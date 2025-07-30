@@ -1,0 +1,1077 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+
+<!-- v5.0.1 css-->
+<link rel="stylesheet" type="text/css" href="../css/v5.0.1/jqx.hamon.css">
+
+<!-- <link rel="stylesheet" type="text/css" href="../css/v5.0.1/jqx.ui-hamon-gray.css"> -->
+<link rel="stylesheet" type="text/css" href="../css/v5.0.1/netis.css">
+
+<link rel="stylesheet" type="text/css" href="../css/v5.0.1/button.css">
+
+
+<link rel="stylesheet" type="text/css" href="../css/v5.0.1/popup.css">
+<link rel="stylesheet" type="text/css" href="../css/v5.0.1/ani.css">
+
+<!-- v6.0.1 css-->
+<link rel="stylesheet" type="text/css" href="../css/v6.0.1/jqx.hamon.v2.css">
+<link rel="stylesheet" type="text/css" href="../css/v6.0.1/button_v62.css">
+
+<!-- js library -->
+<script src="../lib/jquery/jquery-3.6.4.min.js"></script>
+
+<script src="../lib/jquery/jquery-migrate-3.1.0.min.js"></script>
+<script src="../lib/jquery/jquery-dateFormat.js"></script>
+<script src="../lib/jquery/jquery.form.js"></script>
+
+<!-- lodash -->
+<!-- <script src="../lib/lodash/lodash_4.17.21.js"></script> -->
+
+<!-- jqwidgets -->
+<script src="../lib/jqwidgets/jqx-all.js"></script>
+<script src="../lib/jqwidgets/localization.js"></script>
+<script src="../lib/jqwidgets/globalization/globalize.js"></script>
+<script src="../lib/jqwidgets/globalization/globalize.culture.ko-KR.js"></script>
+
+<!-- highchart -->
+
+<!-- <script src="../webjars/highstock/8.0.4/code/highstock.js"></script> -->
+ <!-- 기존 -->
+<!-- <script src="../webjars/highcharts/8.0.4/highcharts-more.js"></script>
+<script src="../webjars/highcharts/8.0.4/modules/heatmap.js"></script> -->
+<!-- cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.0.4/highcharts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.0.4/highcharts-more.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.0.4/modules/solid-gauge.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.0.4/modules/exporting.js"></script>
+<!-- <script src="../webjars/highcharts/8.0.4/modules/networkgraph.js"></script>
+<script src="../webjars/highcharts/8.0.4/modules/networkgraph.src.js"></script>
+
+<script src="../webjars/highstock/8.0.4/code/modules/data.js"></script>
+<script src="../webjars/highstock/8.0.4/code/modules/exporting.js"></script>
+<script src="../webjars/highstock/8.0.4/code/modules/export-data.js"></script>
+<script src="../webjars/highstock/8.0.4/code/modules/no-data-to-display.js"></script>
+
+<script src="../webjars/highcharts/8.0.4/modules/solid-gauge.js"></script>
+<script src="../webjars/highcharts/8.0.4/highcharts-3d.js"></script>
+<script src="../webjars/highcharts/8.0.4/modules/exporting.js"></script>
+
+<script src="../js/hm/highchartscustomEvents.js"></script> -->
+<!-- <script src="../webjars/highcharts/8.0.4/modules/solid-gauge.js"></script> -->
+
+<script src="../lib/megamenu/jquery.hoverIntent.minified.js"></script>
+<script src="../lib/megamenu/jquery.dcmegamenu.1.3.4.min.js"></script>
+
+<!-- <script src="../js/main/code/comCode.js"></script> -->
+<!-- svg to canvas library -->
+<!-- <script src="../lib/rgbcolor.js"></script>
+<script src="../lib/StackBlur.js"></script>
+<script src="../lib/canvg.js"></script> -->
+
+<!-- elastic search 2023.03.21 사용하지 않음으로 주석 처리 -->
+
+
+<!-- hamon -->
+<script src="../js/hm/master.js"></script>
+<script src="../js/hm/hm.prototype.js"></script>
+<script src="../js/hm/hm.resource.js"></script>
+<script src="../js/hm/hm.util.js"></script>
+
+<script src="../js/hm/hm.jqx.grid.v5.0.1.js"></script>
+<script src="../js/hm/hm.jqx.window.js"></script>
+<script src="../js/hm/hm.jqx.tree.js"></script>
+
+<script src="../js/hm/hm.jqx.treegrid.v5.0.1.js"></script>
+<script src="../js/hm/hm.jqx.date.js"></script>
+<script src="../js/hm/hm.jqx.dropdownbtn.js"></script>
+<script src="../js/hm/hm.jqx.dropdownlist.js"></script>
+<script src="../js/hm/hm.jqx.splitter.js"></script>
+<script src="../js/hm/hm.jqx.chart.js"></script>
+<script src="../js/hm/hm.highchart.v2.js"></script>
+<script src="../js/hm/hm.es.js"></script>
+<!-- <script src="../js/hm/chart/hm.aloneUpsVolChart.js"></script>
+<script src="../js/hm/chart/hm.aloneUpsVolChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.aloneUpsTempChart.js"></script>
+<script src="../js/hm/chart/hm.aloneUpsTempChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.perfData.js"></script> -->
+
+<!-- <script src="../js/hm/chart/hm.devCmpChart.js"></script>
+<script src="../js/hm/chart/hm.svrCmpChart.js"></script>
+<script src="../js/hm/chart/hm.devCpuChart.js"></script>
+<script src="../js/hm/chart/hm.devCpsChart.js"></script>
+<script src="../js/hm/chart/hm.devMemoryChart.js"></script>
+<script src="../js/hm/chart/hm.devResptimeChart.js"></script>
+<script src="../js/hm/chart/hm.devThresholdChart.js"></script>
+<script src="../js/hm/chart/hm.svrThresholdChart.js"></script>
+<script src="../js/hm/chart/hm.devSessChart.js"></script>
+<script src="../js/hm/chart/hm.devTempChart.js"></script>
+<script src="../js/hm/chart/hm.ifBpsChart.js"></script>
+<script src="../js/hm/chart/hm.l4IfBpsChart.js"></script>
+
+<script src="../js/hm/chart/hm.devCpuChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.devMemoryChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.devTempChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.devResptimeChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.devSessChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.devCpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifBpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifPpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifBpsPerChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifCrcChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifErrorChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifCollisionChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifNonUnicastChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifDiscardChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifMulticastChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifBroadcastChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifDropChartLeftType.js"></script>
+
+<script src="../js/hm/chart/hm.ifBpsPerChart.js"></script>
+<script src="../js/hm/chart/hm.ifPpsChart.js"></script>
+<script src="../js/hm/chart/hm.ifCrcChart.js"></script>
+<script src="../js/hm/chart/hm.ifErrorChart.js"></script>
+<script src="../js/hm/chart/hm.ifCollisionChart.js"></script>
+<script src="../js/hm/chart/hm.ifNonUnicastChart.js"></script>
+<script src="../js/hm/chart/hm.ifDiscardChart.js"></script>
+<script src="../js/hm/chart/hm.ifMulticastChart.js"></script>
+<script src="../js/hm/chart/hm.ifBroadcastChart.js"></script>
+<script src="../js/hm/chart/hm.ifDropChart.js"></script>
+<script src="../js/hm/chart/hm.ifThresholdChart.js"></script>
+<script src="../js/hm/chart/hm.mainIfBpsChart.js"></script>
+
+<script src="../js/hm/chart/hm.svrCpuChart.js"></script>
+<script src="../js/hm/chart/hm.svrCpuChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrMemoryChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfMemChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfMemChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfMemChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrPerfFsChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfFsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrPerfDiskChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfDiskChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrPerfNetworkChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfNetworkChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrFileSystemChart.js"></script>
+<script src="../js/hm/chart/hm.svrNetworkChart.js"></script>
+<script src="../js/hm/chart/hm.svrDiskChart.js"></script>
+
+<script src="../js/hm/chart/hm.vsvrCpuChart.js"></script>
+<script src="../js/hm/chart/hm.vsvrCpuChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.vsvrMemoryChart.js"></script>
+<script src="../js/hm/chart/hm.vsvrMemoryChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.vsvrBpsChart.js"></script>
+<script src="../js/hm/chart/hm.vsvrBpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.vsvrPpsChart.js"></script>
+<script src="../js/hm/chart/hm.vsvrPpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.vsvrNetworkChart.js"></script>
+
+<script src="../js/hm/chart/hm.vmPpsChart.js"></script>
+<script src="../js/hm/chart/hm.vmPpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.vmBpsChart.js"></script>
+<script src="../js/hm/chart/hm.vmBpsChartLeftType.js"></script>
+
+<script src="../js/hm/chart/hm.apByteChart.js"></script>
+<script src="../js/hm/chart/hm.apClientByteChart.js"></script>
+<script src="../js/hm/chart/hm.apClientByteChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.apClientSignalChart.js"></script>
+<script src="../js/hm/chart/hm.apClientSignalChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrWasChart.js"></script>
+<script src="../js/hm/chart/hm.svrDbmsChart.js"></script>
+<script src="../js/hm/chart/hm.customChart.js"></script>
+<script src="../js/hm/chart/hm.predictChart.js"></script>
+<script src="../js/hm/chart/hm.fmsChart.js"></script>
+
+<script src="../js/hm/chart/hm.l4ConnChart.js"></script>
+<script src="../js/hm/chart/hm.l4CpsChart.js"></script>
+
+
+<script src="../js/hm/chart/hm.donutChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcBarChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcNetworkChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcPieChart.js"></script>
+
+
+<script src="../js/hm/chart/sms/hm.abnlDtcAnalysisChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcSpiderwebChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcAffectLineChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcFeatureLineChart.js"></script>
+
+<script src="../js/hm/chart/hm.solidGaugeChart.js"></script>
+<script src="../js/hm/chart/hm.solidGaugeHarfChart.js"></script>
+<script src="../js/hm/chart/hm.ifPerfTopNChart.js"></script>
+
+<script src="../js/hm/hm.jqx.dataadapter.v2.js"></script>
+<script src="../js/hm/hm.jqx.grid.v2.js"></script>
+<script src="../js/hm/hm.boxcondition.js"></script>
+<script src="../lib/jquery.i18n.properties.min.js"></script>
+
+<link rel="stylesheet" href="../lib/colorpicker/spectrum.css">
+<script src="../lib/colorpicker/spectrum.js"></script>
+<script src="../lib/colorpicker/jquery.spectrum-ko.js"></script> -->
+
+<link rel="stylesheet" href="../lib/colorpicker/spectrum.css">
+<script src="../lib/colorpicker/spectrum.js"></script>
+<script src="../lib/colorpicker/jquery.spectrum-ko.js"></script>
+<!-- <script src="../lib/d3/d3.v4.min.js"></script> -->
+
+
+<!-- <link rel="stylesheet" type="text/css" href="../lib/vis-timeline/vis-timeline-graph2d.min.css"> -->
+
+
+<!-- <script src="../js/hm/chart/hm.l4SessBpsChart.js"></script>
+<script src="../js/hm/chart/hm.l4SessConnChart.js"></script>
+<script src="../js/hm/chart/hm.l4SessCpsChart.js"></script>
+<script src="../js/hm/chart/hm.l4SessBpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.l4SessConnChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.l4SessCpsChartLeftType.js"></script>
+
+
+<script type="text/javascript" src="../lib/swiper/swiper-bundle.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../lib/swiper/swiper-bundle.css"> -->
+
+
+
+<script type="text/javascript" src="../lib/swiper10.3.1/swiper-bundle.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../lib/swiper10.3.1/swiper-bundle.min.css">
+
+
+<!-- <link rel="shortcut icon" href="../img/ico/favicon.ico"> -->
+
+
+<link type="text/css" rel="stylesheet" href="../css/style.css" />
+<script src="../js/pub-ui.js"></script>
+<script src="../js/pub-jqx-temp.js"></script>
+<script src="../js/pub-chart-temp.js"></script>
+</head>
+<body style="min-width: var(--min-width);">
+  <div class="n-wrap">
+     <script> $(document).ready(function() { $.get('header.html', function(data) { $('.n-wrap').prepend(data);gnbMenu();}); }); </script>
+
+
+      <main class="n-container">
+        <span id="content" tabindex="-1" class="n-skip-anchor">본문시작</span>
+        <div class="n-tree-area">
+            <div class="n-tab-type3" role="tablist">
+                <ul>
+                    <li class="on"><button role="tab" data-tab-id="tabTree-1">기본그룹</button></li>
+                    <li><button role="tab" data-tab-id="tabTree-2">조회그룹</button></li>
+                </ul>
+            </div>
+            <!-- 기본그룹 -->
+            <div class="n-tab-content" role="tabpanel" id="tabTree-1">
+                <div class="n-menu-group">
+                    <div class="n-row">
+                        <div class="n-input-search">
+                            <label for="treeSearch" class="n-hidden">명칭검색</label>
+                            <input type="text" placeholder="명칭검색">
+                            <button class="n-btn-search"><span class="n-hidden">검색</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="n-tree">
+                    <div id="jqxTreeList" class="n-jqx-tree-list"></div>
+                </div>
+            </div>
+            <!-- 조회그룹 -->
+            <div class="n-tab-content" role="tabpanel" id="tabTree-2" style="display: none;">
+                <div class="n-menu-group">
+                    <div class="n-row">
+                        <div class="n-input-search">
+                            <label for="treeSearch" class="n-hidden">명칭검색</label>
+                            <input type="text" placeholder="명칭검색">
+                            <button class="n-btn-search"><span class="n-hidden">검색</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="n-tree">
+                    <div id="jqxTreeList1-2" class="n-jqx-tree-list"></div>
+                </div>
+            </div>
+        </div>
+        <div class="n-contents">
+            <nav class="n-breadcrumb" aria-label="경로 탐색">
+                <ol>
+                    <li><a href="../">홈</a></li>
+                    <li><a href="#">1뎁스</a></li>
+                    <li><a href="#">2뎁스</a></li>
+                    <li aria-current="page">current</li>
+                </ol>
+            </nav>
+            <section class="n-content" aria-labelledby="content">
+                <header>
+                    <div class="n-title-wrap">
+                        <h2 class="n-title-page">장비현황</h2>
+                    </div>
+                </header>
+                <div class="n-search-area" aria-label="검색 영역"> <!-- form 태그필요시 div 를 form태그로 변경-->
+                    <div class="n-search-wrap">
+                        <div class="n-row">
+                            <label for="filter-option" class="n-label">검색어</label>
+                            <select id="filter-option" name="filter">
+                                <option value="ip">IP</option>
+                            </select>
+                            <div class="n-inp-search">
+                                <label for="search-query" class="n-hidden">검색어 입력</label>
+                                <input type="text" id="search-query" name="query" placeholder="검색어를 입력하세요.">
+                            </div>
+                            <button type="submit" class="n-btn">검색</button>
+                            <button type="reset" class="n-btn">초기화</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="n-data-header">
+                    
+                    <div class="n-right">
+                        <button type="button" class="n-btn-menu n-st-gray-line">
+                            <i class="n-ico n-ico-excel"></i>
+                            <span>엑셀 다운로드</span>
+                            <i class="n-ico n-ico-down"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="n-grid-data" style="height: 300px;">
+                    <div class="n-grid" id="tempGrid1"></div>
+                </div>
+
+                <div class="jqx-tabs n-tab-type1" id='jqx-tabs'>
+                  <ul class="n-tab">
+                      <li class="on"><button role="tab">요약</button></li>
+                      <li><button role="tab">회선</button></li>
+                      <li><button role="tab">성능</button></li>
+                      <li><button role="tab">이벤트</button></li>
+                  </ul>
+                  <!-- 요약 -->
+                  <div class="n-tab-content" role="tabpanel" id="tab1-1">
+                      <div class="n-f-cell-wrap">
+                          <div class="n-cell n-auto n-system-chart-wrap">
+                              <div class="n-data-header">
+                                  <div class="n-left">
+                                      <div class="n-tit">시스템</div>
+                                  </div>
+                              </div>
+                              <div class="n-system-chart">
+                                  <div class="n-chart">
+                                      <div id="cpu" style="width:100px;height: 100px;;"></div>
+                  
+                                      <div class="txt">CPU</div>
+                                  </div>
+                                  <div class="n-chart-data" style="height:110px;">
+                                      <div id="tempCpuGrid" style="height: 100%;"></div>
+                                  </div>
+                              </div>
+                              <div class="n-system-chart">
+                                  <div class="n-chart">
+                                      <div id="memory" style="width:100px;height: 100px;;"></div>
+                                      <div class="txt">MEMORY</div>
+                                  </div>
+                                  <div class="n-chart-data" style="height:110px;">
+                                      <div class="n-no-data">조회된 데이터가 없습니다.</div>
+                                  </div>
+                              </div>
+                              <div class="n-system-chart">
+                                  <div class="n-chart">
+                                      <div id="lines" style="width:100px;height: 100px;;"></div>
+                                      <div class="txt">수집회선수</div>
+                                  </div>
+                                  <div class="n-chart">
+                                      <div id="temper" style="width:100px;height: 100px;;"></div>
+                                      <div class="txt">온도</div>
+                                  </div>
+                                  <div class="n-chart">
+                                      <div class="n-circle-custom" style="width:100px;height: 100px;;">
+                                          <div class="n-outer" style="background: rgba(60, 216, 240, 0.2);"><div class="n-inner" style="background: #3CD8F0;">0 ms</div></div>
+                                      </div>
+                                      <div class="txt">응답시간</div>
+                                  </div>
+                                  <div class="n-chart">
+                                      <div class="n-circle-custom" style="width:100px;height: 100px;;">
+                                          <div class="n-outer" style="background: rgba(235, 0, 59, 0.2);"><div class="n-inner" style="background: #EB003B;">3</div></div>
+                                      </div>
+                                      <div class="txt">응답시간</div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="n-cell n-auto">
+                              <img src="../img/tree/v5.0.1/switch.svg" alt="DEV" class="devDtlImg" style="width:42px;height:42px;">
+                              <img src="../img/tree/v5.0.1/etc.svg" alt="DEV" class="devDtlImg" style="width:42px;height:42px;">
+                          </div>
+                          <div class="n-cell n-auto">
+                              <div class="n-sys//tem-chart-wrap">
+                                  <div class="n-data-header">
+                                      <div class="n-left">
+                                          <div class="n-tit">회선성능 TopN</div>
+                                      </div>
+                                      <div class="n-right">
+                                          <div class="n-legend">
+                                          <span class="n-item"><i style="background-color:#3FD898;"></i><span class="n-txt">IN</span></span>
+                                          <span class="n-item"><i style="background-color:#3CD8F0;"></i><span class="n-txt">OUT</span></span>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="n-chart">
+                                      <div id="lineTopN" style="width: 100%;height:250px;"></div>
+                                  </div>
+                                  <div class="n-data-header">
+                                      <div class="n-left">
+                                          <div class="n-tit">장비설명</div>
+                                      </div>
+                                  </div>
+                                  <div class="n-summary-desc" style="height: 120px;">PIOLINK Application Switch K</div>
+                              </div>
+                          </div>
+                  
+                      </div>
+                  </div>
+                  <!-- 회선 -->
+                  <div class="n-tab-content" role="tabpanel" id="tab1-2" style="display: none;">
+                      <div class="n-grid-data" style="height: 560px;">
+                          <div class="n-grid" id="tempGrid2"></div>
+                      </div>
+                  </div>
+                  <!-- 성능 -->
+                  <div class="n-tab-content" role="tabpanel" id="tab1-3" style="display: none;">
+                      <div class="jqx-tabs n-tab-type2"  id='jqx-tabs2'>
+                          <ul class="n-tab" role="tablist">
+                              <li class="on"><button role="tab">CPU</button>
+                              <li><button role="tab">Memory</button>
+                              <li><button role="tab">온도</button>
+                              <li><button role="tab">응답시간</button>
+                              <li><button role="tab">SESSION</button>
+                              <li><button role="tab">CPS</button>
+                              <li><button role="tab">기간선택조회</button>
+                              <li><button role="tab">비교</button>
+                          </ul>
+                          <!-- CPU -->
+                          <div class="n-tab-content" role="tabpanel" id="tab2-1">
+                              <div class="n-data-header">
+                              <div class="n-left">
+                                  <div class="n-dropdown">
+                                      <button type="button" class="n-selected">
+                                      <span class="n-fixed"><i class="n-ico-menu"></i></span>
+                                      </button>
+                                      <div class="n-menu-layer">
+                                      <ul>
+                                          <li><button type="button">데이터 보기</button></li>
+                                          <li><button type="button">인쇄</button></li>
+                                          <li><button type="button">다운로드</button></li>
+                                          <li><button type="button">전체보기</button></li>
+                                      </ul>
+                                      </div>
+                                  </div>
+                                  <span class="bar"></span>
+                                  <div class="n-dropdown">
+                                      <button type="button" class="n-selected">
+                                      <span class="n-fixed"><b>성능지표</b></span>
+                                      <span class="n-value">cpu</span>
+                                      </button>
+                                      <div class="n-menu-layer">
+                                      <ul>
+                                          <li><button type="button">CPU</button></li>
+                                          <li><button type="button">Memory</button></li>
+                                          <li><button type="button">온도</button></li>
+                                          <li><button type="button">응답시간</button></li>
+                                      </ul>
+                                      </div>
+                                  </div>
+                                  <div class="n-dropdown">
+                                      <button type="button" class="n-selected">
+                                      <span class="n-fixed"><b>그룹</b></span>
+                                      <span class="n-value">전체<b style="color:#1D56BC">(24)</b></span>
+                                      </button>
+                                      <div class="n-menu-layer">
+                                      <ul>
+                                          <li><button type="button">선택</button></li>
+                                          <li><button type="button">선택2</button></li>
+                                      </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="n-right">
+                                  <div class="n-legend">
+                                  <span class="n-item"><i style="background-color:#246BEB;"></i><span class="n-txt">CPU 평균</span></span>
+                                  <span class="n-item"><i style="background-color:#FE6161;"></i><span class="n-txt">최대</span></span>
+                                  <span class="n-item"><i style="background-color:#8491A7;"></i><span class="n-txt">최소</span></span>
+                                  </div>
+                              </div>
+                              </div>
+                              <div class="n-grid-wrap">
+                                  <div class="n-cell">
+                                      <div class="n-chart-box">
+                                          <div class="n-data-header">
+                                          <div class="n-left"><strong class="n-tit">일</strong></div>
+                                          <div class="n-right">
+                                              <div class="n-menu-group">
+                                              <button class="n-btn"><i class="n-ico-note"></i></button>
+                                              <button class="n-btn"><i class="n-ico-print"></i></button>
+                                              <button class="n-btn"><i class="n-ico-spead"></i></button>
+                                              <button class="n-btn"><i class="n-ico-contract"></i></button>
+                                              <button class="n-btn"><i class="n-ico-down"></i></button>
+                                              </div>
+                                          </div>
+                                          </div>
+                                          <div class="n-chart">
+                                          <div id="chart0" style="width: 100%; height: 200px;"></div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="n-cell">
+                                      <div class="n-chart-box">
+                                          <div class="n-data-header">
+                                              <div class="n-left"><strong class="n-tit">주</strong></div>
+                                              <div class="n-right">
+                                              <div class="n-menu-group">
+                                                  <button class="n-btn"><i class="n-ico-note"></i></button>
+                                                  <button class="n-btn"><i class="n-ico-print"></i></button>
+                                                  <button class="n-btn"><i class="n-ico-spead"></i></button>
+                                                  <button class="n-btn"><i class="n-ico-contract"></i></button>
+                                                  <button class="n-btn"><i class="n-ico-down"></i></button>
+                                              </div>
+                                              </div>
+                                          </div>
+                                          <div class="n-no-data" style="width: 100%; height: 200px;">표시할 데이터가 없습니다.</div>
+                                      </div>
+                                  </div>
+                                  <div class="n-cell">
+                                      <div class="n-chart-box">
+                                          <div class="n-data-header">
+                                              <div class="n-left"><strong class="n-tit">월</strong></div>
+                                              <div class="n-right">
+                                              <div class="n-menu-group">
+                                                  <button class="n-btn"><i class="n-ico-note"></i></button>
+                                                  <button class="n-btn"><i class="n-ico-print"></i></button>
+                                                  <button class="n-btn"><i class="n-ico-spead"></i></button>
+                                                  <button class="n-btn"><i class="n-ico-contract"></i></button>
+                                                  <button class="n-btn"><i class="n-ico-down"></i></button>
+                                              </div>
+                                              </div>
+                                          </div>
+                                          <div class="n-no-data" style="width: 100%; height: 200px;">표시할 데이터가 없습니다.</div>
+                                      </div>
+                                  </div>
+                                  <div class="n-cell">
+                                      <div class="n-chart-box">
+                                          <div class="n-data-header">
+                                              <div class="n-left"><strong class="n-tit">년</strong></div>
+                                              <div class="n-right">
+                                              <div class="n-menu-group">
+                                                  <button class="n-btn"><i class="n-ico-note"></i></button>
+                                                  <button class="n-btn"><i class="n-ico-print"></i></button>
+                                                  <button class="n-btn"><i class="n-ico-spead"></i></button>
+                                                  <button class="n-btn"><i class="n-ico-contract"></i></button>
+                                                  <button class="n-btn"><i class="n-ico-down"></i></button>
+                                              </div>
+                                              </div>
+                                          </div>
+                                          <div class="n-no-data" style="width: 100%; height: 200px;">표시할 데이터가 없습니다.</div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="n-tab-content" role="tabpanel" id="tab2-2" style="display: none;">Memory</div>
+                          <div class="n-tab-content" role="tabpanel" id="tab2-3" style="display: none;">온도</div>
+                          <div class="n-tab-content" role="tabpanel" id="tab2-4" style="display: none;">응답시간</div>
+                          <div class="n-tab-content" role="tabpanel" id="tab2-5" style="display: none;">SESSION</div>
+                          <div class="n-tab-content" role="tabpanel" id="tab2-6" style="display: none;">CPS</div>
+                          <!-- 기간선택조회 -->
+                          <div class="n-tab-content" role="tabpanel" id="tab2-7" style="display: none;">
+                              <div class="n-search-area" aria-label="검색 영역"> <!-- form 태그필요시 div 를 form태그로 변경-->
+                                  <div class="n-search-wrap">
+                                      <div class="n-row">
+                                          <span class="n-label">기간</span>
+                                          <div class="n-input-date">
+                                              <input type="text" class="n-datepicker" data-option='{"disabled": true}'>
+                                              <input type="text" class="n-timepicker" data-option='{"disabled": true}'>
+                                              <span class="n-dash">-</span>
+                                              <input type="text" class="n-datepicker">
+                                              <input type="text" class="n-timepicker">
+                                          </div>
+                                          <fieldset class="n-btn-check">
+                                              <legend class="n-hidden">시간 선택</legend>
+                                              <div class="n-checks">
+                                                  <input id="sPeriod_hist_0" type="radio" name="sPeriod_hist1" value="1D" checked>
+                                                  <label for="sPeriod_hist_0"><span>오늘</span></label>
+                                              </div>
+                                              <div class="n-checks">
+                                                  <input id="sPeriod_hist_1" type="radio" name="sPeriod_hist1" value="7D">
+                                                  <label for="sPeriod_hist_1"><span>1주</span></label>
+                                              </div>
+                                              <div class="n-checks on">
+                                                  <input id="sPeriod_hist_2" type="radio" name="sPeriod_hist1" value="30D">
+                                                  <label for="sPeriod_hist_2"><span>1달</span></label>
+                                              </div>
+                                              <div class="n-checks">
+                                                  <input id="sPeriod_hist_4" type="radio" name="sPeriod_hist1" value="-1">
+                                                  <label for="sPeriod_hist_4"><span>기간선택</span></label>
+                                              </div>
+                                          </fieldset>
+                                      </div>
+                                      <div class="n-row">
+                                          <span class="n-label">수집주기</span>
+                                          <div class="n-input-choice-wrap">
+                                              <div class="n-input-choice">
+                                                  <input id="radio-5min" type="radio" name="radio" checked="checked"><i></i>
+                                                  <label for="radio-5min">5분</label>
+                                              </div>
+                                              <div class="n-input-choice">
+                                                  <input id="radio-1hour" type="radio" name="radio">
+                                                  <i></i>
+                                                  <label for="radio-1hour">1시간</label>
+                                              </div>
+                                              <div class="n-input-choice">
+                                                  <input id="radio-1day" type="radio" name="radio">
+                                                  <i></i>
+                                                  <label for="radio-1day">1일</label>
+                                              </div>
+                                          </div>
+                                          <div class="n-search-menu">
+                                              <button type="submit" class="n-btn">검색</button>
+                                              <button type="reset" class="n-btn">초기화</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!-- // n-search-wrap -->
+                              <div class="n-chart-wrap">
+                                  <div class="n-data-header">
+                                      <div class="n-left">
+                                          <div class="n-dropdown">
+                                              <button type="button" class="n-selected">
+                                              <span class="n-fixed"><i class="n-ico-menu"></i></span>
+                                              </button>
+                                              <div class="n-menu-layer">
+                                              <ul>
+                                                  <li><button type="button">데이터 보기</button></li>
+                                                  <li><button type="button">인쇄</button></li>
+                                                  <li><button type="button">다운로드</button></li>
+                                              </ul>
+                                              </div>
+                                          </div>
+                                          <span class="bar"></span>
+                                          <div class="n-dropdown">
+                                              <button type="button" class="n-selected">
+                                              <span class="n-fixed"><b>성능지표</b></span>
+                                              <span class="n-value">cpu</span>
+                                              </button>
+                                              <div class="n-menu-layer">
+                                              <ul>
+                                                  <li><button type="button">CPU</button></li>
+                                                  <li><button type="button">Memory</button></li>
+                                                  <li><button type="button">온도</button></li>
+                                                  <li><button type="button">응답시간</button></li>
+                                              </ul>
+                                              </div>
+                                          </div>
+                                          <div class="n-dropdown">
+                                              <button type="button" class="n-selected">
+                                              <span class="n-fixed"><b>세부지표</b></span>
+                                              <span class="n-value">전체</span>
+                                              </button>
+                                              <div class="n-menu-layer">
+                                              <ul>
+                                                  <li><button type="button">전체</button></li>
+                                                  <li><button type="button">선택</button></li>
+                                              </ul>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="n-right">
+                                          <div class="n-legend">
+                                          <span class="n-item"><i style="background-color:#246BEB;"></i><span class="n-txt">CPU 평균</span></span>
+                                          <span class="n-item"><i style="background-color:#FE6161;"></i><span class="n-txt">최대</span></span>
+                                          <span class="n-item"><i style="background-color:#8491A7;"></i><span class="n-txt">최소</span></span>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="n-chart n-st-line">
+                                      <div id="chart1" style="width: 100%; height: 272px;"></div>
+                                  </div>
+                              </div>
+                              <!-- // n-chart-wrap -->
+                          </div>
+                          <!-- // 기간선택조회 -->
+                          <!-- 비교 -->
+                          <div class="n-tab-content" role="tabpanel" id="tab2-8" style="display: none;">
+                              <div class="n-search-area" aria-label="검색 영역"> <!-- form 태그필요시 div 를 form태그로 변경-->
+                                  <div class="n-search-wrap">
+                                      <div class="n-row">
+                                          <span class="n-label">기간</span>
+                                          <div class="n-input-date">
+                                              <input type="text" class="n-datepicker" data-option='{"disabled": true}'>
+                                              <input type="text" class="n-timepicker" data-option='{"disabled": true}'>
+                                              <span class="n-dash">-</span>
+                                              <input type="text" class="n-datepicker">
+                                              <input type="text" class="n-timepicker">
+                                          </div>
+                                          <fieldset class="n-btn-check">
+                                              <legend class="n-hidden">시간 선택</legend>
+                                              <div class="n-checks">
+                                                  <input id="sPeriod_hist_0" type="radio" name="sPeriod_hist" value="1D" checked>
+                                                  <label for="sPeriod_hist_0"><span>오늘</span></label>
+                                              </div>
+                                              <div class="n-checks">
+                                                  <input id="sPeriod_hist_1" type="radio" name="sPeriod_hist" value="7D">
+                                                  <label for="sPeriod_hist_1"><span>1주</span></label>
+                                              </div>
+                                              <div class="n-checks on">
+                                                  <input id="sPeriod_hist_2" type="radio" name="sPeriod_hist" value="30D">
+                                                  <label for="sPeriod_hist_2"><span>1달</span></label>
+                                              </div>
+                                              <div class="n-checks">
+                                                  <input id="sPeriod_hist_4" type="radio" name="sPeriod_hist" value="-1">
+                                                  <label for="sPeriod_hist_4"><span>기간선택</span></label>
+                                              </div>
+                                          </fieldset>
+                                      </div>
+                                      <div class="n-row">
+                                          <span class="n-label">수집주기</span>
+                                          <div class="n-input-choice-wrap">
+                                              <div class="n-input-choice">
+                                                  <input id="radio-5min" type="radio" name="radio" checked="checked"><i></i>
+                                                  <label for="radio-5min">5분</label>
+                                              </div>
+                                              <div class="n-input-choice">
+                                                  <input id="radio-1hour" type="radio" name="radio">
+                                                  <i></i>
+                                                  <label for="radio-1hour">1시간</label>
+                                              </div>
+                                              <div class="n-input-choice">
+                                                  <input id="radio-1day" type="radio" name="radio">
+                                                  <i></i>
+                                                  <label for="radio-1day">1일</label>
+                                              </div>
+                                          </div>
+                                          <div class="n-search-menu">
+                                              <button type="submit" class="n-btn">검색</button>
+                                              <button type="reset" class="n-btn">초기화</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="n-f-cell-wrap">
+                                  <div class="n-cell" style="width:280px;">
+                                      <div class="n-tree-area n-st2" style="height:350px;">
+                                          <div class="n-tree">
+                                          <div id="jqxTreeList2" class="n-jqx-tree-list"></div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="n-cell n-auto">
+                                      <div class="n-chart-wrap">
+                                          <div class="n-data-header">
+                                              <div class="n-left">
+                                                  <div class="n-dropdown">
+                                                      <button type="button" class="n-selected">
+                                                      <span class="n-fixed"><i class="n-ico-menu"></i></span>
+                                                      </button>
+                                                      <div class="n-menu-layer">
+                                                          <ul>
+                                                              <li><button type="button">데이터 보기</button></li>
+                                                              <li><button type="button">인쇄</button></li>
+                                                              <li><button type="button">다운로드</button></li>
+                                                              <li><button type="button">전체보기</button></li>
+                                                          </ul>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="n-right">
+                                                  <div class="n-legend">
+                                                  <span class="n-item"><i style="background-color:#246BEB;"></i><span class="n-txt">Mgmt-0</span></span>
+                                                  <span class="n-item"><i style="background-color:#FE6161;"></i><span class="n-txt">PacketProcessor-0</span></span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="n-chart n-st-line n-auto">
+                                          <div id="chart2" style="width: 100%; height: 100%;"></div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- // 비교 -->
+                      </div>
+                  </div>
+                  <!-- 이벤트 -->
+                  <div class="n-tab-content" role="tabpanel" id="tab1-4" style="display: none;">이벤트</div>
+                </div>
+            </section>
+        </div>
+       </main>
+    </div>
+
+
+
+<!-- 트리 -->
+<script>
+    $('#jqx-tabs').jqxTabs({ width: '100%', position: 'top'});          
+    $('#jqx-tabs2').jqxTabs({ width: '100%', position: 'top'});          
+
+      tempJqxTree("#jqxTreeList", {
+        dataFields: [
+            { name: 'grpNo', type: 'string' },
+            { name: 'grpParent', type: 'number' },
+            { name: 'strGrpParent', type: 'string' },
+            { name: 'grpName', type: 'string' },
+            { name: 'devKind1', type: 'string' },
+            { name: 'devKind2', type: 'string' },
+            { name: 'devIp', type: 'string' },
+            { name: 'grpCode', type: 'string' },
+            { name: 'sortIdx', type: 'number'},
+            { name: 'grpRef', type: 'number'}
+        ], 
+        url:'treedata.json',
+        temp:true,
+    });
+      tempJqxTree("#jqxTreeList1-2", {
+        dataFields: [
+            { name: 'grpNo', type: 'string' },
+            { name: 'grpParent', type: 'number' },
+            { name: 'strGrpParent', type: 'string' },
+            { name: 'grpName', type: 'string' },
+            { name: 'devKind1', type: 'string' },
+            { name: 'devKind2', type: 'string' },
+            { name: 'devIp', type: 'string' },
+            { name: 'grpCode', type: 'string' },
+            { name: 'sortIdx', type: 'number'},
+            { name: 'grpRef', type: 'number'}
+        ], 
+        url:'treedata.json',
+        temp:true,
+    });
+    tempJqxTree("#jqxTreeList2", {
+        dataFields: [
+            { name: 'grpNo', type: 'string' },
+            { name: 'grpParent', type: 'number' },
+            { name: 'grpName', type: 'string' },
+            { name: 'devKind1', type: 'string' },
+            { name: 'devKind2', type: 'string' },
+            { name: 'devIp', type: 'string' },
+            { name: 'grpCode', type: 'string' },
+            { name: 'sortIdx', type: 'number'},
+            { name: 'grpRef', type: 'number'}
+        ], 
+        url:'treedata.json',
+        temp:true,
+        filterable: false
+    })    
+    </script>
+
+    <!-- 그리드 -->
+    <script>
+
+    const localData = [{"Field1": "텍스트 텍스트", "Field3": "텍스트 텍스트"}    ];
+    const localData2 = [{"Field1": "텍스트 텍스트", "Field3": "텍스트 텍스트"}    ];
+        tempJqxGrid("#tempGrid1", {
+            columns: [
+                    {text: '타이틀', datafield: 'Field1'},
+                    {text: '타이틀', datafield: 'Field2'}
+                ],  
+        }, localData)
+
+        tempJqxGrid("#tempGrid2", {
+            editable: true,
+                columngroups: [
+                        { text: 'Name', align: 'center', name: 'name' },
+                        { text: 'Name', align: 'center', name: 'name2' },
+                        { text: 'Name', align: 'center', name: 'name3' },
+                    ],
+            columns: [
+                    {text: '클릭시 인풋모드', datafield: 'Field1', cellsalign: 'left', minwidth: '220', editable: true, columnGroup: 'name'},
+                    {text: '타이틀', datafield: 'Field2', cellsalign : 'center', editable: false, width: '150', filtertype:'checkedlist',columnGroup: 'name2'},
+                    {text: '클릭시 인풋모드', datafield: 'Field3', cellsalign: 'center', width: '150', editable: true, columnGroup: 'name2'},
+                    {text: '타이틀', datafield: 'Field4', cellsalign: 'center', width: '200', editable: false, cellsrenderer: HmGrid.apNameNiaRenderer, columnGroup: 'name3'},
+                    {text: '타이틀', datafield: 'Field5', cellsalign: 'center', width: '100', editable: false}
+                ],     
+        }, localData)
+    </script>
+
+
+<!-- 차트 -->
+  <script>
+    tempLineChart1('chart0');
+    tempLineChart1('chart1');
+    tempLineChart1('chart2');
+  </script>
+
+
+<script>
+    
+const tempData = [
+    {"Field1": "그리드 기본은 좌측정렬 입니다.", "Field3": "텍스트 텍스트", "status":"수집"}, 
+    {"Field1": "그리드 기본은 좌측정렬 입니다.", "Field3": "텍스트 텍스트", "status":"수집"},
+    {"Field1": "그리드 기본은 좌측정렬 입니다.", "Field3": "텍스트 텍스트", "status":"수집"}, 
+    {"Field1": "그리드 기본은 좌측정렬 입니다.", "Field3": "텍스트 텍스트", "status":"수집"}, 
+    {"Field1": "그리드 기본은 좌측정렬 입니다.", "Field3": "텍스트 텍스트", "status":"수집"} 
+   ];
+tempJqxGrid("#tempCpuGrid", {
+columnsheight: 28,
+rowsheight: 26,
+columns: [
+        {text: '타이틀', datafield: 'Field1'},
+        {text: '타이틀', datafield: 'Field2'}
+    ],  
+ pageable : false,
+}, tempData)
+
+ tempGageChart('cpu', {
+    plotOptions: {
+      solidgauge: {
+        dataLabels: {
+          useHTML: true,
+          format:
+            '<div class="gauge-label">' +
+            '   <span>{y}%</span>' +
+            '</div>'
+        },
+      }
+    },    
+    series: [{
+        data: [{
+            color: '#246BEB',
+            y: 45
+        }]
+    }],
+});
+ tempGageChart('memory', {
+    plotOptions: {
+      solidgauge: {
+        dataLabels: {
+          useHTML: true,
+          format:
+            '<div class="gauge-label">' +
+            '   <span>{y}%</span>' +
+            '</div>'
+        },
+      }
+    },        
+    series: [{
+        data: [{
+            color: '#3FD898',
+            y: 17.16
+        }]
+    }],
+});
+ tempGageChart('lines', {
+    plotOptions: {
+      solidgauge: {
+        dataLabels: {
+          useHTML: true,
+          format:
+            '<div class="gauge-label">' +
+            '   <span>{y}</span>' +
+            '</div>'
+        },
+      }
+    },        
+    series: [{
+        data: [{
+            color: '#3CD8F0',
+            y: 6
+        }]
+    }],
+});
+ tempGageChart('temper', {
+    plotOptions: {
+      solidgauge: {
+        dataLabels: {
+          useHTML: true,
+          format:
+            '<div class="gauge-label">' +
+            '   <span>{y}</span>' +
+            '</div>'
+        },
+      }
+    },        
+    series: [{
+        data: [{
+            color: '#3CD8F0',
+            y: 50.5
+        }]
+    }],
+});
+
+//회선성능 TopN
+Highcharts.chart('lineTopN', {
+  chart: {
+    type: 'bar'
+  },
+  title: { text: null },
+  xAxis: {
+    categories: ['Gi1/0/1', 'Gi1/0/1', 'Gi1/0/1', 'Gi1/0/1', 'Gi1/0/1', 'Gi1/0/1'],
+    title: { text: null },
+    labels: {
+    style: {
+        color: '#373F57', 
+        fontSize: '11px',
+        whiteSpace: 'nowrap',
+        textOverflow: 'ellipsis',
+        overflow: 'hidden',
+        width: '60px',   // 라벨 최대 너비
+        display: 'inline-block'
+    },
+    },    
+  },
+  yAxis: {
+    labels: { enabled: false },
+    min: 0,
+    title: { text: null },
+    gridLineDashStyle: 'Dash',
+    labels: { enabled: false },
+  },
+  tooltip: { enabled: false }, // 툴팁 제거
+   exporting: { enabled: false },
+ plotOptions: {
+     column: {
+        stacking: 'normal',
+        borderWidth: 0,
+    },
+    series: {
+    pointPadding: 0.05,
+    groupPadding: 0.05,
+      pointWidth: 12,
+      dataLabels: {
+        enabled: true,
+        useHTML: true, 
+        formatter: function() {
+          return '<span style="font-weight: normal;">' + this.point.label + '</span>';
+        }
+      }
+    }
+  },
+  legend: { enabled: false },
+  credits: { enabled: false },
+  series: [{
+    name: 'Series 1',
+    color: '#3FD898',
+    data: [
+      { y: 43.27, label: '43.27 MB' },
+      { y: 5.77, label: '5.77 MB' },
+      { y: 0.54, label: '553.79 KB' },
+      { y: 0.54, label: '553.79 KB' },
+      { y: 0.54, label: '553.79 KB' },
+      { y: 0, label: '0 KB' }
+    ]
+  }, {
+    name: 'Series 2',
+    color: '#3CD8F0',
+    data: [
+      { y: 43.27, label: '43.27 MB' },
+      { y: 38.77, label: '38.77 MB' },
+      { y: 0.46, label: '461.77 KB' },
+      { y: 0.46, label: '461.77 KB' },
+      { y: 0.46, label: '461.77 KB' },
+      { y: 0, label: '0 KB' }
+    ]
+  }]
+});
+
+
+
+</script>
+
+
+</body>
+</html>

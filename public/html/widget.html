@@ -1,0 +1,1065 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+
+<!-- v5.0.1 css-->
+<link rel="stylesheet" type="text/css" href="../css/v5.0.1/jqx.hamon.css">
+
+<!-- <link rel="stylesheet" type="text/css" href="../css/v5.0.1/jqx.ui-hamon-gray.css"> -->
+<link rel="stylesheet" type="text/css" href="../css/v5.0.1/netis.css">
+
+<link rel="stylesheet" type="text/css" href="../css/v5.0.1/button.css">
+
+
+<link rel="stylesheet" type="text/css" href="../css/v5.0.1/popup.css">
+<link rel="stylesheet" type="text/css" href="../css/v5.0.1/ani.css">
+
+<!-- v6.0.1 css-->
+<link rel="stylesheet" type="text/css" href="../css/v6.0.1/jqx.hamon.v2.css">
+<link rel="stylesheet" type="text/css" href="../css/v6.0.1/button_v62.css">
+
+<!-- js library -->
+<script src="../lib/jquery/jquery-3.6.4.min.js"></script>
+
+<script src="../lib/jquery/jquery-migrate-3.1.0.min.js"></script>
+<script src="../lib/jquery/jquery-dateFormat.js"></script>
+<script src="../lib/jquery/jquery.form.js"></script>
+
+
+
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gridstack@1.1.2/dist/gridstack.min.css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gridstack@1.1.2/dist/gridstack.all.js"></script>
+
+<!-- lodash -->
+<!-- <script src="../lib/lodash/lodash_4.17.21.js"></script> -->
+
+<!-- jqwidgets -->
+<script src="../lib/jqwidgets/jqx-all.js"></script>
+<script src="../lib/jqwidgets/localization.js"></script>
+<script src="../lib/jqwidgets/globalization/globalize.js"></script>
+<script src="../lib/jqwidgets/globalization/globalize.culture.ko-KR.js"></script>
+
+<!-- highchart -->
+
+<!-- <script src="../webjars/highstock/8.0.4/code/highstock.js"></script> -->
+ <!-- 기존 -->
+<!-- <script src="../webjars/highcharts/8.0.4/highcharts-more.js"></script>
+<script src="../webjars/highcharts/8.0.4/modules/heatmap.js"></script> -->
+<!-- cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.0.4/highcharts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.0.4/modules/heatmap.min.js"></script>
+
+<!-- <script src="../webjars/highcharts/8.0.4/modules/networkgraph.js"></script>
+<script src="../webjars/highcharts/8.0.4/modules/networkgraph.src.js"></script>
+
+<script src="../webjars/highstock/8.0.4/code/modules/data.js"></script>
+<script src="../webjars/highstock/8.0.4/code/modules/exporting.js"></script>
+<script src="../webjars/highstock/8.0.4/code/modules/export-data.js"></script>
+<script src="../webjars/highstock/8.0.4/code/modules/no-data-to-display.js"></script>
+
+<script src="../webjars/highcharts/8.0.4/modules/solid-gauge.js"></script>
+<script src="../webjars/highcharts/8.0.4/highcharts-3d.js"></script>
+<script src="../webjars/highcharts/8.0.4/modules/exporting.js"></script>
+
+<script src="../js/hm/highchartscustomEvents.js"></script> -->
+<!-- <script src="../webjars/highcharts/8.0.4/modules/solid-gauge.js"></script> -->
+
+<script src="../lib/megamenu/jquery.hoverIntent.minified.js"></script>
+<script src="../lib/megamenu/jquery.dcmegamenu.1.3.4.min.js"></script>
+
+<!-- <script src="../js/main/code/comCode.js"></script> -->
+<!-- svg to canvas library -->
+<!-- <script src="../lib/rgbcolor.js"></script>
+<script src="../lib/StackBlur.js"></script>
+<script src="../lib/canvg.js"></script> -->
+
+<!-- elastic search 2023.03.21 사용하지 않음으로 주석 처리 -->
+
+
+<!-- hamon -->
+<script src="../js/hm/master.js"></script>
+<script src="../js/hm/hm.prototype.js"></script>
+<script src="../js/hm/hm.resource.js"></script>
+<script src="../js/hm/hm.util.js"></script>
+
+<script src="../js/hm/hm.jqx.grid.v5.0.1.js"></script>
+<script src="../js/hm/hm.jqx.window.js"></script>
+<script src="../js/hm/hm.jqx.tree.js"></script>
+
+<script src="../js/hm/hm.jqx.treegrid.v5.0.1.js"></script>
+<script src="../js/hm/hm.jqx.date.js"></script>
+<script src="../js/hm/hm.jqx.dropdownbtn.js"></script>
+<script src="../js/hm/hm.jqx.dropdownlist.js"></script>
+<script src="../js/hm/hm.jqx.splitter.js"></script>
+<script src="../js/hm/hm.jqx.chart.js"></script>
+<script src="../js/hm/hm.highchart.v2.js"></script>
+<script src="../js/hm/hm.es.js"></script>
+<!-- <script src="../js/hm/chart/hm.aloneUpsVolChart.js"></script>
+<script src="../js/hm/chart/hm.aloneUpsVolChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.aloneUpsTempChart.js"></script>
+<script src="../js/hm/chart/hm.aloneUpsTempChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.perfData.js"></script> -->
+
+<!-- <script src="../js/hm/chart/hm.devCmpChart.js"></script>
+<script src="../js/hm/chart/hm.svrCmpChart.js"></script>
+<script src="../js/hm/chart/hm.devCpuChart.js"></script>
+<script src="../js/hm/chart/hm.devCpsChart.js"></script>
+<script src="../js/hm/chart/hm.devMemoryChart.js"></script>
+<script src="../js/hm/chart/hm.devResptimeChart.js"></script>
+<script src="../js/hm/chart/hm.devThresholdChart.js"></script>
+<script src="../js/hm/chart/hm.svrThresholdChart.js"></script>
+<script src="../js/hm/chart/hm.devSessChart.js"></script>
+<script src="../js/hm/chart/hm.devTempChart.js"></script>
+<script src="../js/hm/chart/hm.ifBpsChart.js"></script>
+<script src="../js/hm/chart/hm.l4IfBpsChart.js"></script>
+
+<script src="../js/hm/chart/hm.devCpuChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.devMemoryChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.devTempChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.devResptimeChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.devSessChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.devCpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifBpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifPpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifBpsPerChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifCrcChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifErrorChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifCollisionChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifNonUnicastChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifDiscardChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifMulticastChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifBroadcastChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifDropChartLeftType.js"></script>
+
+<script src="../js/hm/chart/hm.ifBpsPerChart.js"></script>
+<script src="../js/hm/chart/hm.ifPpsChart.js"></script>
+<script src="../js/hm/chart/hm.ifCrcChart.js"></script>
+<script src="../js/hm/chart/hm.ifErrorChart.js"></script>
+<script src="../js/hm/chart/hm.ifCollisionChart.js"></script>
+<script src="../js/hm/chart/hm.ifNonUnicastChart.js"></script>
+<script src="../js/hm/chart/hm.ifDiscardChart.js"></script>
+<script src="../js/hm/chart/hm.ifMulticastChart.js"></script>
+<script src="../js/hm/chart/hm.ifBroadcastChart.js"></script>
+<script src="../js/hm/chart/hm.ifDropChart.js"></script>
+<script src="../js/hm/chart/hm.ifThresholdChart.js"></script>
+<script src="../js/hm/chart/hm.mainIfBpsChart.js"></script>
+
+<script src="../js/hm/chart/hm.svrCpuChart.js"></script>
+<script src="../js/hm/chart/hm.svrCpuChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrMemoryChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfMemChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfMemChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfMemChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrPerfFsChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfFsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrPerfDiskChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfDiskChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrPerfNetworkChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfNetworkChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrFileSystemChart.js"></script>
+<script src="../js/hm/chart/hm.svrNetworkChart.js"></script>
+<script src="../js/hm/chart/hm.svrDiskChart.js"></script>
+
+<script src="../js/hm/chart/hm.vsvrCpuChart.js"></script>
+<script src="../js/hm/chart/hm.vsvrCpuChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.vsvrMemoryChart.js"></script>
+<script src="../js/hm/chart/hm.vsvrMemoryChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.vsvrBpsChart.js"></script>
+<script src="../js/hm/chart/hm.vsvrBpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.vsvrPpsChart.js"></script>
+<script src="../js/hm/chart/hm.vsvrPpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.vsvrNetworkChart.js"></script>
+
+<script src="../js/hm/chart/hm.vmPpsChart.js"></script>
+<script src="../js/hm/chart/hm.vmPpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.vmBpsChart.js"></script>
+<script src="../js/hm/chart/hm.vmBpsChartLeftType.js"></script>
+
+<script src="../js/hm/chart/hm.apByteChart.js"></script>
+<script src="../js/hm/chart/hm.apClientByteChart.js"></script>
+<script src="../js/hm/chart/hm.apClientByteChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.apClientSignalChart.js"></script>
+<script src="../js/hm/chart/hm.apClientSignalChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrWasChart.js"></script>
+<script src="../js/hm/chart/hm.svrDbmsChart.js"></script>
+<script src="../js/hm/chart/hm.customChart.js"></script>
+<script src="../js/hm/chart/hm.predictChart.js"></script>
+<script src="../js/hm/chart/hm.fmsChart.js"></script>
+
+<script src="../js/hm/chart/hm.l4ConnChart.js"></script>
+<script src="../js/hm/chart/hm.l4CpsChart.js"></script>
+
+
+<script src="../js/hm/chart/hm.donutChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcBarChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcNetworkChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcPieChart.js"></script>
+
+
+<script src="../js/hm/chart/sms/hm.abnlDtcAnalysisChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcSpiderwebChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcAffectLineChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcFeatureLineChart.js"></script>
+
+<script src="../js/hm/chart/hm.solidGaugeChart.js"></script>
+<script src="../js/hm/chart/hm.solidGaugeHarfChart.js"></script>
+<script src="../js/hm/chart/hm.ifPerfTopNChart.js"></script>
+
+<script src="../js/hm/hm.jqx.dataadapter.v2.js"></script>
+<script src="../js/hm/hm.jqx.grid.v2.js"></script>
+<script src="../js/hm/hm.boxcondition.js"></script>
+<script src="../lib/jquery.i18n.properties.min.js"></script>
+
+<link rel="stylesheet" href="../lib/colorpicker/spectrum.css">
+<script src="../lib/colorpicker/spectrum.js"></script>
+<script src="../lib/colorpicker/jquery.spectrum-ko.js"></script> -->
+
+<link rel="stylesheet" href="../lib/colorpicker/spectrum.css">
+<script src="../lib/colorpicker/spectrum.js"></script>
+<script src="../lib/colorpicker/jquery.spectrum-ko.js"></script>
+<!-- <script src="../lib/d3/d3.v4.min.js"></script> -->
+
+
+<!-- <link rel="stylesheet" type="text/css" href="../lib/vis-timeline/vis-timeline-graph2d.min.css"> -->
+
+
+<!-- <script src="../js/hm/chart/hm.l4SessBpsChart.js"></script>
+<script src="../js/hm/chart/hm.l4SessConnChart.js"></script>
+<script src="../js/hm/chart/hm.l4SessCpsChart.js"></script>
+<script src="../js/hm/chart/hm.l4SessBpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.l4SessConnChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.l4SessCpsChartLeftType.js"></script>
+
+
+<script type="text/javascript" src="../lib/swiper/swiper-bundle.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../lib/swiper/swiper-bundle.css"> -->
+
+
+<script type="text/javascript" src="../lib/swiper10.3.1/swiper-bundle.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../lib/swiper10.3.1/swiper-bundle.min.css">
+
+
+<!-- <link rel="shortcut icon" href="../img/ico/favicon.ico"> -->
+
+
+<link type="text/css" rel="stylesheet" href="../css/style.css" />
+<script src="../js/pub-ui.js"></script>
+<script src="../js/pub-jqx-temp.js"></script>
+<script src="../js/pub-chart-temp.js"></script>
+</head>
+<body style="min-width: var(--min-width);">
+  <div class="n-wrap">
+     <script> $(document).ready(function() { $.get('header.html', function(data) { $('.n-wrap').prepend(data);gnbMenu();}); }); </script>
+
+
+      <main class="n-container">
+        <span id="content" tabindex="-1" class="n-skip-anchor">본문시작</span>
+        <div class="n-contents">
+            <nav class="n-breadcrumb" aria-label="경로 탐색">
+                <ol>
+                    <li><a href="../">홈</a></li>
+                    <li><a href="#">1뎁스</a></li>
+                    <li><a href="#">2뎁스</a></li>
+                    <li aria-current="page">current</li>
+                </ol>
+            </nav>
+            <section class="n-content" aria-labelledby="content">
+                <header>
+                    <div class="n-title-wrap">
+                        <h2 class="n-title-page">네트워크</h2>
+                    </div> 
+                </header>
+                
+                <div class="n-data-header">
+                  <div class="n-left">
+                    <div class="n-sm-gap">
+                      <fieldset class="n-btn-check n-sm">
+                          <legend class="n-hidden">시간 선택</legend>
+                          <div class="n-checks">
+                              <input id="sRef_0" type="radio" name="sRef" value="30">
+                              <label for="sRef_0"><span>30S</span></label>
+                          </div>
+                          <div class="n-checks">
+                              <input id="sRef_1" type="radio" name="sRef" value="60">
+                              <label for="sRef_1"><span>1m</span></label>
+                          </div>
+                          <div class="n-checks">
+                              <input id="sRef_2" type="radio" name="sRef" value="180" checked>
+                              <label for="sRef_2"><span>3m</span></label>
+                          </div>
+                          <div class="n-checks">
+                              <input id="sRef_3" type="radio" name="sRef" value="300" checked>
+                              <label for="sRef_3"><span>5m</span></label>
+                          </div>
+                          <div class="n-checks n-stop">
+                              <input id="sRef_4" type="radio" name="sRef" value="0">
+                              <label for="sRef_4"><span>정지</span></label>
+                          </div>
+                      </fieldset>
+                      <div class="n-search-gage">
+                          <div class="n-gage-bar"><span class="n-gage" style="width:42%;"></span></div>
+                          <div class="n-gage-txt">42%</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="n-right">
+                    <div class="n-input-toggle2">
+                      <span class="label">화면모드</span>
+                      <span class="n-toggle">
+                        <input id="slide" type="checkbox" name="screenMode">
+                        <span>조회</span>
+                        <span>관리</span>
+                      </span>
+                    </div>
+                    <span class="bar"></span>
+                    <button type="button" class="n-btn-menu n-st-gray-line"><i class="n-ico-reset"></i><span>새로고침</span></button>
+                    <button type="button" class="n-btn-menu n-st-gray-line">필터</button>
+                    <button type="button" class="n-btn-menu n-st-gray-line" id="fullscreenBtn">최대화</button>
+                    <button type="button" class="n-btn-menu n-st-gray-line">
+                        <i class="n-ico n-ico-excel"></i>
+                        <span>엑셀 다운로드</span>
+                        <i class="n-ico n-ico-down"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="n-wedget-wrap">
+                  <div class="grid-stack">
+                      <div class="grid-stack-item" data-gs-x="0" data-gs-y="0" data-gs-width="3" data-gs-height="3">
+                        <div class="grid-stack-item-content">
+                          <div class="n-item-header">
+                            <strong class="tit">Memory TopN</strong>
+                            <div class="n-right">
+                              <button class="n-btn"><i class="n-ico-reset"></i></button>
+                              <button class="n-btn"><i class="n-ico-upload"></i></button>
+                            </div>
+                          </div>
+                          <div class="n-item-body chart-widget">
+                            <div id="memoryTopN" style="width: 100%; height: 100%;padding:0 10px;"></div>
+                          </div> 
+                        </div>
+                      </div>
+
+                      <div class="grid-stack-item" data-gs-x="0" data-gs-y="4" data-gs-width="3" data-gs-height="3">
+                        <div class="grid-stack-item-content">
+                          <div class="n-item-header">
+                            <strong class="tit">CPU TopN</strong>
+                            <div class="n-right">
+                              <button class="n-btn"><i class="n-ico-reset"></i></button>
+                              <button class="n-btn"><i class="n-ico-upload"></i></button>
+                            </div>
+                          </div>
+                          <div class="n-item-body">
+                            <div id="cpuTopN" style="width: 100%; height: 100%;padding:0 10px;"></div>
+                          </div> 
+                        </div>
+                      </div>
+                      
+                      <!-- 현황 -->
+                      <div class="grid-stack-item" data-gs-x="0" data-gs-y="6" data-gs-width="3" data-gs-height="3">
+                        <div class="grid-stack-item-content">
+                          <div class="n-item-header">
+                            <strong class="tit">현황</strong>
+                            <div class="n-right">
+                              <button class="n-btn"><i class="n-ico-reset"></i></button>
+                              <button class="n-btn"><i class="n-ico-upload"></i></button>
+                            </div>
+                          </div>
+                          <div class="n-item-body">
+                            <ul class="n-network-status-list">
+                              <li>
+                                <span class="n-icon"><i class="n-ico-network-controller"></i></span>
+                                <span class="n-txt">컨트롤러</span>
+                                <span class="n-num"><em>1</em> / <span>2</span></span>
+                              </li>
+                              <li>
+                                <span class="n-icon"><i class="n-ico-network-ap"></i></span>
+                                <span class="n-txt">AP</span>
+                                <span class="n-num"><em>74</em> / <span>74</span></span>
+                              </li>
+                              <li>
+                                <span class="n-icon"><i class="n-ico-network-user"></i></span>
+                                <span class="n-txt">사용자</span>
+                                <span class="n-num"><em>32</em> / <span>246</span></span>
+                              </li>
+                            </ul>
+                          </div> 
+                        </div>
+                      </div>
+
+                      <div class="grid-stack-item" data-gs-x="3" data-gs-y="0" data-gs-width="6" data-gs-height="9">
+                        <div class="grid-stack-item-content">
+                          <div class="n-item-header">
+                            <strong class="tit">토폴로지</strong>
+                            <div class="n-right">
+                              <button class="n-btn"><i class="n-ico-reset"></i></button>
+                              <button class="n-btn"><i class="n-ico-upload"></i></button>
+                            </div>
+                          </div>
+                          <div class="n-item-body">
+                            <div class="n-full-item"></div>
+                          </div> 
+                        </div>
+                      </div>
+                      
+                      <!-- 장애현황 -->
+                      <div class="grid-stack-item" data-gs-x="9" data-gs-y="0" data-gs-width="3" data-gs-height="3">
+                        <div class="grid-stack-item-content">
+                          <div class="n-item-header">
+                            <strong class="tit">장애현황</strong>
+                            <div class="n-right">
+                              <button class="n-btn"><i class="n-ico-reset"></i></button>
+                              <button class="n-btn"><i class="n-ico-upload"></i></button>
+                            </div>
+                          </div>
+                          <div class="n-item-body">
+                            <ul class="n-error-status-list">
+                              <li>
+                                <span class="n-num" style="background-color: #EB003B;">113</span>
+                                <span class="n-txt" style="color: #EB003B;">장애</span>
+                              </li>
+                              <li>
+                                <span class="n-num" style="background-color: #FF6A00;">82</span>
+                                <span class="n-txt" style="color: #FF6A00;">경보</span>
+                              </li>
+                              <li>
+                                <span class="n-num" style="background-color: #FF9A00;">16</span>
+                                <span class="n-txt" style="color: #FF9A00;">알림</span>
+                              </li>
+                              <li>
+                                <span class="n-num" style="background-color: #FFB724;">9</span>
+                                <span class="n-txt" style="color: #FFB724;">주의</span>
+                              </li>
+                              <li>
+                                <span class="n-num" style="background-color: #00A284;">24</span>
+                                <span class="n-txt" style="color: #00A284;">정보</span>
+                              </li>
+                            </ul>
+                          </div> 
+                        </div>
+                      </div>                      
+                      
+                      <!-- 조회그룹별 장비수 -->
+                      <div class="grid-stack-item" data-gs-x="9" data-gs-y="3" data-gs-width="3" data-gs-height="3">
+                        <div class="grid-stack-item-content">
+                          <div class="n-item-header">
+                            <div class="n-left"><strong class="tit">조회그룹별 장비수 </strong></div>
+                            <div class="n-right">
+                              <button class="n-btn"><i class="n-ico-reset"></i></button>
+                              <button class="n-btn"><i class="n-ico-upload"></i></button>
+                            </div>
+                          </div>
+                          <div class="n-item-body">
+                            <div id="equipmentNum" style="width: 100%; height: 100%;padding:0 10px;"></div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <!-- 조회그룹별 장비수 -->
+                      <div class="grid-stack-item" data-gs-x="9" data-gs-y="6" data-gs-width="3" data-gs-height="3">
+                        <div class="grid-stack-item-content">
+                          <div class="n-item-header">
+                            <div class="n-left"><strong class="tit">조회그룹별 장비수 </strong></div>
+                            <div class="n-right">
+                              <button class="n-btn"><i class="n-ico-reset"></i></button>
+                              <button class="n-btn"><i class="n-ico-upload"></i></button>
+                            </div>
+                          </div>
+                          <div class="n-item-body">
+                              <div id="equipmentNum2" style="width: 100%; height: 100%;padding:0 10px;"></div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <!-- 응답시간 TopN -->
+                      <div class="grid-stack-item" data-gs-x="0" data-gs-y="9" data-gs-width="3" data-gs-height="4">
+                        <div class="grid-stack-item-content">
+                          <div class="n-item-header">
+                            <strong class="tit">응답시간 TopN</strong>
+                            <div class="n-right">
+                              <button class="n-btn"><i class="n-ico-trash2"></i></button>
+                              <button class="n-btn"><i class="n-ico-copy"></i></button>
+                              <button class="n-btn"><i class="n-ico-setting"></i></button>
+                            </div>
+                          </div>
+                          <div class="n-item-body">
+                            <div id="responseTime" style="width: 100%; height: 100%;padding:0 10px;"></div>
+                          </div> 
+                        </div>
+                      </div>
+
+                      <!-- 장애현황 -->
+                      <div class="grid-stack-item" data-gs-x="3" data-gs-y="9" data-gs-width="6" data-gs-height="4">
+                        <div class="grid-stack-item-content">
+                          <div class="n-item-header">
+                            <div class="n-left"><strong class="tit">장애현황 </strong></div>
+                            <div class="n-right">
+                              <button class="n-btn"><i class="n-ico-reset"></i></button>
+                              <button class="n-btn"><i class="n-ico-upload"></i></button>
+                            </div>
+                          </div>
+                          <div class="n-item-body">
+                            <div class="n-grid-data n-auto">
+                                <div class="n-grid" id="tempGrid"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <!-- 대상장비 -->
+                      <div class="grid-stack-item" data-gs-x="9" data-gs-y="9" data-gs-width="3" data-gs-height="4">
+                        <div class="grid-stack-item-content">
+                          <div class="n-item-header">
+                            <div class="n-left"><strong class="tit">대상장비 </strong><i class="n-ico n-ico-info n-sm" id="tooltip"></i></div>
+                            <div class="n-right">
+                              <button class="n-btn"><i class="n-ico-reset"></i></button>
+                              <button class="n-btn"><i class="n-ico-upload"></i></button>
+                            </div>
+                          </div>
+                          <div class="n-item-body">
+                            <div class="n-grid-data n-auto">
+                                <div class="n-grid" id="tempGrid2"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- 전체 클라이언트 추이 -->
+                      <div class="grid-stack-item" data-gs-x="0" data-gs-y="13" data-gs-width="3" data-gs-height="4">
+                        <div class="grid-stack-item-content">
+                          <div class="n-item-header">
+                            <div class="n-left"><strong class="tit">전체 클라이언트 추이 </strong></div>
+                            <div class="n-right">
+                              <button class="n-btn"><i class="n-ico-trash2"></i></button>
+                              <button class="n-btn"><i class="n-ico-copy"></i></button>
+                              <button class="n-btn"><i class="n-ico-setting"></i></button>
+                            </div>
+                          </div>
+                          <div class="n-item-body">
+                            <div id="client" style="width: 100%; height: 100%;padding:0 10px;"></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- 전체 클라이언트 추이 -->
+                      <div class="grid-stack-item" data-gs-x="3" data-gs-y="13" data-gs-width="3" data-gs-height="4">
+                        <div class="grid-stack-item-content">
+                          <div class="n-item-header">    
+                            <div class="n-left"><strong class="tit">전체 클라이언트 추이 </strong></div>
+                            <div class="n-right">
+                              <button class="n-btn"><i class="n-ico-reset"></i></button>
+                              <button class="n-btn"><i class="n-ico-upload"></i></button>
+                            </div>
+                          </div>
+                          <div class="n-item-body">
+                            <div id="client2" style="width: 100%; height: 100%;padding:0 10px;"></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- 그룹별 장비수 -->
+                      <div class="grid-stack-item" data-gs-x="6" data-gs-y="13" data-gs-width="3" data-gs-height="4">
+                        <div class="grid-stack-item-content">
+                          <div class="n-item-header">    
+                            <div class="n-left"><strong class="tit">그룹별 장비수</strong></div>
+                            <div class="n-right">
+                              <button class="n-btn"><i class="n-ico-reset"></i></button>
+                              <button class="n-btn"><i class="n-ico-upload"></i></button>
+                            </div>
+                          </div>
+                          <div class="n-item-body">
+                            <div id="equipmentNum3" style="width: 100%; height: 100%;padding:0 10px;"></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- 그룹별 장비수 -->
+                      <div class="grid-stack-item" data-gs-x="12" data-gs-y="13" data-gs-width="3" data-gs-height="4">
+                        <div class="grid-stack-item-content">
+                          <div class="n-item-header">    
+                            <div class="n-left"><strong class="tit">그룹별 장비수</strong></div>
+                            <div class="n-right">
+                              <button class="n-btn"><i class="n-ico-reset"></i></button>
+                              <button class="n-btn"><i class="n-ico-upload"></i></button>
+                            </div>
+                          </div>
+                          <div class="n-item-body">
+                            <div id="equipmentNum4" style="width: 100%; height: 100%;padding:0 10px;"></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Traffic TopN -->
+                      <div class="grid-stack-item" data-gs-x="3" data-gs-y="17" data-gs-width="3" data-gs-height="4">
+                        <div class="grid-stack-item-content">
+                          <div class="n-item-header">    
+                            <div class="n-left"><strong class="tit">Traffic TopN</strong></div>
+                            <div class="n-right">
+                              <button class="n-btn"><i class="n-ico-reset"></i></button>
+                              <button class="n-btn"><i class="n-ico-upload"></i></button>
+                            </div>
+                          </div>
+                          <div class="n-item-body">
+                            <div id="trafficTopN2" style="width: 100%; height: 100%;padding:0 10px;"></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Memory TopN -->
+                      <div class="grid-stack-item" data-gs-x="0" data-gs-y="17" data-gs-width="3" data-gs-height="4">
+                        <div class="grid-stack-item-content">
+                          <div class="n-item-header">    
+                            <div class="n-left"><strong class="tit">Memory TopN</strong></div>
+                            <div class="n-right">
+                              <button class="n-btn"><i class="n-ico-reset"></i></button>
+                              <button class="n-btn"><i class="n-ico-upload"></i></button>
+                            </div>
+                          </div>
+                          <div class="n-item-body">
+                            <div id="memoryTopN2" style="width: 100%; height: 100%;padding:0 10px;"></div>
+                          </div>
+                        </div>
+                      </div>
+
+                  </div>
+                </div>
+            </section>
+        </div>
+       </main>
+    </div>
+  
+
+  <script>
+    let grid = GridStack.init({
+      verticalMargin: 10,
+    });
+     grid.setStatic(true)
+
+    $('input[name="screenMode"]').on('change', function () {
+        if ($(this).is(':checked')) {
+            grid.setStatic(false); 
+        } else {
+            grid.setStatic(true); 
+        }
+    });
+
+
+    // 풀스크린
+    $('#fullscreenBtn').on('click', function () {
+        let elem = document.documentElement;
+
+        if (!document.fullscreenElement) {
+            $('body').addClass('n-fullscreen');
+            $('body').append('<button type="button" class="n-btn-fullscreen-close" id="fullscreenCloseBtn"></button>');
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.webkitRequestFullscreen) { // Safari
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { // IE/Edge
+                elem.msRequestFullscreen();
+            }
+        }
+
+        // 풀스크린 해제
+        $(document).on('click', '#fullscreenCloseBtn', function () {
+            exitFullScreen();
+        });
+    });
+
+    // ESC 전체화면 해제 
+    $(document).on('fullscreenchange webkitfullscreenchange msfullscreenchange', function () {
+        if (!document.fullscreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement) {
+            $('body').removeClass('n-fullscreen');
+            $('#fullscreenCloseBtn').remove();
+        }
+    });
+
+    function exitFullScreen() {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+        } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+        }
+    }
+
+
+
+    //툴팁
+    let tooltipHtml = `<strong class="n-tooltip-tit">타이틀</strong><ul class="n-tooltip-dot-list">
+                                <li>실시간 AP조회 및 AP재시작은 학교단위에서 실행 <br>가능합니다.</li>
+                                <li>실시간 상태체크는 제어 이력데이터에서 제외됩니다.</li>
+                            </ul>`
+    setTimeout(function(){
+      jqxTooltip('#tooltip', tooltipHtml, 'right');
+    }, 500)
+
+
+      //그리드
+      const localData = [{"Field1": "그리드 기본은 좌측정렬 입니다.", "Field3": "텍스트 텍스트", "status":"수집"},{"Field1": "그리드 기본은 좌측정렬 입니다.", "Field3": "텍스트 텍스트", "status":"수집"},{"Field1": "그리드 기본은 좌측정렬 입니다.", "Field3": "텍스트 텍스트", "status":"수집"},{"Field1": "그리드 기본은 좌측정렬 입니다.", "Field3": "텍스트 텍스트", "status":"수집"},{"Field1": "그리드 기본은 좌측정렬 입니다.", "Field3": "텍스트 텍스트", "status":"수집"},{"Field1": "그리드 기본은 좌측정렬 입니다.", "Field3": "텍스트 텍스트", "status":"수집"},{"Field1": "그리드 기본은 좌측정렬 입니다.", "Field3": "텍스트 텍스트", "status":"수집"},{"Field1": "그리드 기본은 좌측정렬 입니다.", "Field3": "텍스트 텍스트", "status":"수집"},{"Field1": "그리드 기본은 좌측정렬 입니다.", "Field3": "텍스트 텍스트", "status":"수집"} ];
+      tempJqxGrid("#tempGrid", {
+          columns: [
+                  {text: '타이틀', datafield: 'Field1'},
+                  {text: '타이틀', datafield: 'Field2',  cellsrenderer: function (row, datafield, value) {
+                        return '<div class="n-grid-item-wrap"><span class="n-tag" style="background-color: #FDF2F3;color:#D50136">장애</span> </div>';
+                    }}
+              ],  
+        pageable : false,
+        columnsheight: 30,
+        rowsheight: 32,
+      }, localData)
+      tempJqxGrid("#tempGrid2", {
+          columns: [
+                  {text: '타이틀', datafield: 'Field1'},
+                  {text: '타이틀', datafield: 'Field2'}
+              ],  
+        pageable : false,
+        columnsheight: 30,
+        rowsheight: 32,
+      }, localData)
+
+
+    //차트
+tempWidgetBarChart('memoryTopN', {
+      xAxis: {
+          categories: ['L3-SW_2', 'L3-SW_3', 'L3-SW', 'CISCO APC', 'CISCO APC'],
+      },
+      series: [{
+          data: [
+              { y: 80, color: '#246BEB' },
+              { y: 62, color: '#3D9BFF' },
+              { y: 62, color: '#3CD8F0' },
+              { y: 62, color: '#3FD898' },
+              { y: 62, color: '#BEE228' } 
+          ]
+      }]      
+    });
+    tempWidgetBarChart('memoryTopN2', {
+      xAxis: {
+          categories: ['Gi1/0/1', 'Gi1/0/1', 'Gi1/0/1', 'Gi1/0/1', 'Gi1/0/1'],
+      },
+      yAxis: {
+        tickInterval: 5,
+        labels: {
+              formatter: function () {
+                  return this.value + 'M';
+              },
+          }
+      },
+      plotOptions: {
+          series: {
+              grouping: true,
+              borderWidth: 0,
+              pointPadding: 0.1,
+              groupPadding: 0.1,
+              pointWidth: 10, 
+          }
+      },
+      series: [
+          {
+              name: 'Series 1',
+              data: [18, 18, 18, 18, 18],
+              color: '#1E64F0'
+          },
+          {
+              name: 'Series 2',
+              data: [32, 32, 32, 32, 32],
+              color: '#2FD3E3'
+          }
+      ]    
+    });
+    tempWidgetBarChart('trafficTopN2', {
+      xAxis: {
+          categories: ['Gi1/0/1', 'Gi1/0/1', 'Gi1/0/1', 'Gi1/0/1', 'Gi1/0/1'],
+      },
+      yAxis: {
+        tickInterval: 5,
+        labels: {
+              formatter: function () {
+                  return this.value + 'M';
+              },
+          }
+      },
+    plotOptions: {
+        series: {
+            stacking: 'normal',
+            dataLabels: {
+                enabled: false
+            },
+            pointWidth: 10, 
+        }
+    },   
+    
+      series: [
+          {
+              name: 'Series 1',
+              data: [18, 18, 18, 18, 18],
+              color: '#1E64F0'
+          },
+          {
+              name: 'Series 2',
+              data: [32, 32, 32, 32, 32],
+              color: '#2FD3E3'
+          }
+      ]    
+    });
+    tempWidgetBarChart('cpuTopN', {
+      chart: {
+          type: 'column'
+      },
+      xAxis: {
+          categories: ['TiFLoW4824_4', 'TiFLoW4824_4', 'TiFLoW4824_4', 'TiFLoW4824_4', 'TiFLoW4824_4'],
+      },      
+      series: [{
+          data: [
+              { y: 48, color: '#246BEB' },
+              { y: 48, color: '#3D9BFF' },
+              { y: 48, color: '#3CD8F0' },
+              { y: 48, color: '#3FD898' },
+              { y: 48, color: '#BEE228' } 
+          ]
+      }]      
+    });
+
+
+    tempWidgetBarChart('equipmentNum', {
+      xAxis: {
+          categories: ['02'],
+      },      
+      yAxis: {
+        tickInterval: 0.25,
+        labels: {
+            formatter: function () {
+                return this.value + 'EA';
+            },
+        }
+    },
+    plotOptions: {
+        series: {
+            stacking: 'normal',
+            dataLabels: {
+                enabled: false
+            }
+        }
+    },    
+    series: [
+        {
+            data: [1],
+            color: '#1E64F0' 
+        },
+        {
+            data: [1],
+            color: '#2FD3E3'
+        }
+    ]     
+    });
+
+    tempWidgetBarChart('equipmentNum2', {
+      chart: {
+          type: 'column'
+      },
+      xAxis: {
+          categories: ['02'],
+      },      
+      yAxis: {
+        tickInterval: 0.5,
+        labels: {
+            formatter: function () {
+                return this.value + 'EA';
+            },
+        }
+    },
+    plotOptions: {
+        column: {
+            stacking: 'normal',
+            borderWidth: 0
+        }
+    }, 
+    series: [
+        {
+            data: [1],
+            color: '#2FD3E3'
+        },
+        {
+            data: [1],
+            color: '#1E64F0' 
+        }
+    ]   
+    });
+
+
+
+    tempWidgetCircleChart('responseTime', {
+        colors: chartColors,  
+      series: [{
+        name: 'Count',
+        colorByPoint: true,
+        data: [
+          { name: 'Hamonsoft-Main_L2_2', y: 2 },
+          { name: 'Hamin-Main_3', y: 2 },
+          { name: 'Hamin-Main_2', y: 1 },
+          { name: 'SW_bizmgmt', y: 1 },
+          { name: 'Hamonsoft-Main_L2', y: 1 },
+          { name: 'Hamonsoft-Main_L2_3', y: 1 },
+          { name: 'TiFLOW4824_3', y: 0.5 },
+          { name: 'TiFLOW4824_2', y: 0.5 },
+          { name: 'TiFLOW4824', y: 1 }
+        ]
+      }]
+    })    
+
+
+    tempWidgetLineChart('client', {
+      xAxis: {
+          type: 'datetime',
+          tickInterval: 6 * 3600 * 1000, 
+          labels: {
+              format: '{value:%H:%M}'
+          },
+      },     
+      series: [{
+          name: 'Value',
+          data: (function () {
+              const data = [];
+              const start = Date.UTC(2025, 6, 2, 0, 0); 
+              for (let i = 0; i <= 18 * 60; i += 5) { 
+                  const time = start + i * 60 * 1000;
+                  const value = 10 + (i > 240 && i < 600 ? 50 * Math.random() : 5 * Math.random());
+                  data.push([time, Math.round(value)]);
+              }
+              return data;
+          })(),
+          color: '#246BEB',
+          lineWidth: 1.5,
+          marker: { enabled: false }
+      }]      
+    });
+
+    
+    tempWidgetLineChart('client2', {
+    chart: {
+          type: 'area',
+      },
+      xAxis: {
+          type: 'datetime',
+          tickInterval: 6 * 3600 * 1000, 
+          labels: {
+              format: '{value:%H:%M}'
+          },
+      },     
+     plotOptions: {
+      series: {
+        lineWidth: 1.5,
+        marker: { enabled: false },
+        fillColor: {
+          linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
+          stops: [
+            [0, 'rgba(36, 107, 235, 0.4)'], // 위쪽 진한 파랑
+            [1, 'rgba(36, 107, 235, 0)']    // 아래쪽 투명
+          ]
+        }
+      }
+    },
+      series: [{
+          name: 'Value',
+          data: (function () {
+              const data = [];
+              const start = Date.UTC(2025, 6, 2, 0, 0); 
+              for (let i = 0; i <= 18 * 60; i += 5) { 
+                  const time = start + i * 60 * 1000;
+                  const value = 10 + (i > 240 && i < 600 ? 50 * Math.random() : 5 * Math.random());
+                  data.push([time, Math.round(value)]);
+              }
+              return data;
+          })(),
+          color: '#246BEB',
+          lineWidth: 1.5,
+          marker: { enabled: false }
+      }]      
+    });
+
+
+
+    
+    tempWidgetBarChart('equipmentNum3', {
+      colors: chartColors,  
+      xAxis: {
+        categories: ['hamonsoft', '보정초등학교', '수도권', 'FTTH', '전체'],
+      },      
+      yAxis: {
+        tickInterval: 25,
+        labels: {
+            formatter: function () {
+                return this.value + 'EA';
+            },
+        }
+    },
+  plotOptions: {
+          series: {
+              stacking: 'normal',
+              borderWidth: 0,
+              pointPadding: 0,
+              groupPadding: 0.05,
+              pointWidth: 14 
+          }
+      },
+     series: [
+      { name: 'Part1', data: [10, 5, 5, 3, 3] },
+      { name: 'Part2', data: [10, 5, 5, 3, 3] },
+      { name: 'Part3', data: [10, 10, 5, 3, 3] },
+      { name: 'Part4', data: [10, 10, 5, 3, 3] },
+      { name: 'Part5', data: [10, 10, 5, 3, 3] },
+      { name: 'Part6', data: [10, 10, 5, 3, 3] },
+      { name: 'Part7', data: [10, 15, 5, 3, 3] },
+      { name: 'Part8', data: [10, 15, 5, 3, 3] },
+      { name: 'Part9', data: [100, 25, 10, 5, 5] }
+    ]
+    });
+
+    tempWidgetBarChart('equipmentNum4', {
+      chart: {
+        type: 'column'
+    },
+      colors: chartColors,  
+      xAxis: {
+        categories: ['hamonsoft', '보정초등학교', '수도권', 'FTTH', '전체'],
+      },      
+      yAxis: {
+        tickInterval: 50,
+        labels: {
+            formatter: function () {
+                return this.value + 'EA';
+            },
+        }
+    },
+   plotOptions: {
+        column: {
+            stacking: 'normal',
+            borderWidth: 0,
+            pointPadding: 0.05,
+            groupPadding: 0.05,
+             pointWidth: 35
+        }
+    },
+     series: [
+      { name: 'Part1', data: [10, 5, 5, 3, 3] },
+      { name: 'Part2', data: [10, 5, 5, 3, 3] },
+      { name: 'Part3', data: [10, 10, 5, 3, 3] },
+      { name: 'Part4', data: [10, 10, 5, 3, 3] },
+      { name: 'Part5', data: [10, 10, 5, 3, 3] },
+      { name: 'Part6', data: [10, 10, 5, 3, 3] },
+      { name: 'Part7', data: [10, 15, 5, 3, 3] },
+      { name: 'Part8', data: [10, 15, 5, 3, 3] },
+      { name: 'Part9', data: [100, 25, 10, 5, 5] }
+    ]
+    });
+
+
+    
+  </script>
+
+</body>
+</html>

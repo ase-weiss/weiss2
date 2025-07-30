@@ -1,0 +1,930 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+
+<!-- v5.0.1 css-->
+<link rel="stylesheet" type="text/css" href="../css/v5.0.1/jqx.hamon.css">
+
+<!-- <link rel="stylesheet" type="text/css" href="../css/v5.0.1/jqx.ui-hamon-gray.css"> -->
+<link rel="stylesheet" type="text/css" href="../css/v5.0.1/netis.css">
+
+<link rel="stylesheet" type="text/css" href="../css/v5.0.1/button.css">
+
+
+<link rel="stylesheet" type="text/css" href="../css/v5.0.1/popup.css">
+<link rel="stylesheet" type="text/css" href="../css/v5.0.1/ani.css">
+
+<!-- v6.0.1 css-->
+<link rel="stylesheet" type="text/css" href="../css/v6.0.1/jqx.hamon.v2.css">
+<link rel="stylesheet" type="text/css" href="../css/v6.0.1/button_v62.css">
+
+<!-- js library -->
+<script src="../lib/jquery/jquery-3.6.4.min.js"></script>
+
+<script src="../lib/jquery/jquery-migrate-3.1.0.min.js"></script>
+<script src="../lib/jquery/jquery-dateFormat.js"></script>
+<script src="../lib/jquery/jquery.form.js"></script>
+
+<!-- lodash -->
+<!-- <script src="../lib/lodash/lodash_4.17.21.js"></script> -->
+
+<!-- jqwidgets -->
+<script src="../lib/jqwidgets/jqx-all.js"></script>
+<script src="../lib/jqwidgets/localization.js"></script>
+<script src="../lib/jqwidgets/globalization/globalize.js"></script>
+<script src="../lib/jqwidgets/globalization/globalize.culture.ko-KR.js"></script>
+
+<!-- highchart -->
+
+<!-- <script src="../webjars/highstock/8.0.4/code/highstock.js"></script> -->
+ <!-- 기존 -->
+<!-- <script src="../webjars/highcharts/8.0.4/highcharts-more.js"></script>
+<script src="../webjars/highcharts/8.0.4/modules/heatmap.js"></script> -->
+<!-- cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.0.4/highcharts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.0.4/highcharts-more.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.0.4/modules/solid-gauge.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.0.4/modules/exporting.js"></script>
+<!-- <script src="../webjars/highcharts/8.0.4/modules/networkgraph.js"></script>
+<script src="../webjars/highcharts/8.0.4/modules/networkgraph.src.js"></script>
+
+<script src="../webjars/highstock/8.0.4/code/modules/data.js"></script>
+<script src="../webjars/highstock/8.0.4/code/modules/exporting.js"></script>
+<script src="../webjars/highstock/8.0.4/code/modules/export-data.js"></script>
+<script src="../webjars/highstock/8.0.4/code/modules/no-data-to-display.js"></script>
+
+<script src="../webjars/highcharts/8.0.4/modules/solid-gauge.js"></script>
+<script src="../webjars/highcharts/8.0.4/highcharts-3d.js"></script>
+<script src="../webjars/highcharts/8.0.4/modules/exporting.js"></script>
+
+<script src="../js/hm/highchartscustomEvents.js"></script> -->
+<!-- <script src="../webjars/highcharts/8.0.4/modules/solid-gauge.js"></script> -->
+
+<script src="../lib/megamenu/jquery.hoverIntent.minified.js"></script>
+<script src="../lib/megamenu/jquery.dcmegamenu.1.3.4.min.js"></script>
+
+<!-- <script src="../js/main/code/comCode.js"></script> -->
+<!-- svg to canvas library -->
+<!-- <script src="../lib/rgbcolor.js"></script>
+<script src="../lib/StackBlur.js"></script>
+<script src="../lib/canvg.js"></script> -->
+
+<!-- elastic search 2023.03.21 사용하지 않음으로 주석 처리 -->
+
+
+<!-- hamon -->
+<script src="../js/hm/master.js"></script>
+<script src="../js/hm/hm.prototype.js"></script>
+<script src="../js/hm/hm.resource.js"></script>
+<script src="../js/hm/hm.util.js"></script>
+
+<script src="../js/hm/hm.jqx.grid.v5.0.1.js"></script>
+<script src="../js/hm/hm.jqx.window.js"></script>
+<script src="../js/hm/hm.jqx.tree.js"></script>
+
+<script src="../js/hm/hm.jqx.treegrid.v5.0.1.js"></script>
+<script src="../js/hm/hm.jqx.date.js"></script>
+<script src="../js/hm/hm.jqx.dropdownbtn.js"></script>
+<script src="../js/hm/hm.jqx.dropdownlist.js"></script>
+<script src="../js/hm/hm.jqx.splitter.js"></script>
+<script src="../js/hm/hm.jqx.chart.js"></script>
+<script src="../js/hm/hm.highchart.v2.js"></script>
+<script src="../js/hm/hm.es.js"></script>
+<!-- <script src="../js/hm/chart/hm.aloneUpsVolChart.js"></script>
+<script src="../js/hm/chart/hm.aloneUpsVolChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.aloneUpsTempChart.js"></script>
+<script src="../js/hm/chart/hm.aloneUpsTempChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.perfData.js"></script> -->
+
+<!-- <script src="../js/hm/chart/hm.devCmpChart.js"></script>
+<script src="../js/hm/chart/hm.svrCmpChart.js"></script>
+<script src="../js/hm/chart/hm.devCpuChart.js"></script>
+<script src="../js/hm/chart/hm.devCpsChart.js"></script>
+<script src="../js/hm/chart/hm.devMemoryChart.js"></script>
+<script src="../js/hm/chart/hm.devResptimeChart.js"></script>
+<script src="../js/hm/chart/hm.devThresholdChart.js"></script>
+<script src="../js/hm/chart/hm.svrThresholdChart.js"></script>
+<script src="../js/hm/chart/hm.devSessChart.js"></script>
+<script src="../js/hm/chart/hm.devTempChart.js"></script>
+<script src="../js/hm/chart/hm.ifBpsChart.js"></script>
+<script src="../js/hm/chart/hm.l4IfBpsChart.js"></script>
+
+<script src="../js/hm/chart/hm.devCpuChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.devMemoryChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.devTempChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.devResptimeChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.devSessChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.devCpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifBpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifPpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifBpsPerChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifCrcChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifErrorChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifCollisionChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifNonUnicastChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifDiscardChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifMulticastChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifBroadcastChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifDropChartLeftType.js"></script>
+
+<script src="../js/hm/chart/hm.ifBpsPerChart.js"></script>
+<script src="../js/hm/chart/hm.ifPpsChart.js"></script>
+<script src="../js/hm/chart/hm.ifCrcChart.js"></script>
+<script src="../js/hm/chart/hm.ifErrorChart.js"></script>
+<script src="../js/hm/chart/hm.ifCollisionChart.js"></script>
+<script src="../js/hm/chart/hm.ifNonUnicastChart.js"></script>
+<script src="../js/hm/chart/hm.ifDiscardChart.js"></script>
+<script src="../js/hm/chart/hm.ifMulticastChart.js"></script>
+<script src="../js/hm/chart/hm.ifBroadcastChart.js"></script>
+<script src="../js/hm/chart/hm.ifDropChart.js"></script>
+<script src="../js/hm/chart/hm.ifThresholdChart.js"></script>
+<script src="../js/hm/chart/hm.mainIfBpsChart.js"></script>
+
+<script src="../js/hm/chart/hm.svrCpuChart.js"></script>
+<script src="../js/hm/chart/hm.svrCpuChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrMemoryChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfMemChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfMemChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfMemChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrPerfFsChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfFsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrPerfDiskChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfDiskChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrPerfNetworkChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfNetworkChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrFileSystemChart.js"></script>
+<script src="../js/hm/chart/hm.svrNetworkChart.js"></script>
+<script src="../js/hm/chart/hm.svrDiskChart.js"></script>
+
+<script src="../js/hm/chart/hm.vsvrCpuChart.js"></script>
+<script src="../js/hm/chart/hm.vsvrCpuChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.vsvrMemoryChart.js"></script>
+<script src="../js/hm/chart/hm.vsvrMemoryChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.vsvrBpsChart.js"></script>
+<script src="../js/hm/chart/hm.vsvrBpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.vsvrPpsChart.js"></script>
+<script src="../js/hm/chart/hm.vsvrPpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.vsvrNetworkChart.js"></script>
+
+<script src="../js/hm/chart/hm.vmPpsChart.js"></script>
+<script src="../js/hm/chart/hm.vmPpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.vmBpsChart.js"></script>
+<script src="../js/hm/chart/hm.vmBpsChartLeftType.js"></script>
+
+<script src="../js/hm/chart/hm.apByteChart.js"></script>
+<script src="../js/hm/chart/hm.apClientByteChart.js"></script>
+<script src="../js/hm/chart/hm.apClientByteChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.apClientSignalChart.js"></script>
+<script src="../js/hm/chart/hm.apClientSignalChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrWasChart.js"></script>
+<script src="../js/hm/chart/hm.svrDbmsChart.js"></script>
+<script src="../js/hm/chart/hm.customChart.js"></script>
+<script src="../js/hm/chart/hm.predictChart.js"></script>
+<script src="../js/hm/chart/hm.fmsChart.js"></script>
+
+<script src="../js/hm/chart/hm.l4ConnChart.js"></script>
+<script src="../js/hm/chart/hm.l4CpsChart.js"></script>
+
+
+<script src="../js/hm/chart/hm.donutChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcBarChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcNetworkChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcPieChart.js"></script>
+
+
+<script src="../js/hm/chart/sms/hm.abnlDtcAnalysisChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcSpiderwebChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcAffectLineChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcFeatureLineChart.js"></script>
+
+<script src="../js/hm/chart/hm.solidGaugeChart.js"></script>
+<script src="../js/hm/chart/hm.solidGaugeHarfChart.js"></script>
+<script src="../js/hm/chart/hm.ifPerfTopNChart.js"></script>
+
+<script src="../js/hm/hm.jqx.dataadapter.v2.js"></script>
+<script src="../js/hm/hm.jqx.grid.v2.js"></script>
+<script src="../js/hm/hm.boxcondition.js"></script>
+<script src="../lib/jquery.i18n.properties.min.js"></script>
+
+<link rel="stylesheet" href="../lib/colorpicker/spectrum.css">
+<script src="../lib/colorpicker/spectrum.js"></script>
+<script src="../lib/colorpicker/jquery.spectrum-ko.js"></script> -->
+
+<link rel="stylesheet" href="../lib/colorpicker/spectrum.css">
+<script src="../lib/colorpicker/spectrum.js"></script>
+<script src="../lib/colorpicker/jquery.spectrum-ko.js"></script>
+<!-- <script src="../lib/d3/d3.v4.min.js"></script> -->
+
+
+<!-- <link rel="stylesheet" type="text/css" href="../lib/vis-timeline/vis-timeline-graph2d.min.css"> -->
+
+
+<!-- <script src="../js/hm/chart/hm.l4SessBpsChart.js"></script>
+<script src="../js/hm/chart/hm.l4SessConnChart.js"></script>
+<script src="../js/hm/chart/hm.l4SessCpsChart.js"></script>
+<script src="../js/hm/chart/hm.l4SessBpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.l4SessConnChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.l4SessCpsChartLeftType.js"></script>
+
+
+<script type="text/javascript" src="../lib/swiper/swiper-bundle.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../lib/swiper/swiper-bundle.css"> -->
+
+
+
+<script type="text/javascript" src="../lib/swiper10.3.1/swiper-bundle.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../lib/swiper10.3.1/swiper-bundle.min.css">
+
+
+<!-- <link rel="shortcut icon" href="../img/ico/favicon.ico"> -->
+
+
+<link type="text/css" rel="stylesheet" href="../css/style.css" />
+<script src="../js/pub-ui.js"></script>
+<script src="../js/pub-jqx-temp.js"></script>
+<script src="../js/pub-chart-temp.js"></script>
+</head>
+<body>
+
+<div class="n-popup-wrap" id="tempPopId">
+  <div class="n-dim"></div>
+  <div class="n-pop-wrap">
+    <div class="n-popup" style="width:1500px;">
+      <div class="n-pop-header">
+        <h2 class="n-tit">장비상세정보</h2>
+        <div class="n-right">
+          <button class="n-btn-close"><i class="n-ico-close"></i></button>
+        </div>
+      </div>
+      <div class="n-pop-body">
+        
+        <div class="n-tab-type1">
+          <ul class="n-tab" role="tablist">
+              <li class="on"><button role="tab" data-tab-id="tab1">요약</button></li>
+              <li><button role="tab" data-tab-id="tab2">회선</button></li>
+              <li><button role="tab" data-tab-id="tab3">성능</button></li>
+              <li><button role="tab" data-tab-id="tab4">이벤트</button></li>
+          </ul>
+        </div>  
+        <!-- 요약 -->
+        <div class="n-tab-content" role="tabpanel" id="tab1">
+          <div class="n-f-cell-wrap">
+              <div class="n-cell n-auto n-system-chart-wrap">
+                  <div class="n-input-toggle2">
+                    <span class="n-toggle">
+                      <input id="sound" type="checkbox" name="status">
+                      <span>현황</span>
+                      <span>통계</span>
+                    </span>
+                  </div>
+                  <!-- n-status-pannel -->
+                  <div class="n-status-pannel" id="statusPannel">
+                    <div class="n-data-header">
+                        <div class="n-left">
+                            <div class="n-tit">시스템</div>
+                        </div>
+                    </div>                        
+                    <div class="n-system-chart">
+                        <div class="n-chart">
+                            <div id="cpu" style="width:100px;height: 100px;;"></div>
+                      
+                            <div class="txt">CPU</div>
+                        </div>
+                        <div class="n-chart-data" style="height:115px;">
+                            <div id="tempCpuGrid" style="height: 100%;"></div>
+                        </div>
+                    </div>
+                    <div class="n-system-chart">
+                        <div class="n-chart">
+                            <div id="memory" style="width:100px;height: 100px;;"></div>
+                            <div class="txt">MEMORY</div>
+                        </div>
+                        <div class="n-chart-data" style="height:115px;">
+                            <div class="n-no-data">조회된 데이터가 없습니다.</div>
+                        </div>
+                    </div>
+                    <div class="n-system-chart">
+                        <div class="n-chart">
+                            <div id="lines" style="width:100px;height: 100px;;"></div>
+                            <div class="txt">수집회선수</div>
+                        </div>
+                        <div class="n-chart">
+                            <div id="temper" style="width:100px;height: 100px;;"></div>
+                            <div class="txt">온도</div>
+                        </div>
+                        <div class="n-chart">
+                            <div class="n-circle-custom" style="width:100px;height: 100px;;">
+                                <div class="n-outer" style="background: rgba(60, 216, 240, 0.2);"><div class="n-inner" style="background: #3CD8F0;">0 ms</div></div>
+                            </div>
+                            <div class="txt">응답시간</div>
+                        </div>
+                        <div class="n-chart">
+                            <div class="n-circle-custom" style="width:100px;height: 100px;;">
+                                <div class="n-outer" style="background: rgba(235, 0, 59, 0.2);"><div class="n-inner" style="background: #EB003B;">3</div></div>
+                            </div>
+                            <div class="txt">응답시간</div>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="n-statistic-pannel" id="statisticPannel" style="display: none;">
+                    <div class="n-data-header">
+                        <div class="n-left">
+                            <div class="n-tit">CPU</div>
+                        </div>
+                    </div>
+                    <div class="n-table">
+                      <table>
+                        <caption>CPU 통계</caption>
+                        <colgroup>
+                            <col width="12%">
+                            <col width="10%">
+                            <col width="15%">
+                            <col width="15%">
+                            <col width="15%">
+                            <col width="15%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th colspan="2">구분</th>
+                                <th>전일</th>
+                                <th>최근1M</th>
+                                <th>최근3M</th>
+                                <th>최근1Y</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                              <tr>
+                                <th rowspan="2">CPU</th>
+                                <th>최대</th>
+                                <td><span id="summary_cpuMaxToday">39</span> <span class="sumUnit">%</span></td>
+                                <td><span id="summary_cpuMax1MM">40</span> <span class="sumUnit">%</span></td>
+                                <td><span id="summary_cpuMax3MM">47</span> <span class="sumUnit">%</span></td>
+                                <td><span id="summary_cpuMax12MM">64</span> <span class="sumUnit">%</span></td>
+                            </tr>
+                            <tr>
+                                <th>평균</th>
+                                <td><span id="summary_cpuAvgToday">36.1</span> <span class="sumUnit">%</span></td>
+                                <td><span id="summary_cpuAvg1MM">35.44</span> <span class="sumUnit">%</span></td>
+                                <td><span id="summary_cpuAvg3MM">36.71</span> <span class="sumUnit">%</span></td>
+                                <td><span id="summary_cpuAvg12MM">38.04</span> <span class="sumUnit">%</span></td>
+                            </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="n-data-header">
+                        <div class="n-left">
+                            <div class="n-tit">MEMORY</div>
+                        </div>
+                    </div>
+                    <div class="n-table">
+                      <table>
+                        <caption>MEMORY 통계</caption>
+                        <colgroup>
+                            <col width="12%">
+                            <col width="10%">
+                            <col width="15%">
+                            <col width="15%">
+                            <col width="15%">
+                            <col width="15%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th colspan="2">구분</th>
+                                <th>전일</th>
+                                <th>최근1M</th>
+                                <th>최근3M</th>
+                                <th>최근1Y</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                              <tr>
+                                <th rowspan="2">MEMORY</th>
+                                <th>최대</th>
+                                <td><span id="summary_cpuMaxToday">39</span> <span class="sumUnit">%</span></td>
+                                <td><span id="summary_cpuMax1MM">40</span> <span class="sumUnit">%</span></td>
+                                <td><span id="summary_cpuMax3MM">47</span> <span class="sumUnit">%</span></td>
+                                <td><span id="summary_cpuMax12MM">64</span> <span class="sumUnit">%</span></td>
+                            </tr>
+                            <tr>
+                                <th>평균</th>
+                                <td><span id="summary_cpuAvgToday">36.1</span> <span class="sumUnit">%</span></td>
+                                <td><span id="summary_cpuAvg1MM">35.44</span> <span class="sumUnit">%</span></td>
+                                <td><span id="summary_cpuAvg3MM">36.71</span> <span class="sumUnit">%</span></td>
+                                <td><span id="summary_cpuAvg12MM">38.04</span> <span class="sumUnit">%</span></td>
+                            </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="n-data-header">
+                        <div class="n-left">
+                            <div class="n-tit">온도</div>
+                        </div>
+                    </div>
+                    <div class="n-table">
+                      <table>
+                        <caption>온도 통계</caption>
+                        <colgroup>
+                            <col width="12%">
+                            <col width="10%">
+                            <col width="15%">
+                            <col width="15%">
+                            <col width="15%">
+                            <col width="15%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th colspan="2">구분</th>
+                                <th>전일</th>
+                                <th>최근1M</th>
+                                <th>최근3M</th>
+                                <th>최근1Y</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                              <tr>
+                                <th rowspan="2">온도</th>
+                                <th>최대</th>
+                                <td><span id="summary_cpuMaxToday">39</span> <span class="sumUnit">%</span></td>
+                                <td><span id="summary_cpuMax1MM">40</span> <span class="sumUnit">%</span></td>
+                                <td><span id="summary_cpuMax3MM">47</span> <span class="sumUnit">%</span></td>
+                                <td><span id="summary_cpuMax12MM">64</span> <span class="sumUnit">%</span></td>
+                            </tr>
+                            <tr>
+                                <th>평균</th>
+                                <td><span id="summary_cpuAvgToday">36.1</span> <span class="sumUnit">%</span></td>
+                                <td><span id="summary_cpuAvg1MM">35.44</span> <span class="sumUnit">%</span></td>
+                                <td><span id="summary_cpuAvg3MM">36.71</span> <span class="sumUnit">%</span></td>
+                                <td><span id="summary_cpuAvg12MM">38.04</span> <span class="sumUnit">%</span></td>
+                            </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="n-data-header">
+                        <div class="n-left">
+                            <div class="n-tit">응답시간</div>
+                        </div>
+                    </div>
+                    <div class="n-table">
+                      <table>
+                        <caption>응답시간 통계</caption>
+                        <colgroup>
+                            <col width="12%">
+                            <col width="10%">
+                            <col width="15%">
+                            <col width="15%">
+                            <col width="15%">
+                            <col width="15%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th colspan="2">구분</th>
+                                <th>전일</th>
+                                <th>최근1M</th>
+                                <th>최근3M</th>
+                                <th>최근1Y</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                              <tr>
+                                <th rowspan="2">응답시간</th>
+                                <th>최대</th>
+                                <td><span id="summary_cpuMaxToday">39</span> <span class="sumUnit">%</span></td>
+                                <td><span id="summary_cpuMax1MM">40</span> <span class="sumUnit">%</span></td>
+                                <td><span id="summary_cpuMax3MM">47</span> <span class="sumUnit">%</span></td>
+                                <td><span id="summary_cpuMax12MM">64</span> <span class="sumUnit">%</span></td>
+                            </tr>
+                            <tr>
+                                <th>평균</th>
+                                <td><span id="summary_cpuAvgToday">36.1</span> <span class="sumUnit">%</span></td>
+                                <td><span id="summary_cpuAvg1MM">35.44</span> <span class="sumUnit">%</span></td>
+                                <td><span id="summary_cpuAvg3MM">36.71</span> <span class="sumUnit">%</span></td>
+                                <td><span id="summary_cpuAvg12MM">38.04</span> <span class="sumUnit">%</span></td>
+                            </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  <div class="n-data-header">
+                      <div class="n-left">
+                          <div class="n-tit">전체회선 bps 성능 합계</div>
+                      </div>
+                      <div class="n-right">
+                          <div class="n-legend">
+                          <span class="n-item"><i style="background-color:#246BEB;"></i><span class="n-txt">IN</span></span>
+                          <span class="n-item"><i style="background-color:#EB003B;"></i><span class="n-txt">OUT</span></span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="n-chart n-line">
+                      <div id="pbs" style="width: 100%;height:160px;"></div>
+                  </div>
+              </div>
+
+              <div class="n-cell n-auto">
+                  <img src="../img/tree/v5.0.1/switch.svg" alt="DEV" class="devDtlImg" style="width:42px;height:42px;">
+                  <img src="../img/tree/v5.0.1/etc.svg" alt="DEV" class="devDtlImg" style="width:42px;height:42px;">
+              </div>
+
+              <div class="n-cell n-auto">
+                  <div class="n-sys//tem-chart-wrap">
+                      <div class="n-data-header">
+                          <div class="n-left">
+                              <div class="n-tit">회선성능 TopN</div>
+                          </div>
+                          <div class="n-right">
+                              <div class="n-legend">
+                              <span class="n-item"><i style="background-color:#3FD898;"></i><span class="n-txt">IN</span></span>
+                              <span class="n-item"><i style="background-color:#3CD8F0;"></i><span class="n-txt">OUT</span></span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="n-chart">
+                          <div id="lineTopN" style="width: 100%;height:250px;"></div>
+                      </div>
+
+                      <div class="n-data-header">
+                          <div class="n-left">
+                              <div class="n-tit">포트현황</div>
+                          </div>
+                      </div>
+                      <div class="n-port-status" style="height: 150px;"></div>
+
+                      <div class="n-data-header">
+                          <div class="n-left">
+                              <div class="n-tit">장비설명</div>
+                          </div>
+                      </div>
+                      <div class="n-summary-desc" style="height: 120px;">PIOLINK Application Switch K</div>
+                  </div>
+              </div>
+              
+          </div>
+        </div> 
+        <!-- 회선 -->
+        <div class="n-tab-content" role="tabpanel" id="tab2" style="display: none;">회선</div>
+        <!-- 성능 -->
+        <div class="n-tab-content" role="tabpanel" id="tab3"  style="display: none;">성능</div>
+        <!-- 이벤트 -->
+        <div class="n-tab-content" role="tabpanel" id="tab4" style="display: none;">이벤트</div>
+      </div>
+      <div class="n-pop-footer">
+        <div class="n-btn-wrap">
+            <div class="n-right">
+                <button type="button" class="n-btn-popup n-st-gray-line" onclick="popClose('#tempPopId')">닫기</button>
+                <button type="button" class="n-btn-popup n-st-blue">저장</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+
+  popOpen('#tempPopId');
+
+  $('input[name="status"]').on('change', function () {
+    if ($(this).is(':checked')) {
+      $('#statusPannel').hide();
+      $('#statisticPannel').show();
+    } else {
+        $('#statisticPannel').hide();
+        $('#statusPannel').show();
+      }
+  });
+
+
+  //윈도우 팝업용
+  window.resizeTo(1500, 1000);
+  const params = new URLSearchParams(window.location.search);
+
+  if (params.has('popup')) {
+    $('.n-popup-wrap').addClass('n-windowpopup');
+    
+    function popClose(){
+      window.close();
+    }
+  }
+</script>
+
+<script>
+
+const tempData = [
+    {"Field1": "그리드 기본은 좌측정렬 입니다.", "Field3": "텍스트 텍스트", "status":"수집"}, 
+    {"Field1": "그리드 기본은 좌측정렬 입니다.", "Field3": "텍스트 텍스트", "status":"수집"},
+    {"Field1": "그리드 기본은 좌측정렬 입니다.", "Field3": "텍스트 텍스트", "status":"수집"}, 
+    {"Field1": "그리드 기본은 좌측정렬 입니다.", "Field3": "텍스트 텍스트", "status":"수집"}, 
+    {"Field1": "그리드 기본은 좌측정렬 입니다.", "Field3": "텍스트 텍스트", "status":"수집"} 
+   ];
+tempJqxGrid("#tempCpuGrid", {
+columnsheight: 28,
+rowsheight: 26,
+columns: [
+        {text: '타이틀', datafield: 'Field1'},
+        {text: '타이틀', datafield: 'Field2'}
+    ],  
+ pageable : false,
+}, tempData)
+
+ tempGageChart('cpu', {
+    plotOptions: {
+      solidgauge: {
+        dataLabels: {
+          useHTML: true,
+          format:
+            '<div class="gauge-label">' +
+            '   <span>{y}%</span>' +
+            '</div>'
+        },
+      }
+    },    
+    series: [{
+        data: [{
+            color: '#246BEB',
+            y: 45
+        }]
+    }],
+});
+ tempGageChart('memory', {
+    plotOptions: {
+      solidgauge: {
+        dataLabels: {
+          useHTML: true,
+          format:
+            '<div class="gauge-label">' +
+            '   <span>{y}%</span>' +
+            '</div>'
+        },
+      }
+    },        
+    series: [{
+        data: [{
+            color: '#3FD898',
+            y: 17.16
+        }]
+    }],
+});
+ tempGageChart('lines', {
+    plotOptions: {
+      solidgauge: {
+        dataLabels: {
+          useHTML: true,
+          format:
+            '<div class="gauge-label">' +
+            '   <span>{y}</span>' +
+            '</div>'
+        },
+      }
+    },        
+    series: [{
+        data: [{
+            color: '#3CD8F0',
+            y: 6
+        }]
+    }],
+});
+ tempGageChart('temper', {
+    plotOptions: {
+      solidgauge: {
+        dataLabels: {
+          useHTML: true,
+          format:
+            '<div class="gauge-label">' +
+            '   <span>{y}</span>' +
+            '</div>'
+        },
+      }
+    },        
+    series: [{
+        data: [{
+            color: '#3CD8F0',
+            y: 50.5
+        }]
+    }],
+});
+
+//회선성능 TopN
+Highcharts.chart('lineTopN', {
+  chart: {
+    type: 'bar'
+  },
+  title: { text: null },
+  xAxis: {
+    categories: ['Gi1/0/1', 'Gi1/0/1', 'Gi1/0/1', 'Gi1/0/1', 'Gi1/0/1', 'Gi1/0/1'],
+    title: { text: null },
+    labels: {
+    style: {
+        color: '#373F57', 
+        fontSize: '11px',
+        whiteSpace: 'nowrap',
+        textOverflow: 'ellipsis',
+        overflow: 'hidden',
+        width: '60px',   // 라벨 최대 너비
+        display: 'inline-block'
+    },
+    },    
+  },
+  yAxis: {
+    labels: { enabled: false },
+    min: 0,
+    title: { text: null },
+    gridLineDashStyle: 'Dash',
+    labels: { enabled: false },
+  },
+  tooltip: { enabled: false }, // 툴팁 제거
+   exporting: { enabled: false },
+ plotOptions: {
+     column: {
+        stacking: 'normal',
+        borderWidth: 0,
+    },
+    series: {
+    pointPadding: 0.05,
+    groupPadding: 0.05,
+      pointWidth: 12,
+      dataLabels: {
+        enabled: true,
+        useHTML: true, 
+        formatter: function() {
+          return '<span style="font-weight: normal;">' + this.point.label + '</span>';
+        }
+      }
+    }
+  },
+  legend: { enabled: false },
+  credits: { enabled: false },
+  series: [{
+    name: 'Series 1',
+    color: '#3FD898',
+    data: [
+      { y: 43.27, label: '43.27 MB' },
+      { y: 5.77, label: '5.77 MB' },
+      { y: 0.54, label: '553.79 KB' },
+      { y: 0.54, label: '553.79 KB' },
+      { y: 0.54, label: '553.79 KB' },
+      { y: 0, label: '0 KB' }
+    ]
+  }, {
+    name: 'Series 2',
+    color: '#3CD8F0',
+    data: [
+      { y: 43.27, label: '43.27 MB' },
+      { y: 38.77, label: '38.77 MB' },
+      { y: 0.46, label: '461.77 KB' },
+      { y: 0.46, label: '461.77 KB' },
+      { y: 0.46, label: '461.77 KB' },
+      { y: 0, label: '0 KB' }
+    ]
+  }]
+});
+
+
+Highcharts.chart('pbs', {
+    chart: {
+      type: 'line'
+    },
+    title: false,
+    legend: {
+    enabled: false
+  },
+    xAxis: {
+      categories: ['11:00', '11:05', '11:10', '11:15', '11:20', '11:25', '11:30', '11:35', '11:40', '11:45'],
+      title: false,
+      labels: {
+        style: {
+          color: '#373F57', 
+          fontSize: '11 px'
+        }
+      },      
+      crosshair: {
+          width: 1,
+          color: '#8491A7',   
+          dashStyle: 'Solid',
+        }
+    },
+ yAxis: {
+      min: 0,
+      max: 100,
+      title: false,
+      gridLineWidth: 1,
+      gridLineDashStyle: 'Dash',
+      gridLineColor: '#D7DCE5',
+      labels: {
+        style: {
+          color: '#5E687F',
+          fontSize: '11px'
+        }
+      }
+    },
+    tooltip: {
+      shared: true,
+      useHTML: true,
+      borderRadius: 12,
+      backgroundColor: 'rgba(255, 255, 255, 0.95)',
+      borderColor: '#8491A7',
+      style: {
+        color: '#000',
+        fontSize: '12px'
+      },
+      formatter: function () {
+      let s = `<div class="n-chart-tooltip">`;
+      s += `<b class="n-tit">${this.x}</b>`;
+      s += `<ul class="n-list">`;
+      this.points.forEach(point => {
+        s += ` <li>
+                 <span class="n-label"><span class="n-ic" style="background:${point.color};"></span>${point.series.name}</span><b style="font-weight:500;">${point.y.toFixed(2)}</b>
+              </li>
+        `;
+      });
+      s += `</ul></div>`;
+      return s;
+    }
+    },
+    exporting: { enabled: false },
+    plotOptions: {
+      series: {
+        marker: {
+          enabled: false,
+          states: {
+            hover: {
+              enabled: true,
+              radius: 6,
+              lineColor: null,
+            }
+          }
+        },
+        states: {
+          hover: {
+            halo: {
+              size: 12, // 반투명 원 크기
+              opacity: 0.15 // 반투명 정도
+            },
+            lineWidth: 2
+          }
+        }
+      }
+    },
+    series: [{
+      name: 'IN',
+       type: 'area',
+      data: [35, 35, 41, 35, 30, 30, 30, 30, 30, 30],
+      color: '#246BEB',
+      fillColor: {
+         linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
+        stops: [
+          [0.3, Highcharts.color('#246BEB').setOpacity(0.2).get('rgba')],
+          [1, Highcharts.color('#246BEB').setOpacity(0).get('rgba')] 
+        ]
+      },
+      fillOpacity: 0.1,
+      marker: {
+        enabled: false,
+        states: {
+          hover: {
+            enabled: true, 
+            radius: 5
+          }
+        },
+        symbol: 'circle'
+      },
+       lineWidth: 1
+    }, {
+      name: 'OUT',
+       type: 'area',
+       data: [28, 28, 32, 28, 26, 26, 26, 26, 26, 26],
+      color: '#EB003B',
+      fillColor: {
+         linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
+        stops: [
+          [0.3, Highcharts.color('#EB003B').setOpacity(0.2).get('rgba')],
+          [1, Highcharts.color('#EB003B').setOpacity(0).get('rgba')] 
+        ]
+      },
+      fillOpacity: 0.1,
+      marker: {
+        enabled: false,
+        states: {
+          hover: {
+            enabled: true, 
+            radius: 5
+          }
+        },
+        symbol: 'circle'
+      },
+       lineWidth: 1
+    }, ]
+  });  
+
+
+</script>
+
+
+</body>
+</html>

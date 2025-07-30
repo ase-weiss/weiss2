@@ -1,0 +1,365 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+
+<!-- v5.0.1 css-->
+<link rel="stylesheet" type="text/css" href="../css/v5.0.1/jqx.hamon.css">
+
+<!-- <link rel="stylesheet" type="text/css" href="../css/v5.0.1/jqx.ui-hamon-gray.css"> -->
+<link rel="stylesheet" type="text/css" href="../css/v5.0.1/netis.css">
+
+<link rel="stylesheet" type="text/css" href="../css/v5.0.1/button.css">
+
+
+<link rel="stylesheet" type="text/css" href="../css/v5.0.1/popup.css">
+<link rel="stylesheet" type="text/css" href="../css/v5.0.1/ani.css">
+
+<!-- v6.0.1 css-->
+<link rel="stylesheet" type="text/css" href="../css/v6.0.1/jqx.hamon.v2.css">
+<link rel="stylesheet" type="text/css" href="../css/v6.0.1/button_v62.css">
+
+<!-- js library -->
+<script src="../lib/jquery/jquery-3.6.4.min.js"></script>
+
+<script src="../lib/jquery/jquery-migrate-3.1.0.min.js"></script>
+<script src="../lib/jquery/jquery-dateFormat.js"></script>
+<script src="../lib/jquery/jquery.form.js"></script>
+
+<!-- lodash -->
+<!-- <script src="../lib/lodash/lodash_4.17.21.js"></script> -->
+
+<!-- jqwidgets -->
+<script src="../lib/jqwidgets/jqx-all.js"></script>
+<script src="../lib/jqwidgets/localization.js"></script>
+<script src="../lib/jqwidgets/globalization/globalize.js"></script>
+<script src="../lib/jqwidgets/globalization/globalize.culture.ko-KR.js"></script>
+
+<!-- highchart -->
+
+<!-- <script src="../webjars/highstock/8.0.4/code/highstock.js"></script> -->
+ <!-- 기존 -->
+<!-- <script src="../webjars/highcharts/8.0.4/highcharts-more.js"></script>
+<script src="../webjars/highcharts/8.0.4/modules/heatmap.js"></script> -->
+<!-- cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.0.4/highcharts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.0.4/modules/heatmap.min.js"></script>
+
+<!-- <script src="../webjars/highcharts/8.0.4/modules/networkgraph.js"></script>
+<script src="../webjars/highcharts/8.0.4/modules/networkgraph.src.js"></script>
+
+<script src="../webjars/highstock/8.0.4/code/modules/data.js"></script>
+<script src="../webjars/highstock/8.0.4/code/modules/exporting.js"></script>
+<script src="../webjars/highstock/8.0.4/code/modules/export-data.js"></script>
+<script src="../webjars/highstock/8.0.4/code/modules/no-data-to-display.js"></script>
+
+<script src="../webjars/highcharts/8.0.4/modules/solid-gauge.js"></script>
+<script src="../webjars/highcharts/8.0.4/highcharts-3d.js"></script>
+<script src="../webjars/highcharts/8.0.4/modules/exporting.js"></script>
+
+<script src="../js/hm/highchartscustomEvents.js"></script> -->
+<!-- <script src="../webjars/highcharts/8.0.4/modules/solid-gauge.js"></script> -->
+
+<script src="../lib/megamenu/jquery.hoverIntent.minified.js"></script>
+<script src="../lib/megamenu/jquery.dcmegamenu.1.3.4.min.js"></script>
+
+<!-- <script src="../js/main/code/comCode.js"></script> -->
+<!-- svg to canvas library -->
+<!-- <script src="../lib/rgbcolor.js"></script>
+<script src="../lib/StackBlur.js"></script>
+<script src="../lib/canvg.js"></script> -->
+
+<!-- elastic search 2023.03.21 사용하지 않음으로 주석 처리 -->
+
+
+<!-- hamon -->
+<script src="../js/hm/master.js"></script>
+<script src="../js/hm/hm.prototype.js"></script>
+<script src="../js/hm/hm.resource.js"></script>
+<script src="../js/hm/hm.util.js"></script>
+
+<script src="../js/hm/hm.jqx.grid.v5.0.1.js"></script>
+<script src="../js/hm/hm.jqx.window.js"></script>
+<script src="../js/hm/hm.jqx.tree.js"></script>
+
+<script src="../js/hm/hm.jqx.treegrid.v5.0.1.js"></script>
+<script src="../js/hm/hm.jqx.date.js"></script>
+<script src="../js/hm/hm.jqx.dropdownbtn.js"></script>
+<script src="../js/hm/hm.jqx.dropdownlist.js"></script>
+<script src="../js/hm/hm.jqx.splitter.js"></script>
+<script src="../js/hm/hm.jqx.chart.js"></script>
+<script src="../js/hm/hm.highchart.v2.js"></script>
+<script src="../js/hm/hm.es.js"></script>
+<!-- <script src="../js/hm/chart/hm.aloneUpsVolChart.js"></script>
+<script src="../js/hm/chart/hm.aloneUpsVolChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.aloneUpsTempChart.js"></script>
+<script src="../js/hm/chart/hm.aloneUpsTempChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.perfData.js"></script> -->
+
+<!-- <script src="../js/hm/chart/hm.devCmpChart.js"></script>
+<script src="../js/hm/chart/hm.svrCmpChart.js"></script>
+<script src="../js/hm/chart/hm.devCpuChart.js"></script>
+<script src="../js/hm/chart/hm.devCpsChart.js"></script>
+<script src="../js/hm/chart/hm.devMemoryChart.js"></script>
+<script src="../js/hm/chart/hm.devResptimeChart.js"></script>
+<script src="../js/hm/chart/hm.devThresholdChart.js"></script>
+<script src="../js/hm/chart/hm.svrThresholdChart.js"></script>
+<script src="../js/hm/chart/hm.devSessChart.js"></script>
+<script src="../js/hm/chart/hm.devTempChart.js"></script>
+<script src="../js/hm/chart/hm.ifBpsChart.js"></script>
+<script src="../js/hm/chart/hm.l4IfBpsChart.js"></script>
+
+<script src="../js/hm/chart/hm.devCpuChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.devMemoryChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.devTempChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.devResptimeChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.devSessChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.devCpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifBpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifPpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifBpsPerChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifCrcChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifErrorChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifCollisionChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifNonUnicastChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifDiscardChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifMulticastChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifBroadcastChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifDropChartLeftType.js"></script>
+
+<script src="../js/hm/chart/hm.ifBpsPerChart.js"></script>
+<script src="../js/hm/chart/hm.ifPpsChart.js"></script>
+<script src="../js/hm/chart/hm.ifCrcChart.js"></script>
+<script src="../js/hm/chart/hm.ifErrorChart.js"></script>
+<script src="../js/hm/chart/hm.ifCollisionChart.js"></script>
+<script src="../js/hm/chart/hm.ifNonUnicastChart.js"></script>
+<script src="../js/hm/chart/hm.ifDiscardChart.js"></script>
+<script src="../js/hm/chart/hm.ifMulticastChart.js"></script>
+<script src="../js/hm/chart/hm.ifBroadcastChart.js"></script>
+<script src="../js/hm/chart/hm.ifDropChart.js"></script>
+<script src="../js/hm/chart/hm.ifThresholdChart.js"></script>
+<script src="../js/hm/chart/hm.mainIfBpsChart.js"></script>
+
+<script src="../js/hm/chart/hm.svrCpuChart.js"></script>
+<script src="../js/hm/chart/hm.svrCpuChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrMemoryChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfMemChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfMemChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfMemChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrPerfFsChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfFsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrPerfDiskChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfDiskChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrPerfNetworkChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfNetworkChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrFileSystemChart.js"></script>
+<script src="../js/hm/chart/hm.svrNetworkChart.js"></script>
+<script src="../js/hm/chart/hm.svrDiskChart.js"></script>
+
+<script src="../js/hm/chart/hm.vsvrCpuChart.js"></script>
+<script src="../js/hm/chart/hm.vsvrCpuChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.vsvrMemoryChart.js"></script>
+<script src="../js/hm/chart/hm.vsvrMemoryChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.vsvrBpsChart.js"></script>
+<script src="../js/hm/chart/hm.vsvrBpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.vsvrPpsChart.js"></script>
+<script src="../js/hm/chart/hm.vsvrPpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.vsvrNetworkChart.js"></script>
+
+<script src="../js/hm/chart/hm.vmPpsChart.js"></script>
+<script src="../js/hm/chart/hm.vmPpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.vmBpsChart.js"></script>
+<script src="../js/hm/chart/hm.vmBpsChartLeftType.js"></script>
+
+<script src="../js/hm/chart/hm.apByteChart.js"></script>
+<script src="../js/hm/chart/hm.apClientByteChart.js"></script>
+<script src="../js/hm/chart/hm.apClientByteChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.apClientSignalChart.js"></script>
+<script src="../js/hm/chart/hm.apClientSignalChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrWasChart.js"></script>
+<script src="../js/hm/chart/hm.svrDbmsChart.js"></script>
+<script src="../js/hm/chart/hm.customChart.js"></script>
+<script src="../js/hm/chart/hm.predictChart.js"></script>
+<script src="../js/hm/chart/hm.fmsChart.js"></script>
+
+<script src="../js/hm/chart/hm.l4ConnChart.js"></script>
+<script src="../js/hm/chart/hm.l4CpsChart.js"></script>
+
+
+<script src="../js/hm/chart/hm.donutChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcBarChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcNetworkChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcPieChart.js"></script>
+
+
+<script src="../js/hm/chart/sms/hm.abnlDtcAnalysisChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcSpiderwebChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcAffectLineChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcFeatureLineChart.js"></script>
+
+<script src="../js/hm/chart/hm.solidGaugeChart.js"></script>
+<script src="../js/hm/chart/hm.solidGaugeHarfChart.js"></script>
+<script src="../js/hm/chart/hm.ifPerfTopNChart.js"></script>
+
+<script src="../js/hm/hm.jqx.dataadapter.v2.js"></script>
+<script src="../js/hm/hm.jqx.grid.v2.js"></script>
+<script src="../js/hm/hm.boxcondition.js"></script>
+<script src="../lib/jquery.i18n.properties.min.js"></script>
+
+<link rel="stylesheet" href="../lib/colorpicker/spectrum.css">
+<script src="../lib/colorpicker/spectrum.js"></script>
+<script src="../lib/colorpicker/jquery.spectrum-ko.js"></script> -->
+
+<link rel="stylesheet" href="../lib/colorpicker/spectrum.css">
+<script src="../lib/colorpicker/spectrum.js"></script>
+<script src="../lib/colorpicker/jquery.spectrum-ko.js"></script>
+<!-- <script src="../lib/d3/d3.v4.min.js"></script> -->
+
+
+<!-- <link rel="stylesheet" type="text/css" href="../lib/vis-timeline/vis-timeline-graph2d.min.css"> -->
+
+
+<!-- <script src="../js/hm/chart/hm.l4SessBpsChart.js"></script>
+<script src="../js/hm/chart/hm.l4SessConnChart.js"></script>
+<script src="../js/hm/chart/hm.l4SessCpsChart.js"></script>
+<script src="../js/hm/chart/hm.l4SessBpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.l4SessConnChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.l4SessCpsChartLeftType.js"></script>
+
+
+<script type="text/javascript" src="../lib/swiper/swiper-bundle.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../lib/swiper/swiper-bundle.css"> -->
+
+
+
+<script type="text/javascript" src="../lib/swiper10.3.1/swiper-bundle.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../lib/swiper10.3.1/swiper-bundle.min.css">
+
+
+<!-- <link rel="shortcut icon" href="../img/ico/favicon.ico"> -->
+
+
+<link type="text/css" rel="stylesheet" href="../css/style.css" />
+<script src="../js/pub-ui.js"></script>
+<script src="../js/pub-jqx-temp.js"></script>
+<script src="../js/pub-chart-temp.js"></script>
+</head>
+<body>
+
+  <!-- jqx-window 클래스추가 -->
+<div class="n-popup-wrap jqx-window" id="tempPopId">
+  <div class="n-dim"></div>
+  <div class="n-pop-wrap">
+    <div class="n-popup">
+      <div class="n-pop-header">
+        <h2 class="n-tit">이벤트 그룹 설정</h2>
+        <div class="n-right">
+          <button class="n-btn-close" onclick="$('#tempPopId').jqxWindow('close');"><i class="n-ico-close"></i></button>
+        </div>
+      </div>
+      <div class="n-pop-body">
+        <div class="n-tab-type1">
+          <ul class="n-tab" role="tablist">
+              <li class="on"><button role="tab" data-tab-id="tab1">이벤트 설정</button></li>
+              <li><button role="tab" data-tab-id="tab2">이벤트그룹 관리</button></li>
+          </ul>
+        </div>  
+        <div class="n-tab-content" role="tabpanel" id="tab1">
+          <div class="n-grid-data n-tree-grid auto">
+              <div class="n-grid" id="p_confGrid"></div>
+          </div>
+        </div>
+        <div class="n-tab-content" role="tabpanel" id="tab2" style="display: none;">
+          <div class="n-data-header">
+              <div class="n-right">
+                  <button type="button" class="n-btn-menu n-st-gray-line">선택 삭제</button>
+                  <button type="button" class="n-btn-menu n-st-blue"><i class="n-ico-plus-white"></i><span>추가</span></button>
+              </div>
+          </div>          
+          <div class="n-grid-data auto">
+              <div class="n-grid" id="p_grpGrid"></div>
+          </div>    
+        </div>
+      </div>
+      <div class="n-pop-footer">
+        <div class="n-btn-wrap">
+            <div class="n-right">
+                <button type="button" class="n-btn-popup n-st-gray-line" onclick="$('#tempPopId').jqxWindow('close');">닫기</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+
+  // popOpen('#tempPopId');
+
+$('#tempPopId').jqxWindow({  width: 800,
+                    resizable: false,
+                    draggable:false,
+                    title:'dsfsdf'
+                });
+
+  
+
+  //윈도우 팝업용
+  window.resizeTo(720, 1010);
+  const params = new URLSearchParams(window.location.search);
+
+  if (params.has('popup')) {
+    $('.n-popup-wrap').addClass('n-windowpopup');
+    $("#p_confGrid").jqxGrid('height', 685);
+
+    function popClose(){
+      window.close();
+    }
+  }
+</script>
+
+<script>
+  
+  const localData = [{"evtGrpNo":16,"evtGrpName":"장비다운","grpSort":1,"isUse":1,"evtCode":"ICMP_01","evtType":"DEV","evtName":"Ping 장애","evtDesc":""},{"evtGrpNo":16,"evtGrpName":"장비다운","grpSort":1,"isUse":1,"evtCode":"ICMP_00","evtType":"SVR","evtName":"Ping 장애","evtDesc":""},{"evtGrpNo":14,"evtGrpName":"AP 장애","grpSort":2,"isUse":1,"evtCode":"AP_01","evtType":"AP","evtName":"AP Down","evtDesc":""},{"evtGrpNo":14,"evtGrpName":"AP 장애","grpSort":2,"isUse":1,"evtCode":"URL_01","evtType":"DEV","evtName":"URL 응답이상/위변조발생","evtDesc":""},{"evtGrpNo":14,"evtGrpName":"AP 장애","grpSort":2,"isUse":1,"evtCode":"URL_01","evtType":"VSVR","evtName":"URL 응답이상/위변조발생","evtDesc":""},{"evtGrpNo":17,"evtGrpName":"패키지 웹","grpSort":2,"isUse":0,"evtCode":"URL_02","evtType":"SVR","evtName":"URL 응답이상/위변조발생","evtDesc":""},{"evtGrpNo":4,"evtGrpName":"링크다운","grpSort":4,"isUse":1,"evtCode":"PERF_11","evtType":"IF","evtName":"Link Down","evtDesc":""},{"evtGrpNo":3,"evtGrpName":"TCP포트/URL 감시","grpSort":5,"isUse":0,"evtCode":"TCP_01","evtType":"DEV","evtName":"서비스포트 장애","evtDesc":""},{"evtGrpNo":3,"evtGrpName":"TCP포트/URL 감시","grpSort":5,"isUse":0,"evtCode":"URL_01","evtType":"DEV","evtName":"URL 응답이상/위변조발생","evtDesc":""},{"evtGrpNo":3,"evtGrpName":"TCP포트/URL 감시","grpSort":5,"isUse":0,"evtCode":"URL_01","evtType":"VSVR","evtName":"URL 응답이상/위변조발생","evtDesc":""},{"evtGrpNo":6,"evtGrpName":"프로세스 다운","grpSort":5,"isUse":0,"evtCode":"MPROC_00","evtType":"SVR","evtName":"Process Down","evtDesc":""},{"evtGrpNo":2,"evtGrpName":"SNMP,FMS","grpSort":6,"isUse":0,"evtCode":"RTU_01","evtType":"RTU","evtName":"누수 발생","evtDesc":""},{"evtGrpNo":2,"evtGrpName":"SNMP,FMS","grpSort":6,"isUse":0,"evtCode":"RTU_11","evtType":"RTU","evtName":"상태 이상","evtDesc":""},{"evtGrpNo":2,"evtGrpName":"SNMP,FMS","grpSort":6,"isUse":0,"evtCode":"RTU_12","evtType":"RTU","evtName":"풍량 이상","evtDesc":""},{"evtGrpNo":2,"evtGrpName":"SNMP,FMS","grpSort":6,"isUse":0,"evtCode":"SNMP_01","evtType":"DEV","evtName":"SNMP 장애","evtDesc":""},{"evtGrpNo":10,"evtGrpName":"CPU 사용률초과","grpSort":7,"isUse":1,"evtCode":"PERF_05","evtType":"DEV","evtName":"CPU 사용률 초과","evtDesc":""},{"evtGrpNo":10,"evtGrpName":"CPU 사용률초과","grpSort":7,"isUse":1,"evtCode":"CPU_00","evtType":"SVR","evtName":"CPU 사용률 초과","evtDesc":""},{"evtGrpNo":11,"evtGrpName":"Memory 사용률초과","grpSort":8,"isUse":1,"evtCode":"PERF_06","evtType":"DEV","evtName":"Memory 사용률 초과","evtDesc":""},{"evtGrpNo":11,"evtGrpName":"Memory 사용률초과","grpSort":8,"isUse":1,"evtCode":"MEM_00","evtType":"SVR","evtName":"Memory 사용률 초과","evtDesc":""},{"evtGrpNo":9,"evtGrpName":"Disk 사용량초과","grpSort":9,"isUse":0,"evtCode":"FS_00","evtType":"SVR","evtName":"FileSystem 초과","evtDesc":""},{"evtGrpNo":8,"evtGrpName":"BPS 초과","grpSort":10,"isUse":0,"evtCode":"PERF_01","evtType":"IF","evtName":"IN BPS 초과","evtDesc":""},{"evtGrpNo":8,"evtGrpName":"BPS 초과","grpSort":10,"isUse":0,"evtCode":"PERF_02","evtType":"IF","evtName":"OUT BPS 초과","evtDesc":""},{"evtGrpNo":5,"evtGrpName":"PPS 초과","grpSort":11,"isUse":0,"evtCode":"PERF_03","evtType":"IF","evtName":"IN PPS 초과","evtDesc":""},{"evtGrpNo":5,"evtGrpName":"PPS 초과","grpSort":11,"isUse":0,"evtCode":"PERF_04","evtType":"IF","evtName":"OUT PPS초과","evtDesc":""},{"evtGrpNo":12,"evtGrpName":"Crc/Collision/Drop","grpSort":12,"isUse":0,"evtCode":"PERF_07","evtType":"IF","evtName":"CRC 에러","evtDesc":""},{"evtGrpNo":12,"evtGrpName":"Crc/Collision/Drop","grpSort":12,"isUse":0,"evtCode":"PERF_08","evtType":"IF","evtName":"Collision 에러","evtDesc":""},{"evtGrpNo":12,"evtGrpName":"Crc/Collision/Drop","grpSort":12,"isUse":0,"evtCode":"PERF_09","evtType":"IF","evtName":"Input Queue Drop","evtDesc":""},{"evtGrpNo":12,"evtGrpName":"Crc/Collision/Drop","grpSort":12,"isUse":0,"evtCode":"PERF_10","evtType":"IF","evtName":"OutputQueue Drop","evtDesc":""},{"evtGrpNo":15,"evtGrpName":"Trap","grpSort":13,"isUse":0,"evtCode":"TRAP_00","evtType":"TRAP","evtName":"TRAP 이벤트","evtDesc":""},{"evtGrpNo":15,"evtGrpName":"Trap","grpSort":13,"isUse":0,"evtCode":"TRAP_00","evtType":"TRAP","evtName":"TRAP 이벤트","evtDesc":""},{"evtGrpNo":18,"evtGrpName":"Syslog","grpSort":14,"isUse":0,"evtCode":"SYSLOG_00","evtType":"SYSLOG","evtName":"SYSLOG 이벤트","evtDesc":""},{"evtGrpNo":18,"evtGrpName":"Syslog","grpSort":14,"isUse":0,"evtCode":"SYSLOG_00","evtType":"SYSLOG","evtName":"SYSLOG 이벤트","evtDesc":""}];
+
+    tempJqxGrid("#p_confGrid", {
+      pageable: false,
+      groupable: true,
+      showgroupsheader: false,
+      selectionmode: 'none',
+      showheader: false,
+      columns: [
+          {text: '그룹명', datafield: 'evtGrpName'},
+          {text: '이벤트명', datafield: 'evtName'},
+          {text: '이벤트 설명', datafield: 'evtDesc'}
+      ],
+      groups: ['evtGrpName'],
+      groupsrenderer: function (text, group, expanded, data) {
+        return `<div class="group-tit">${data.group} <em>(${data.subItems.length})</em></div>`;
+      },
+      ready: function () {
+        $("#p_confGrid").jqxGrid('expandallgroups');
+      }
+    }, localData)
+
+    tempJqxGrid("#p_grpGrid", {
+      showheader: true,
+      pageable: false,
+      columns: [
+        {text: '그룹명', datafield: 'evtGrpName'},
+        {text: '표시순서', datafield: 'grpSort', width: '20%', cellsalign: 'right'},
+        {text: '표시여부', datafield: 'isUse', width: '100', columntype: 'checkbox'}
+     ],
+     selectionmode: 'checkbox',
+    }, localData)
+
+
+</script>
+
+
+</body>
+</html>

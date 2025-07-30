@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="format-detection" content="telephone=no"/>
+<title></title>
+
+<script src="lib/jquery/jquery-3.7.1.min.js"></script>
+
+</head>
+<!-- style -->
+<style type="text/css">
+  *{margin:0;padding:0;}
+  body {padding:20px; font-family:Tahoma, Sans-Serif; color:#333; font-size:11px; background-color:#fff;}
+  h1 {color:#000; letter-spacing:-2px;}
+  h2 {margin-top:20px;padding-left:10px;letter-spacing:-2px;position:relative;font-size:18px;}
+  h2:before{content:'';display:block;position:absolute;top:50%;left:0;width:5px;height:5px;background:#333;transform:translateY(-50%);-webkit-transform:translateY(-50%);}
+  .currentsite {display:block; position:absolute; right:40px; top:20px;}
+  .mwork table {width:100%; border-collapse:collapse; border:0px solid #666;margin-top:10px;}
+  .mwork caption {text-align:left; font-size:200%; color:#999;}
+  .mwork th {padding:6px; border:1px solid #fff; color:#fff; font-size:110%; background-color:#1F5DBE;}
+  .mwork td {height:16px; padding:4px; padding-left:10px; border:1px solid #666;}
+  .mwork a,
+  .mwork a:link, #mwork a:visited {color:#009; text-decoration:none;}
+  .mwork a:hover, #mwork a:active {color:#00f; text-decoration:underline;}
+  .mwork td:hover {background-color:#ddd !important;}
+  
+
+  .title td{background:#eee;}
+
+</style>
+<!-- //style -->
+<!-- html body -->
+<script>
+  $(function(){
+    let data = [
+      // 공통
+      ["공통", "title", "", "", ""],
+      ["", "로딩", "", "", "html/loading.html", "", "", ""],
+      ["", "alert", "", "", "html/alert.html", "", "", ""],
+      ["", "그리드아이템", "", "", "html/grid-item.html", "", "", ""],
+      ["", "트리아이템", "", "", "html/tree-item.html", "", "", ""],
+      ["", "데이터 없음(트리, 그리드)", "", "", "html/no-data.html", "", "", ""],
+      ["로그인", "title", "", "", ""],
+      ["", "인트로", "", "", "html/intro.html", "", "", ""],
+      ["", "로그인", "", "", "html/login.html", "", "", ""],
+      ["", "계정신청", "", "", "html/join.html", "", "", ""],
+      ["종합현황", "title", "", "", ""],
+      ["", "종합관제", "토폴로지", "", "html/topology.html", "", "", ""],
+      ["", "", "네트워크", "", "html/widget.html", "", "", ""],
+      ["", "이벤트현황", "이벤트현황", "", "html/errStatus.html", "", "", ""],
+      ["", "", "", "이벤트 그룹 설정", "html/pEvtCodeGrp.html", "html/pEvtCodeGrp.html", "", ""],
+      ["", "", "", "이벤트 그룹 설정 (jqx팝업)", "html/pEvtCodeGrp2.html", "", "", ""],
+      ["", "", "", "이벤트 그룹 추가", "html/pEvtCodeGrpReg.html", "레이어팝업", "", ""],
+      ["", "", "이벤트이력", "", "html/errHistory.html", "", "", ""],
+      ["", "", "", "(jqx탭 적용)", "html/errHistory2.html", "", "", ""],
+      ["", "", "", "이벤트이력 캘린더", "html/pErrHistory.html", "레이어팝업", "", ""],
+      ["", "운영이력", "공지사항", "", "html/noticeBoardList.html", "", "", ""],
+      ["", "", "", "상세", "html/pNoticeBoardContents.html", "html/pNoticeBoardContents.html", "", ""],
+      ["", "", "", "등록", "html/pNoticeBoardWrite.html", "html/pNoticeBoardWrite.html", "", ""],
+      ["", "", "기술지원", "", "", "", "", "", ""],
+      ["", "", "", "상세", "html/pSupportBoardContents.html", "html/pSupportBoardContents.html", "", ""],
+      ["", "", "장애처리", "", "html/supportBoardList.html", "", "", ""],
+      ["", "", "사용자접속", "", "html/userContact.html", "", "", ""],
+      ["", "로그현황", "Syslog", "", "html/syslog.html", "", "", ""],
+      ["", "", "", "Syslog 설정", "html/pSyslogSet.html", "html/pSyslogSet.html", "", ""],
+      ["", "", "", "Syslog 제외 문구 추가", "html/pSyslogExclusionPhrase.html", "레이어팝업", "", ""],
+      ["", "", "", "Syslog 이벤트 필터 추가", "html/pSyslogFilter.html", "레이어팝업?", "", ""],
+      ["네트워크", "title", "", "", ""],
+      ["", "네트워크관리", "장비현황", "", "html/devStatus.html", "", "", ""],
+      ["", "", "", "(jqx탭 적용)", "html/devStatus2.html", "", "", ""],
+      ["", "", "", "장비상세정보", "html/pEquipDetail.html", "html/pEquipDetail.html", "", ""],
+      ["", "회선관리", "회선현황", "", "장비현황 참조", "", "", ""], 
+      ["", "네트워크설정", "프로파일", "", "html/profileNetMgmt.html", "", "", ""],
+      ["", "", "", "프로파일 대상설정", "html/pProfile.html", "레이어팝업", "", ""],
+      ["", "", "장비", "", "html/devMgmt.html", "", "", ""],
+      ["", "", "", "장비 추가", "html/pDevMgmt.html", "레이어팝업", "", ""],
+      ["", "", "", "장비 다중 추가", "html/pDevAddMulti.html", "html/pDevAddMulti.html", "", ""],
+      ["무선", "title", "", "", ""],
+      ["", "AP관리", "AP괸리", "", "html/apMng.html", "", "", ""],
+      ["", "", "로컬인증SSID사용", "", "html/localSSID.html", "", "", ""],
+      ["", "", "무선인증SSID사용", "", "html/wifiSSID.html", "", "", ""],
+      ["", "AP제어", "AP채널설정", "", "html/apChannel.html", "", "", ""],
+      ["", "", "AP무선출력설정", "", "html/apWifiSet.html", "", "", ""],
+      ["", "", "펌웨어관리", "펌웨어 등록", "html/pFirmwareReg.html", "레이어팝업?", "", ""],
+      ["보고서", "title", "", "", ""],
+      ["", "장비보고서", "일일성능", "", "html/dailyWorkRpt.html", "", "", ""],
+      ["", "", "월간장비", "", "html/monthDevRpt.html", "", "", ""],
+      ["", "", "", "월간 장비_데이터 보기", "html/pMonthDevRpt.html", "레이어팝업", "", ""],
+      ["", "회선보고서", "회선성능", "", "html/ifPerfRpt.html", "", "", ""],
+      ["환경설정", "title", "", "", ""],
+      ["", "사용자 그룹 설정", "그룹", "", "html/grpMgmt.html", "", "", ""],
+      ["", "", "", "데이터없음", "html/grpMgmtNoData.html", "", "", ""],
+      ["", "", "", "그룹등록", "html/pGroupReg.html", "레이어팝업?", "", ""],
+      ["", "", "", "그룹정렬순서", "html/pGroupAlign.html", "레이어팝업?", "", ""],
+      ["", "", "학교관리", "", "html/schoolMgmt.html", "", "", ""],
+      ["", "", "", "학교 등록", "html/pSchoolReg.html", "레이어팝업?", "", ""],
+      ["", "", "사용자관리", "", "", "", "", ""],
+      ["", "", "", "사용자 등록", "html/pUserReg.html", "레이어팝업?", "", ""],
+      ["", "", "토폴로지 권한 설정", "", "html/pTopologyPermission.html", "레이어팝업?", "", ""],
+      ["", "", "수신자그룹", "", "html/recvGrpMgmt.html", "", "", ""],
+      ["", "", "", "수신자그룹 등록", "html/pRecvGrpReg.html", "레이어팝업", "", ""],
+      ["", "", "비밀번호 보안설정", "", "html/policyConf.html", "", "", ""],
+      ["", "", "메뉴권한", "", "html/menuAuth.html", "", "", ""],
+      // ["", "기본 설정", "초기화면", "", "html/widgetMain.html", "", "", ""],
+      ["", "기본 설정", "초기화면", "", "작업중", "", "", ""],
+      ["", "", "환경옵션", "", "html/optConf.html", "", "", ""],
+      ["", "", "", "데이터 관리 주기", "html/pDataMgmt.html", "레이어팝업", "", ""],
+      ["", "", "", "공휴일 등록", "html/pHolidayReg.html", "레이어팝업", "", ""],
+      ["", "", "Syslog설정", "", "html/syslogEvtMgmt.html", "", "", ""],
+      ["", "", "", "Syslog 이벤트 등록", "html/pSyslogEvtReg.html", "레이어팝업", "", ""],
+      ["", "", "", "대상장비 추가", "html/pEquipAdd.html", "레이어팝업", "", ""],
+      ["", "", "", "정규식 도우미", "html/pRegexHelper.html", "레이어팝업", "", ""]
+    ];
+
+
+
+    for(var i = 0 ; i<= data.length -1 ; i++){
+      if(data[i][1] == 'title'){
+        $('tbody').append('<tr class="title">'+
+          '<td>'+data[i][0]+'</td>' + 
+          '<td></td>' +
+          '<td></td>' +
+          '<td></td>' +
+          '<td></td>' +
+          '<td></td>' +
+          '<td></td>' +
+        '</tr>')
+      }else{
+        $('tbody').append('<tr>'+
+          '<td>'+data[i][0]+'</td>' +
+          '<td>'+data[i][1]+'</td>' +
+          '<td>'+data[i][2]+'</td>' +
+          '<td>'+data[i][3]+'</td>' +
+          ((data[i][4]).includes('html') ? '<td><a href="'+data[i][4]+'">'+data[i][4]+'</a></td>' :'<td>'+ data[i][4] +'</td>') +
+          ((data[i][5]).includes('html') ? '<td><a href="javascript:void(0);" onclick="window.open(\'' + data[i][4] + '?popup\', \'_blank\', \'resizable=no,scrollbars=no\')">' + data[i][5] + '</a></td>' : '<td>'+ data[i][5] +'</td>') +
+          '<td>'+data[i][6]+'</td>' +
+        '</tr>')
+      }
+    }
+
+  });
+
+
+
+
+</script>
+</head>
+<body>
+<!-- sheet -->
+<h1>Publishing Work Sheet </h1>
+
+<div class="mwork">
+  <table>
+    <colgroup>
+			<col style="width:120px" />
+			<col style="width:150px" />
+			<col style="width:150px" />
+			<col style="width:150px" />
+			<col style="width:200px" />
+			<col style="width:200px" />
+			<col style="width:auto" />
+    </colgroup>
+
+    <thead>
+      <tr>
+				<th>Category</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>3Depth</th>
+				<th>FileName/Link</th>
+				<th>window popup</th>
+				<th>Memo</th>
+      </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+  </table>
+<!-- //sheet -->
+
+</body>
+</html>

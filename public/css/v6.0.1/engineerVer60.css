@@ -1,0 +1,56 @@
+/**=======================
+	로그인
+	
+	1. 작성자: pub1
+	2. 생성일자: 2023.09.18
+	3. 수정일자: 2023.09.18
+
+	   
+======================== */
+#n_login {width: 100%;min-height: 100%;background: #0e1017 url(../../img/login/loginSpot60.png);padding-top:0px;box-sizing: border-box;}
+.login_block {position:absolute;top:calc(50% - 300px); left:calc(50% - 500px);width: 1006px;height:600px;margin: 0 auto;background: url('../../img/login/loginBG_eng60.png') center left no-repeat;}
+.login_box {position:absolute;top:150px;right:0px;width: 360px;height: 400px;text-align: center;font-family: Malgun Gothic, "맑은고딕;"}
+.login_tit{width:100%;height:50px; line-height:50px;  background-color: #505050; color:#fff; font-size:22px; font-weight:bold; text-align: center;}
+.inputBox2 {width:360px;height:270px;box-sizing: border-box;border-radius:6px;background-color: #4e546a;border: 1px solid #79819f;}
+.inputBox2 .login_form {margin: 30px 30px 0 30px;}
+.inputBox2 .login_form > div {position: relative;padding-bottom: 14px;}
+.inputBox2 .login_form > div:last-child {padding-bottom: 0;position:relative;text-align: left;font-size:12px;}
+.login_tit{width:100%;height:50px;line-height:50px;background-color: #787f9d;color: #c5c7d0;font-size:22px;font-weight:bold;text-align: center;}
+.inputBox2  .login_form > div > img {position:absolute;top:15px;right:15px;}
+.inputBox2  .login_form > div > input {width: 280px;height: 50px;padding-left: 20px;border: 1px solid #929bbf;border-radius: 5px;color: #eee;font-size: 1.2em;background: #656c88;}
+.inputBox2  .login_form > div > input::placeholder {
+    font-family: '맑은고딕', sans-serif;
+    color: #eee!important;
+    font-size:16px;
+    opacity: 1;
+
+}
+::placeholder{
+    color: #eee;
+}
+input[type="password"]::placeholder {
+    color: #eee;
+
+}
+input::-webkit-input-placeholder {
+    color: #eee;
+    font-style: normal;
+}
+input:-ms-input-placeholder {
+    color: #eee;
+    font-style: normal;
+}
+input::-webkit-input-placeholder {
+    color: #eee;
+    font-style: normal;
+}
+input:-ms-input-placeholder {
+    color: #eee;
+    font-style: normal;
+}
+.login_btn {width:300px; height:50px; margin:20px 30px 20px 30px;}
+.login_btn button{width:300px;height:50px;border-radius:25px;background-color: #6080b6;text-align: center;font-size:18px;color: #fff;}
+.login_btn button:hover{background-color: #d6d6d6;}
+.login_sub {width:300px; height:50px;}
+.copy_txt{line-hegiht:20px;text-align:center;font-size:12px;color: #787f9d;}
+div[role="dialog"]{border-color: #0e1017;}

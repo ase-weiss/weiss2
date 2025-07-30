@@ -1,0 +1,592 @@
+@charset "UTF-8";
+/**=======================
+
+	horizontal UI CSS
+
+	1. 작성자: pub1
+	2. 생성일자: 2023.08.25
+	3. 수정일자: 2023.10.06
+
+======================== */
+
+/* main */
+.mainWrap{ top: 50px;}
+
+/* gnb*/
+.gnb{
+	position: relative;
+	/*height:55px;*/
+	width: 100%;
+	background: #FFFFFF;
+}
+
+/*  logo Light animation */
+.backGradi {
+	background: linear-gradient(132deg, #fff, #fff, rgba(76, 180, 214, 0.4), #fff, #fff);
+	background-size: 400% 400%;
+	animation: BackgroundGradient 10s ease infinite;
+}
+
+@keyframes BackgroundGradient {
+	0% {background-position: 0% 0%;}
+	50% {background-position: 0% 10%;}
+	100% {background-position: 100% 100%;}
+}
+
+
+/** ===========
+
+5.9v  jQuery Mega Menu (메뉴) Start
+
+===================*/
+
+
+ul.mega-menu li a {
+	float: left;
+	display: block;
+	color: #fff;
+	padding: 29px 25px 3px 25px;
+	/*text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);*/
+	text-decoration: none;
+}
+
+ul.mega-menu li a.dc-mega {
+	position: relative;
+	min-width: 100px;
+	padding: 0;
+	height: 55px;
+	text-align: center;
+	line-height: 79px;
+	opacity: 0.7;
+}
+
+ul.mega-menu li a span[class*='icon_']{
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: 40%;
+	width: 23px;
+	height: 23px;}
+ul.mega-menu li a .dc-mega-icon {
+	background: url('../../lib/megamenu/skins/images/icon4.png') no-repeat 0 0;
+}
+
+/* 네트워크관리 */
+ul.mega-menu li a .icon_nms {
+	background: url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 513px -8px;
+}
+/* 트래픽관리 */
+ul.mega-menu li a .icon_tms {
+	background: url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 476px -8px;
+}
+/* 서버관리 */
+ul.mega-menu li a .icon_sms {
+	background: url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 438px -8px;
+}
+/* 시설관리 */
+ul.mega-menu li a .icon_fms {
+	background: url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 403px -8px;
+}
+/* 보고서 */
+ul.mega-menu li a .icon_rpt {
+	background: url('../../lib/megamenu/skins/images/ui-icons-v5-12.png') 465px -8px;
+}
+/* 환경설정 */
+ul.mega-menu li a .icon_env {
+	background: url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 295px -8px;
+}
+
+/* 종합현황 */
+ul.mega-menu li a .icon_alarm {
+	background: url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 548px -8px;
+}
+/* 자산관리 */
+ul.mega-menu li a .icon_asset {
+	background: url('../../lib/megamenu/skins/images/ui-icons-v5-12.png') 538px -8px;
+}
+/* 선번장 */
+ul.mega-menu li a .icon_lms {
+	background: url('../../lib/megamenu/skins/images/ui-icons-v5-12.png') 502px -8px;
+}
+/* 콜센터 */
+ul.mega-menu li a .icon_ipt {
+	background: url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 331px -8px;
+}
+/* 무선관리 */
+ul.mega-menu li a .icon_ap {
+	background: url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 365px -8px;
+}
+
+ul.mega-menu li.mega-hover a,  ul.mega-menu li a:hover
+{
+	color: #ffffff;
+	text-shadow: none;
+	background: #545454;
+	opacity: 1;
+}
+
+/**
+	level-1 메뉴 선택스타일
+	by jjung
+ */
+ul.mega-menu li.mega-selected a
+{
+	/*background-position: 100% -40px;*/
+	color: #ffffff;
+	text-shadow: none;
+	background: #f1f6fe;
+	opacity: 1;
+}
+
+
+ul.mega-menu li.mega-hover a [class^="dc-mega-icon"] {
+	/*background-position: 0 100%;*/
+	opacity: 1;
+}
+
+ul.mega-menu li .sub-container {
+	position: absolute;
+	background-color: #fff;
+	margin-left: -3px;
+}
+
+ul.mega-menu li .sub {
+	padding: 5px 0px 15px 0px;
+}
+
+ul.mega-menu li .sub-container.mega .sub {
+	border: 1px solid #d8dce5;
+}
+
+ul.mega-menu li .sub .row {
+	width: 100%;
+	overflow: hidden;
+	clear: both;
+	/*margin: 5px 0px 0px 0px;*/
+}
+
+ul.mega-menu li .sub li {
+	list-style: none;
+	float: none;
+	width: 161px;
+	font-size: 1em;
+	font-weight: normal;
+}
+
+ul.mega-menu li .sub li.mega-hdr {
+	margin: 0px 0px 0px 5px;
+	border-right: 1px solid #d8dce5;
+	float: left;
+	background: url(../../lib/megamenu/skins/images/submenuBg.png) no-repeat 0
+	0;
+	font-size: 16px;
+}
+
+ul.mega-menu li .sub li.mega-hdr.last {
+	margin-right: 0;
+	border: none;
+}
+
+ul.mega-menu li .sub a {
+	background: none;
+	border: none;
+	text-shadow: none;
+	color: #fff;
+	padding: 7px 10px;
+	display: block;
+	float: none;
+	text-decoration: none;
+	font-size: 0.9em;
+}
+
+ul.mega-menu li .sub li.mega-hdr a.mega-hdr-a {
+	padding: 7px 10px 7px 4px;
+	margin-bottom: 10px;
+	height: 23px!important;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #111;
+	font-size: 14px;
+	text-align: center;
+	cursor: default;
+	background: #f1f6fe;
+	width: 142px;
+}
+
+ul.mega-menu li .sub li.mega-hdr a.mega-hdr-a:hover {
+	color: #111;  /*  #fff  2023-02-27 */
+	text-shadow: none;
+}
+
+ul.mega-menu .sub li.mega-hdr li a {
+	padding: 4px 5px 4px 15px;
+	/*background: url(../../lib/megamenu/skins/images/rec01_off.png) no-repeat 5px 14px;*/
+	font-weight: normal;
+	width: 135px;
+	font-size: 13px;
+}
+
+ul.mega-menu .sub li.mega-hdr li a:hover {
+	color: #485393;
+	font-weight: bold;
+	/*text-decoration:underline;*/
+	text-decoration:none;
+	/*background:  url(../../lib/megamenu/skins/images/rec01_on.png) no-repeat 5px 14px;*/
+	font-size: 13px !important;
+}
+
+ul.mega-menu .sub ul li {
+	padding-right: 0;
+}
+
+ul.mega-menu li .sub-container.non-mega .sub {
+	padding: 20px 20px 20px 0;
+}
+
+ul.mega-menu li .sub-container.non-mega li {
+	padding: 0;
+	width: 190px;
+	margin: 0;
+}
+
+ul.mega-menu li .sub-container.non-mega li a {
+	padding: 10px 5px 10px 22px;
+	background: url(../../lib/megamenu/skins/images/rec01_off.png) no-repeat 7px 10px;
+}
+
+ul.mega-menu li .sub-container.non-mega li a:hover {
+	color: #3f7ab3;
+	background: #e9f6ff url(../../lib/megamenu/skins/images/rec01_on.png) no-repeat 7px 10px;
+}
+
+/** ===========
+
+5.9v  jQuery Mega Menu (메뉴) End
+
+===================*/
+
+/** layout - nav */
+/*!*#nav .favicon_component {float: right; padding:12px 10px 0px 0px; height: 55px; box-sizing:border-box;}*!*/
+/*#nav .favicon_component div {margin: 0px 4px;cursor: pointer}*/
+/*#nav .favicon_component div[class*='favicon_']{float: left;width: 32px;height: 32px;border-radius: 50%;!*background-color:rgba(255,255,255,0.1)  *!}*/
+/*#nav .favicon_component div[class*='favicon_']:hover,#nav .favicon_component div[class*='favicon_']:active{float: left; width: 32px; height: 32px; border-radius: 50%;}*/
+
+/*#nav .favicon_component .favicon_dash {background:url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 229px -3px;}*/
+/*#nav .favicon_component .favicon_dash:hover, #nav .favicon_component .favicon_dash:active {background: rgba(255,255,255,0) url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 229px -87px;}*/
+
+/*#nav .favicon_component .favicon_mib {  background:url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 156px -3px;}*/
+/*#nav .favicon_component .favicon_mib:hover, #nav .favicon_component .favicon_mib:active {background: rgba(255,255,255,0)  url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 156px -88px;}*/
+
+/*#nav .favicon_component .favicon_topo { background: url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 192px -2px;}*/
+/*#nav .favicon_component .favicon_topo:hover, #nav .favicon_component .favicon_topo:active {background: rgba(255,255,255,0) url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 192px -88px;}*/
+
+/*#nav .favicon_component .favicon_admin {  background: url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 119px -3px;}*/
+/*#nav .favicon_component .favicon_admin:hover, #nav .favicon_component .favicon_admin:active {background: rgba(255,255,255,0)  url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 119px -87px;}*/
+
+/*#nav .favicon_component .favicon_logout {  background:url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 47px -3px;}*/
+/*#nav .favicon_component .favicon_logout:hover, #nav .favicon_component .favicon_logout:active {background: rgba(255,255,255,0)  url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 47px -87px;}*/
+
+/*#nav .favicon_component .favicon_sitemap {  background: url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 264px -3px;}*/
+/*#nav .favicon_component .favicon_sitemap:hover, #nav .favicon_component .favicon_sitemap:active {  background: rgba(255,255,255,0) url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 264px -88px;}*/
+
+/*#nav .favicon_component .favicon_bookmark {  background:url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 83px -3px;}*/
+/*#nav .favicon_component .favicon_bookmark:hover, #nav .favicon_component .favicon_bookmark:active {background: rgba(255,255,255,0) url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 83px -87px;}*/
+
+
+/*
+ sitemap
+
+*/
+
+#hmSitemap ul.mega-menu li .sub-container{background:#fff}
+#hmSitemap  ul.mega-menu li .sub li.mega-hdr a.mega-hdr-a{background:#3a3e56}
+
+#hmSitemap .dc-mega-li>a>span{display:block!important; width:auto; color: #3a3e56!important;background:none;font-size:20px;}
+#hmSitemap .level-1:hover a > span:nth-child(2){display:block!important; }
+#hmSitemap ul.mega-menu li a span[class*='icon_']{display:none!important; }
+#hmSitemap .level-1:hover a > span:nth-child(1){width:auto; }
+#hmSitemap .level-2>a {word-break: break-all;height: auto!important;color:#fff!important}
+
+
+#hmSitemap ul.mega-menu .sub li.mega-hdr li a {
+	background: url(../../lib/megamenu/skins/images/rec01_off.png) no-repeat 5px 14px;
+}
+
+#hmSitemap  ul.mega-menu .sub li.mega-hdr li a:hover {
+	background:  url(../../lib/megamenu/skins/images/rec01_on.png) no-repeat 5px 14px;
+}
+#hmSitemap .level-1 {
+	width: 160px;
+	height: 44px;
+	padding: 0px 0 0px 10px;
+	margin: 0;
+}
+
+#hmSitemap .sub-container {
+	/* height: 900px; */
+	margin-top: 34px;
+	border-right: 1px solid #e1e1e1;}
+
+/* horizontal */
+
+/* 상단 ui 6.0 */
+#nav{height:50px;}
+.gnb{height:50px;border-bottom:1px solid #d8dce5}
+.backGradi{height:50px;}
+.netismenu{height:50px;}
+
+.level-1:hover > .pageMenuTitle{
+	background:#f1f6fe
+}
+span[class*="pageMenuTitle"]{
+	display:none;
+	color:#485393;
+	word-break: break-all;
+	line-height: inherit;
+	height:auto;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	/*width: 50px;*/
+	width: 60px;
+	height: 50px;
+}
+.level-1:hover a > span:nth-child(2){display:none!important}
+.level-1:hover a > span:nth-child(1) {
+	display: flex !important;
+	/*width: 50px;*/
+	width: 60px;
+	height: 50px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+.level-1.mega-selected a > span:nth-child(1){
+	text-align: center;
+	/*width: 50px;*/
+	width: 60px;
+	justify-content: center;
+	align-items: center;
+	background:#f1f6fe;
+}
+
+ul.mega-menu li a.dc-mega {
+	position: relative;
+	/*min-width: 50px;*/
+	min-width: 60px;
+	padding: 0;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	opacity:1
+}
+ul.mega-menu li a span[class*='icon_'] {
+	display: flex;
+	/* position: absolute; */
+	/* top: 10px; */
+	/* left: 40%; */
+	/*width: 50px;*/
+	width: 60px;
+	height: 50px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	background-position:center;
+	top:0;
+	left:0;
+}
+
+#section{top:90px;}
+
+/* icon */
+ul.mega-menu li a .dc-mega-icon {
+	background: url('../../lib/megamenu/skins/images/icon4.png') no-repeat 0 0;
+}
+/* 기본 */
+ul.mega-menu li a .icon_default {
+	background: url('../../lib/nav-6.0/icon-white/icon_default.png') no-repeat 0 0
+}
+/* 네트워크관리 */
+ul.mega-menu li a .icon_nms {
+	background: url('../../lib/nav-6.0/icon-white/icon_nms.png') no-repeat 0 0
+}
+/* 트래픽관리 */
+ul.mega-menu li a .icon_tms {
+	background: url('../../lib/nav-6.0/icon-white/icon_tms.png') no-repeat 0 0
+}
+/* 서버관리 */
+ul.mega-menu li a .icon_sms {
+	background: url('../../lib/nav-6.0/icon-white/icon_sms.png') no-repeat 0 0
+}
+/* 시설관리 */
+ul.mega-menu li a .icon_fms {
+	background: url('../../lib/nav-6.0/icon-white/icon_fms.png') no-repeat 0 0
+}
+/* 보고서 */
+ul.mega-menu li a .icon_rpt {
+	background: url('../../lib/nav-6.0/icon-white/icon_rpt.png') no-repeat 0 0
+}
+/* 환경설정 */
+ul.mega-menu li a .icon_env {
+	background: url('../../lib/nav-6.0/icon-white/icon_env.png') no-repeat 0 0
+}
+
+/* 종합현황 */
+ul.mega-menu li a .icon_alarm {
+	background: url('../../lib/nav-6.0/icon-white/icon_alarm.png') no-repeat 0 0
+}
+/* 자산관리 */
+ul.mega-menu li a .icon_asset {
+	background: url('../../lib/nav-6.0/icon-white/icon_asset.png') no-repeat 0 0
+}
+/* 선번장 */
+ul.mega-menu li a .icon_lms {
+	background: url('../../lib/nav-6.0/icon-white/icon_lms.png') no-repeat 0 0
+}
+/* 콜센터 */
+ul.mega-menu li a .icon_ipt {
+	background: url('../../lib/nav-6.0/icon-white/icon_ipt.png') no-repeat 0 0
+}
+/* 무선관리 */
+ul.mega-menu li a .icon_ap {
+	background: url('../../lib/nav-6.0/icon-white/icon_ap.png') no-repeat 0 0
+}
+/* 쿠버네티스 */
+ul.mega-menu li a .icon_cubernetis {
+	background: url('../../lib/nav-6.0/icon-white/icon_kubernetis.png') no-repeat 0 0
+}
+/* 이상탐지 오류프리 */
+ul.mega-menu li a .icon_errfree {
+	background: url('../../lib/nav-6.0/icon-white/icon_errfree.png') no-repeat 0 0
+}
+
+ul.mega-menu li.mega-hover a,  ul.mega-menu li a:hover
+{
+	color: #111111;
+	text-shadow: none;
+	background: #fff;
+	opacity: 1;
+}
+
+#TopNav6_0 .favicon_component {
+	position: absolute;
+	right: 9px;
+	bottom: 15px;
+	/* top: auto; */
+	line-height: 55px;
+	box-sizing: border-box;
+	padding: 0;
+	width: auto;
+	text-align: center;
+	height: 50px;
+}
+
+#TopNav6_0 .favicon_component > a {
+	width: 34px;
+	height: 50px;
+	display: block;
+	float: left;
+}
+
+#TopNav6_0 .favicon_component div[class*='favicon_'] {
+	float: left;
+	width: 50px;
+	height: 32px;
+	border-radius: 50%;
+	margin: 0
+}
+
+#TopNav6_0 .favicon_component div {
+	margin: 0px;
+	cursor: pointer
+}
+
+#TopNav6_0 .favicon_component div[class*='favicon_'] {
+	float: none;
+	width: 34px;
+	height: 42px;
+	border-radius: 0;
+	margin-top: 8px;
+}
+
+#TopNav6_0 .favicon_component div[class*='favicon_']:hover,#TopNav6_0 .favicon_component div[class*='favicon_']:active {
+	float: left;
+	width: 34px;
+	height: 32px;
+	border-radius: 50%;
+}
+
+#TopNav6_0 .favicon_component .favicon_admin {
+	background: url('../../lib/nav-6.0/ui-icons-v6-0.png') 121px 77px;
+}
+
+#TopNav6_0 .favicon_component .favicon_admin:hover, #TopNav6_0 .favicon_component .favicon_admin:active {
+	background: url('../../lib/nav-6.0/ui-icons-v6-0.png') 121px 35px;
+}
+
+#TopNav6_0 .favicon_component .favicon_logout {
+	background: url('../../lib/nav-6.0/ui-icons-v6-0.png') 50px 77px;
+}
+
+#TopNav6_0 .favicon_component .favicon_logout:hover, #TopNav6_0 .favicon_component .favicon_logout:active {
+	background: url('../../lib/nav-6.0/ui-icons-v6-0.png') 50px 35px;
+}
+
+#TopNav6_0 .favicon_component .favicon_bookmark {
+	background: url('../../lib/nav-6.0/ui-icons-v6-0.png') 85px 77px;
+}
+
+#TopNav6_0 .favicon_component .favicon_bookmark:hover, #TopNav6_0 .favicon_component .favicon_bookmark:active {
+	background: url('../../lib/nav-6.0/ui-icons-v6-0.png') 85px 35px;
+}
+
+#TopNav6_0 .favicon_component .favicon_sitemap {
+	background: url('../../lib/nav-6.0/ui-icons-v6-1.png') 79px 77px;
+}
+
+#TopNav6_0 .favicon_component .favicon_sitemap:hover, #TopNav6_0 .favicon_component .favicon_sitemap:active {
+	background: url('../../lib/nav-6.0/ui-icons-v6-1.png') 79px 35px;
+}
+#TopNav6_0 .favicon_component .favicon_license {
+	background: url('../../lib/nav-6.0/ui-icons-v6-12.png') 79px 77px;
+}
+
+#TopNav6_0 .favicon_component .favicon_license:hover, #TopNav6_0 .favicon_component .favicon_license:active {
+	background: url('../../lib/nav-6.0/ui-icons-v6-12.png') 79px 35px;
+}
+
+/* - 사용자, 북마크, 종료*/
+/*p {*/
+/*margin: 0}*/
+
+.favicon_component
+a:hover > .compo_text {
+	display: flex}
+
+.compo_text {
+	display: none;
+	color: #fff;
+	z-index: 20;
+	font-weight: 600;
+	font-size: 11px;
+	word-break: break-all;
+	line-height: inherit;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+/*#TopNav6_0 .favicon_component a:hover > div:nth-child(1) {*/
+/*display: none!important*/
+/*}*/
+
+
+/* 사이트맵 스크롤 */
+.sitemapScroll{width: 100%;height: max-content;overflow: auto;min-height: 94.7%;}
+
+/*메뉴명추가*/
+.menuTxt{display: inline-block;margin: 0; margin-top: 13px; color: #485393;/*width:50px;*/width:60px;height:37px;line-height: 45px;text-align: center;}
+.dc-mega:hover .menuTxt{display:none!important}
+.mega-selected .menuTxt{display:none!important}

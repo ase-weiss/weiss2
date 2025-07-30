@@ -1,0 +1,372 @@
+[ {
+"grpNo": "100","grpParent": 1,"grpRef": 1,"grpRefString": null,"grpName": "강원특별자치도교육청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "102","grpParent": 1,"grpRef": 1,"grpRefString": null,"grpName": "경상남도교육청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "103","grpParent": 1,"grpRef": 1,"grpRefString": null,"grpName": "경상북도교육청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "104","grpParent": 1,"grpRef": 1,"grpRefString": null,"grpName": "광주광역시교육청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "1","grpParent": 0,"grpRef": 1,"grpRefString": null,"grpName": "기술지원센터","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "106","grpParent": 1,"grpRef": 1,"grpRefString": null,"grpName": "대전광역시교육청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "107","grpParent": 1,"grpRef": 1,"grpRefString": null,"grpName": "부산광역시교육청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "108","grpParent": 1,"grpRef": 1,"grpRefString": null,"grpName": "서울특별시교육청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "109","grpParent": 1,"grpRef": 1,"grpRefString": null,"grpName": "세종특별자치교육청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "110","grpParent": 1,"grpRef": 1,"grpRefString": null,"grpName": "울산광역시교육청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "111","grpParent": 1,"grpRef": 1,"grpRefString": null,"grpName": "인천광역시교육청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "100001","grpParent": 1,"grpRef": 1,"grpRefString": null,"grpName": "장비","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "113","grpParent": 1,"grpRef": 1,"grpRefString": null,"grpName": "전라남도교육청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "112","grpParent": 1,"grpRef": 1,"grpRefString": null,"grpName": "전라북도교육청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "114","grpParent": 1,"grpRef": 1,"grpRefString": null,"grpName": "제주특별자치시교육청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "115","grpParent": 1,"grpRef": 1,"grpRefString": null,"grpName": "충청남도교육청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "116","grpParent": 1,"grpRef": 1,"grpRefString": null,"grpName": "충청북도교육청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "99999","grpParent": 1,"grpRef": 1,"grpRefString": null,"grpName": "판교","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "100594","grpParent": 100001,"grpRef": 2,"grpRefString": null,"grpName": "KAONTEST","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "100566","grpParent": 99999,"grpRef": 2,"grpRefString": null,"grpName": "가온테스트","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "146","grpParent": 110,"grpRef": 2,"grpRefString": null,"grpName": "강남교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "123","grpParent": 108,"grpRef": 2,"grpRefString": null,"grpName": "강남서초교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "117","grpParent": 108,"grpRef": 2,"grpRefString": null,"grpName": "강동송파교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "179","grpParent": 100,"grpRef": 2,"grpRefString": null,"grpName": "강릉교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "147","grpParent": 110,"grpRef": 2,"grpRefString": null,"grpName": "강북교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "122","grpParent": 108,"grpRef": 2,"grpRefString": null,"grpName": "강서양천교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "12397","grpParent": 100,"grpRef": 2,"grpRefString": null,"grpName": "강원본청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "230","grpParent": 113,"grpRef": 2,"grpRefString": null,"grpName": "강진교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "140","grpParent": 111,"grpRef": 2,"grpRefString": null,"grpName": "강화교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "283","grpParent": 102,"grpRef": 2,"grpRefString": null,"grpName": "거제교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "277","grpParent": 102,"grpRef": 2,"grpRefString": null,"grpName": "거창교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "12399","grpParent": 103,"grpRef": 2,"grpRefString": null,"grpName": "경북본청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "264","grpParent": 103,"grpRef": 2,"grpRefString": null,"grpName": "경산교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "258","grpParent": 103,"grpRef": 2,"grpRefString": null,"grpName": "경주교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "260","grpParent": 103,"grpRef": 2,"grpRefString": null,"grpName": "고령교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "176","grpParent": 100,"grpRef": 2,"grpRefString": null,"grpName": "고성교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "282","grpParent": 102,"grpRef": 2,"grpRefString": null,"grpName": "고성교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "215","grpParent": 112,"grpRef": 2,"grpRefString": null,"grpName": "고창교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "238","grpParent": 113,"grpRef": 2,"grpRefString": null,"grpName": "고흥교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "235","grpParent": 113,"grpRef": 2,"grpRefString": null,"grpName": "곡성교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "206","grpParent": 115,"grpRef": 2,"grpRefString": null,"grpName": "공주교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "239","grpParent": 113,"grpRef": 2,"grpRefString": null,"grpName": "광양교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "12400","grpParent": 104,"grpRef": 2,"grpRefString": null,"grpName": "광주본청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "194","grpParent": 116,"grpRef": 2,"grpRefString": null,"grpName": "괴산증평교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "229","grpParent": 113,"grpRef": 2,"grpRefString": null,"grpName": "구례교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "262","grpParent": 103,"grpRef": 2,"grpRefString": null,"grpName": "구미교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "218","grpParent": 112,"grpRef": 2,"grpRefString": null,"grpName": "군산교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "265","grpParent": 103,"grpRef": 2,"grpRefString": null,"grpName": "군위교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "212","grpParent": 115,"grpRef": 2,"grpRefString": null,"grpName": "금산교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "221","grpParent": 112,"grpRef": 2,"grpRefString": null,"grpName": "김제교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "256","grpParent": 103,"grpRef": 2,"grpRefString": null,"grpName": "김천교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "278","grpParent": 102,"grpRef": 2,"grpRefString": null,"grpName": "김해교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "240","grpParent": 113,"grpRef": 2,"grpRefString": null,"grpName": "나주교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "141","grpParent": 111,"grpRef": 2,"grpRefString": null,"grpName": "남부교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "118","grpParent": 108,"grpRef": 2,"grpRefString": null,"grpName": "남부교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "128","grpParent": 107,"grpRef": 2,"grpRefString": null,"grpName": "남부교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "225","grpParent": 112,"grpRef": 2,"grpRefString": null,"grpName": "남원교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "285","grpParent": 102,"grpRef": 2,"grpRefString": null,"grpName": "남해교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "202","grpParent": 115,"grpRef": 2,"grpRefString": null,"grpName": "논산계룡교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "100571","grpParent": 99999,"grpRef": 2,"grpRefString": null,"grpName": "다보테스트","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "100564","grpParent": 99999,"grpRef": 2,"grpRefString": null,"grpName": "다산테스트","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "191","grpParent": 116,"grpRef": 2,"grpRefString": null,"grpName": "단양교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "236","grpParent": 113,"grpRef": 2,"grpRefString": null,"grpName": "담양교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "207","grpParent": 115,"grpRef": 2,"grpRefString": null,"grpName": "당진교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "12402","grpParent": 106,"grpRef": 2,"grpRefString": null,"grpName": "대전본청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "132","grpParent": 107,"grpRef": 2,"grpRefString": null,"grpName": "동래교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "144","grpParent": 106,"grpRef": 2,"grpRefString": null,"grpName": "동부교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "138","grpParent": 111,"grpRef": 2,"grpRefString": null,"grpName": "동부교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "126","grpParent": 108,"grpRef": 2,"grpRefString": null,"grpName": "동부교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "142","grpParent": 104,"grpRef": 2,"grpRefString": null,"grpName": "동부교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "120","grpParent": 108,"grpRef": 2,"grpRefString": null,"grpName": "동작관악교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "187","grpParent": 100,"grpRef": 2,"grpRefString": null,"grpName": "동해교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "249","grpParent": 113,"grpRef": 2,"grpRefString": null,"grpName": "목포교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "246","grpParent": 113,"grpRef": 2,"grpRefString": null,"grpName": "무안교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "222","grpParent": 112,"grpRef": 2,"grpRefString": null,"grpName": "무주교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "252","grpParent": 103,"grpRef": 2,"grpRefString": null,"grpName": "문경교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "290","grpParent": 102,"grpRef": 2,"grpRefString": null,"grpName": "밀양교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "204","grpParent": 115,"grpRef": 2,"grpRefString": null,"grpName": "보령교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "232","grpParent": 113,"grpRef": 2,"grpRefString": null,"grpName": "보성교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "195","grpParent": 116,"grpRef": 2,"grpRefString": null,"grpName": "보은교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "271","grpParent": 103,"grpRef": 2,"grpRefString": null,"grpName": "봉화교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "12403","grpParent": 107,"grpRef": 2,"grpRefString": null,"grpName": "부산본청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "219","grpParent": 112,"grpRef": 2,"grpRefString": null,"grpName": "부안교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "211","grpParent": 115,"grpRef": 2,"grpRefString": null,"grpName": "부여교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "139","grpParent": 111,"grpRef": 2,"grpRefString": null,"grpName": "북부교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "127","grpParent": 108,"grpRef": 2,"grpRefString": null,"grpName": "북부교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "130","grpParent": 107,"grpRef": 2,"grpRefString": null,"grpName": "북부교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "286","grpParent": 102,"grpRef": 2,"grpRefString": null,"grpName": "사천교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "289","grpParent": 102,"grpRef": 2,"grpRefString": null,"grpName": "산청교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "173","grpParent": 100,"grpRef": 2,"grpRefString": null,"grpName": "삼척교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "267","grpParent": 103,"grpRef": 2,"grpRefString": null,"grpName": "상주교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "291","grpParent": 114,"grpRef": 2,"grpRefString": null,"grpName": "서귀포시교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "119","grpParent": 108,"grpRef": 2,"grpRefString": null,"grpName": "서부교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "131","grpParent": 107,"grpRef": 2,"grpRefString": null,"grpName": "서부교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "143","grpParent": 104,"grpRef": 2,"grpRefString": null,"grpName": "서부교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "137","grpParent": 111,"grpRef": 2,"grpRefString": null,"grpName": "서부교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "145","grpParent": 106,"grpRef": 2,"grpRefString": null,"grpName": "서부교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "201","grpParent": 115,"grpRef": 2,"grpRefString": null,"grpName": "서산교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "12404","grpParent": 108,"grpRef": 2,"grpRefString": null,"grpName": "서울본청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "213","grpParent": 115,"grpRef": 2,"grpRefString": null,"grpName": "서천교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "124","grpParent": 108,"grpRef": 2,"grpRefString": null,"grpName": "성동광진교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "121","grpParent": 108,"grpRef": 2,"grpRefString": null,"grpName": "성북강북교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "254","grpParent": 103,"grpRef": 2,"grpRefString": null,"grpName": "성주교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "180","grpParent": 100,"grpRef": 2,"grpRefString": null,"grpName": "속초양양교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "223","grpParent": 112,"grpRef": 2,"grpRefString": null,"grpName": "순창교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "245","grpParent": 113,"grpRef": 2,"grpRefString": null,"grpName": "순천교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "228","grpParent": 113,"grpRef": 2,"grpRefString": null,"grpName": "신안교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "205","grpParent": 115,"grpRef": 2,"grpRefString": null,"grpName": "아산교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "263","grpParent": 103,"grpRef": 2,"grpRefString": null,"grpName": "안동교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "188","grpParent": 100,"grpRef": 2,"grpRefString": null,"grpName": "양구교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "274","grpParent": 102,"grpRef": 2,"grpRefString": null,"grpName": "양산교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "100574","grpParent": 99999,"grpRef": 2,"grpRefString": null,"grpName": "엘텍테스트","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "231","grpParent": 113,"grpRef": 2,"grpRefString": null,"grpName": "여수교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "243","grpParent": 113,"grpRef": 2,"grpRefString": null,"grpName": "영광교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "259","grpParent": 103,"grpRef": 2,"grpRefString": null,"grpName": "영덕교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "197","grpParent": 116,"grpRef": 2,"grpRefString": null,"grpName": "영동교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "242","grpParent": 113,"grpRef": 2,"grpRefString": null,"grpName": "영암교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "272","grpParent": 103,"grpRef": 2,"grpRefString": null,"grpName": "영양교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "183","grpParent": 100,"grpRef": 2,"grpRefString": null,"grpName": "영월교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "269","grpParent": 103,"grpRef": 2,"grpRefString": null,"grpName": "영주교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "261","grpParent": 103,"grpRef": 2,"grpRefString": null,"grpName": "영천교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "209","grpParent": 115,"grpRef": 2,"grpRefString": null,"grpName": "예산교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "257","grpParent": 103,"grpRef": 2,"grpRefString": null,"grpName": "예천교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "198","grpParent": 116,"grpRef": 2,"grpRefString": null,"grpName": "옥천교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "100568","grpParent": 99999,"grpRef": 2,"grpRefString": null,"grpName": "올레디오테스트","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "234","grpParent": 113,"grpRef": 2,"grpRefString": null,"grpName": "완도교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "214","grpParent": 112,"grpRef": 2,"grpRefString": null,"grpName": "완주교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "250","grpParent": 103,"grpRef": 2,"grpRefString": null,"grpName": "울릉교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "12405","grpParent": 110,"grpRef": 2,"grpRefString": null,"grpName": "울산본청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "270","grpParent": 103,"grpRef": 2,"grpRefString": null,"grpName": "울진교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "182","grpParent": 100,"grpRef": 2,"grpRefString": null,"grpName": "원주교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "193","grpParent": 116,"grpRef": 2,"grpRefString": null,"grpName": "음성교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "276","grpParent": 102,"grpRef": 2,"grpRefString": null,"grpName": "의령교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "253","grpParent": 103,"grpRef": 2,"grpRefString": null,"grpName": "의성교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "224","grpParent": 112,"grpRef": 2,"grpRefString": null,"grpName": "익산교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "185","grpParent": 100,"grpRef": 2,"grpRefString": null,"grpName": "인제교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "12406","grpParent": 111,"grpRef": 2,"grpRefString": null,"grpName": "인천본청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "216","grpParent": 112,"grpRef": 2,"grpRefString": null,"grpName": "임실교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "248","grpParent": 113,"grpRef": 2,"grpRefString": null,"grpName": "장성교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "220","grpParent": 112,"grpRef": 2,"grpRefString": null,"grpName": "장수교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "241","grpParent": 113,"grpRef": 2,"grpRefString": null,"grpName": "장흥교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "12407","grpParent": 113,"grpRef": 2,"grpRefString": null,"grpName": "전남본청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "12408","grpParent": 112,"grpRef": 2,"grpRefString": null,"grpName": "전북본청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "227","grpParent": 112,"grpRef": 2,"grpRefString": null,"grpName": "전주교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "177","grpParent": 100,"grpRef": 2,"grpRefString": null,"grpName": "정선교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "217","grpParent": 112,"grpRef": 2,"grpRefString": null,"grpName": "정읍교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "12409","grpParent": 114,"grpRef": 2,"grpRefString": null,"grpName": "제주본청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "292","grpParent": 114,"grpRef": 2,"grpRefString": null,"grpName": "제주시교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "199","grpParent": 116,"grpRef": 2,"grpRefString": null,"grpName": "제천교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "125","grpParent": 108,"grpRef": 2,"grpRefString": null,"grpName": "중부교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "237","grpParent": 113,"grpRef": 2,"grpRefString": null,"grpName": "진도교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "226","grpParent": 112,"grpRef": 2,"grpRefString": null,"grpName": "진안교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "275","grpParent": 102,"grpRef": 2,"grpRefString": null,"grpName": "진주교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "196","grpParent": 116,"grpRef": 2,"grpRefString": null,"grpName": "진천교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "284","grpParent": 102,"grpRef": 2,"grpRefString": null,"grpName": "창녕교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "273","grpParent": 102,"grpRef": 2,"grpRefString": null,"grpName": "창원교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "210","grpParent": 115,"grpRef": 2,"grpRefString": null,"grpName": "천안교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "186","grpParent": 100,"grpRef": 2,"grpRefString": null,"grpName": "철원교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "255","grpParent": 103,"grpRef": 2,"grpRefString": null,"grpName": "청도교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "268","grpParent": 103,"grpRef": 2,"grpRefString": null,"grpName": "청송교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "200","grpParent": 115,"grpRef": 2,"grpRefString": null,"grpName": "청양교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "190","grpParent": 116,"grpRef": 2,"grpRefString": null,"grpName": "청주교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "174","grpParent": 100,"grpRef": 2,"grpRefString": null,"grpName": "춘천교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "12410","grpParent": 115,"grpRef": 2,"grpRefString": null,"grpName": "충남본청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "12411","grpParent": 116,"grpRef": 2,"grpRefString": null,"grpName": "충북본청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "192","grpParent": 116,"grpRef": 2,"grpRefString": null,"grpName": "충주교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "251","grpParent": 103,"grpRef": 2,"grpRefString": null,"grpName": "칠곡교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "189","grpParent": 100,"grpRef": 2,"grpRefString": null,"grpName": "태백교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "208","grpParent": 115,"grpRef": 2,"grpRefString": null,"grpName": "태안교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "287","grpParent": 102,"grpRef": 2,"grpRefString": null,"grpName": "통영교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "181","grpParent": 100,"grpRef": 2,"grpRefString": null,"grpName": "평창교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "266","grpParent": 103,"grpRef": 2,"grpRefString": null,"grpName": "포항교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "281","grpParent": 102,"grpRef": 2,"grpRefString": null,"grpName": "하동교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "100622","grpParent": 99999,"grpRef": 2,"grpRefString": null,"grpName": "학교무선인프라지원센터","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "279","grpParent": 102,"grpRef": 2,"grpRefString": null,"grpName": "함안교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "288","grpParent": 102,"grpRef": 2,"grpRefString": null,"grpName": "함양교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "244","grpParent": 113,"grpRef": 2,"grpRefString": null,"grpName": "함평교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "280","grpParent": 102,"grpRef": 2,"grpRefString": null,"grpName": "합천교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "233","grpParent": 113,"grpRef": 2,"grpRefString": null,"grpName": "해남교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "129","grpParent": 107,"grpRef": 2,"grpRefString": null,"grpName": "해운대교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "203","grpParent": 115,"grpRef": 2,"grpRefString": null,"grpName": "홍성교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "184","grpParent": 100,"grpRef": 2,"grpRefString": null,"grpName": "홍천교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "247","grpParent": 113,"grpRef": 2,"grpRefString": null,"grpName": "화순교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {
+"grpNo": "175","grpParent": 100,"grpRef": 2,"grpRefString": null,"grpName": "화천교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null}
+, {"grpNo": "178","grpParent": 100,"grpRef": 2,"grpRefString": null,"grpName": "횡성교육지원청","isLeaf": 0,"devKind1": "","devKind2": "GROUP","devIp": "","grpFlag": 0,"grpCode": null,"strGrpParent": null,"sortIdx": null},
+{"grpNo":"100023","grpParent":12400,"grpRef":3,"grpRefString":null,"grpName":"건국유치원","isLeaf":0,"devKind1":"","devKind2":"GROUP","devIp":"","grpFlag":0,"grpCode":"F100001286","strGrpParent":null,"sortIdx":null},
+{"grpNo":"2234","grpParent":131,"grpRef":3,"grpRefString":null,"grpName":"건국중학교","isLeaf":0,"devKind1":"","devKind2":"GROUP","devIp":"","grpFlag":0,"grpCode":"C107171032","strGrpParent":null,"sortIdx":null},
+{"grpNo":"3366","grpParent":12400,"grpRef":3,"grpRefString":null,"grpName":"고려고등학교","isLeaf":0,"devKind1":"","devKind2":"GROUP","devIp":"","grpFlag":0,"grpCode":"F107380041","strGrpParent":null,"sortIdx":null}]

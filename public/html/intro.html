@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+
+<!-- v5.0.1 css-->
+<link rel="stylesheet" type="text/css" href="../css/v5.0.1/jqx.hamon.css">
+
+<!-- <link rel="stylesheet" type="text/css" href="../css/v5.0.1/jqx.ui-hamon-gray.css"> -->
+<link rel="stylesheet" type="text/css" href="../css/v5.0.1/netis.css">
+
+<link rel="stylesheet" type="text/css" href="../css/v5.0.1/button.css">
+
+
+<link rel="stylesheet" type="text/css" href="../css/v5.0.1/popup.css">
+<link rel="stylesheet" type="text/css" href="../css/v5.0.1/ani.css">
+
+<!-- v6.0.1 css-->
+<link rel="stylesheet" type="text/css" href="../css/v6.0.1/jqx.hamon.v2.css">
+<link rel="stylesheet" type="text/css" href="../css/v6.0.1/button_v62.css">
+
+<!-- js library -->
+<script src="../lib/jquery/jquery-3.6.4.min.js"></script>
+
+<script src="../lib/jquery/jquery-migrate-3.1.0.min.js"></script>
+<script src="../lib/jquery/jquery-dateFormat.js"></script>
+<script src="../lib/jquery/jquery.form.js"></script>
+
+<!-- lodash -->
+<!-- <script src="../lib/lodash/lodash_4.17.21.js"></script> -->
+
+<!-- jqwidgets -->
+<script src="../lib/jqwidgets/jqx-all.js"></script>
+<script src="../lib/jqwidgets/localization.js"></script>
+<script src="../lib/jqwidgets/globalization/globalize.js"></script>
+<script src="../lib/jqwidgets/globalization/globalize.culture.ko-KR.js"></script>
+
+<!-- highchart -->
+
+<!-- <script src="../webjars/highstock/8.0.4/code/highstock.js"></script> -->
+ <!-- 기존 -->
+<!-- <script src="../webjars/highcharts/8.0.4/highcharts-more.js"></script>
+<script src="../webjars/highcharts/8.0.4/modules/heatmap.js"></script> -->
+<!-- cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.0.4/highcharts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.0.4/modules/heatmap.min.js"></script>
+
+<!-- <script src="../webjars/highcharts/8.0.4/modules/networkgraph.js"></script>
+<script src="../webjars/highcharts/8.0.4/modules/networkgraph.src.js"></script>
+
+<script src="../webjars/highstock/8.0.4/code/modules/data.js"></script>
+<script src="../webjars/highstock/8.0.4/code/modules/exporting.js"></script>
+<script src="../webjars/highstock/8.0.4/code/modules/export-data.js"></script>
+<script src="../webjars/highstock/8.0.4/code/modules/no-data-to-display.js"></script>
+
+<script src="../webjars/highcharts/8.0.4/modules/solid-gauge.js"></script>
+<script src="../webjars/highcharts/8.0.4/highcharts-3d.js"></script>
+<script src="../webjars/highcharts/8.0.4/modules/exporting.js"></script>
+
+<script src="../js/hm/highchartscustomEvents.js"></script> -->
+<!-- <script src="../webjars/highcharts/8.0.4/modules/solid-gauge.js"></script> -->
+
+<script src="../lib/megamenu/jquery.hoverIntent.minified.js"></script>
+<script src="../lib/megamenu/jquery.dcmegamenu.1.3.4.min.js"></script>
+
+<!-- <script src="../js/main/code/comCode.js"></script> -->
+<!-- svg to canvas library -->
+<!-- <script src="../lib/rgbcolor.js"></script>
+<script src="../lib/StackBlur.js"></script>
+<script src="../lib/canvg.js"></script> -->
+
+<!-- elastic search 2023.03.21 사용하지 않음으로 주석 처리 -->
+
+
+<!-- hamon -->
+<script src="../js/hm/master.js"></script>
+<script src="../js/hm/hm.prototype.js"></script>
+<script src="../js/hm/hm.resource.js"></script>
+<script src="../js/hm/hm.util.js"></script>
+
+<script src="../js/hm/hm.jqx.grid.v5.0.1.js"></script>
+<script src="../js/hm/hm.jqx.window.js"></script>
+<script src="../js/hm/hm.jqx.tree.js"></script>
+
+<script src="../js/hm/hm.jqx.treegrid.v5.0.1.js"></script>
+<script src="../js/hm/hm.jqx.date.js"></script>
+<script src="../js/hm/hm.jqx.dropdownbtn.js"></script>
+<script src="../js/hm/hm.jqx.dropdownlist.js"></script>
+<script src="../js/hm/hm.jqx.splitter.js"></script>
+<script src="../js/hm/hm.jqx.chart.js"></script>
+<script src="../js/hm/hm.highchart.v2.js"></script>
+<script src="../js/hm/hm.es.js"></script>
+<!-- <script src="../js/hm/chart/hm.aloneUpsVolChart.js"></script>
+<script src="../js/hm/chart/hm.aloneUpsVolChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.aloneUpsTempChart.js"></script>
+<script src="../js/hm/chart/hm.aloneUpsTempChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.perfData.js"></script> -->
+
+<!-- <script src="../js/hm/chart/hm.devCmpChart.js"></script>
+<script src="../js/hm/chart/hm.svrCmpChart.js"></script>
+<script src="../js/hm/chart/hm.devCpuChart.js"></script>
+<script src="../js/hm/chart/hm.devCpsChart.js"></script>
+<script src="../js/hm/chart/hm.devMemoryChart.js"></script>
+<script src="../js/hm/chart/hm.devResptimeChart.js"></script>
+<script src="../js/hm/chart/hm.devThresholdChart.js"></script>
+<script src="../js/hm/chart/hm.svrThresholdChart.js"></script>
+<script src="../js/hm/chart/hm.devSessChart.js"></script>
+<script src="../js/hm/chart/hm.devTempChart.js"></script>
+<script src="../js/hm/chart/hm.ifBpsChart.js"></script>
+<script src="../js/hm/chart/hm.l4IfBpsChart.js"></script>
+
+<script src="../js/hm/chart/hm.devCpuChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.devMemoryChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.devTempChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.devResptimeChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.devSessChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.devCpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifBpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifPpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifBpsPerChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifCrcChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifErrorChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifCollisionChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifNonUnicastChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifDiscardChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifMulticastChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifBroadcastChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifDropChartLeftType.js"></script>
+
+<script src="../js/hm/chart/hm.ifBpsPerChart.js"></script>
+<script src="../js/hm/chart/hm.ifPpsChart.js"></script>
+<script src="../js/hm/chart/hm.ifCrcChart.js"></script>
+<script src="../js/hm/chart/hm.ifErrorChart.js"></script>
+<script src="../js/hm/chart/hm.ifCollisionChart.js"></script>
+<script src="../js/hm/chart/hm.ifNonUnicastChart.js"></script>
+<script src="../js/hm/chart/hm.ifDiscardChart.js"></script>
+<script src="../js/hm/chart/hm.ifMulticastChart.js"></script>
+<script src="../js/hm/chart/hm.ifBroadcastChart.js"></script>
+<script src="../js/hm/chart/hm.ifDropChart.js"></script>
+<script src="../js/hm/chart/hm.ifThresholdChart.js"></script>
+<script src="../js/hm/chart/hm.mainIfBpsChart.js"></script>
+
+<script src="../js/hm/chart/hm.svrCpuChart.js"></script>
+<script src="../js/hm/chart/hm.svrCpuChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrMemoryChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfMemChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfMemChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfMemChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrPerfFsChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfFsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrPerfDiskChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfDiskChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrPerfNetworkChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfNetworkChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrFileSystemChart.js"></script>
+<script src="../js/hm/chart/hm.svrNetworkChart.js"></script>
+<script src="../js/hm/chart/hm.svrDiskChart.js"></script>
+
+<script src="../js/hm/chart/hm.vsvrCpuChart.js"></script>
+<script src="../js/hm/chart/hm.vsvrCpuChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.vsvrMemoryChart.js"></script>
+<script src="../js/hm/chart/hm.vsvrMemoryChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.vsvrBpsChart.js"></script>
+<script src="../js/hm/chart/hm.vsvrBpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.vsvrPpsChart.js"></script>
+<script src="../js/hm/chart/hm.vsvrPpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.vsvrNetworkChart.js"></script>
+
+<script src="../js/hm/chart/hm.vmPpsChart.js"></script>
+<script src="../js/hm/chart/hm.vmPpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.vmBpsChart.js"></script>
+<script src="../js/hm/chart/hm.vmBpsChartLeftType.js"></script>
+
+<script src="../js/hm/chart/hm.apByteChart.js"></script>
+<script src="../js/hm/chart/hm.apClientByteChart.js"></script>
+<script src="../js/hm/chart/hm.apClientByteChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.apClientSignalChart.js"></script>
+<script src="../js/hm/chart/hm.apClientSignalChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrWasChart.js"></script>
+<script src="../js/hm/chart/hm.svrDbmsChart.js"></script>
+<script src="../js/hm/chart/hm.customChart.js"></script>
+<script src="../js/hm/chart/hm.predictChart.js"></script>
+<script src="../js/hm/chart/hm.fmsChart.js"></script>
+
+<script src="../js/hm/chart/hm.l4ConnChart.js"></script>
+<script src="../js/hm/chart/hm.l4CpsChart.js"></script>
+
+
+<script src="../js/hm/chart/hm.donutChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcBarChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcNetworkChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcPieChart.js"></script>
+
+
+<script src="../js/hm/chart/sms/hm.abnlDtcAnalysisChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcSpiderwebChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcAffectLineChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcFeatureLineChart.js"></script>
+
+<script src="../js/hm/chart/hm.solidGaugeChart.js"></script>
+<script src="../js/hm/chart/hm.solidGaugeHarfChart.js"></script>
+<script src="../js/hm/chart/hm.ifPerfTopNChart.js"></script>
+
+<script src="../js/hm/hm.jqx.dataadapter.v2.js"></script>
+<script src="../js/hm/hm.jqx.grid.v2.js"></script>
+<script src="../js/hm/hm.boxcondition.js"></script>
+<script src="../lib/jquery.i18n.properties.min.js"></script>
+
+<link rel="stylesheet" href="../lib/colorpicker/spectrum.css">
+<script src="../lib/colorpicker/spectrum.js"></script>
+<script src="../lib/colorpicker/jquery.spectrum-ko.js"></script> -->
+
+<link rel="stylesheet" href="../lib/colorpicker/spectrum.css">
+<script src="../lib/colorpicker/spectrum.js"></script>
+<script src="../lib/colorpicker/jquery.spectrum-ko.js"></script>
+<!-- <script src="../lib/d3/d3.v4.min.js"></script> -->
+
+
+<!-- <link rel="stylesheet" type="text/css" href="../lib/vis-timeline/vis-timeline-graph2d.min.css"> -->
+
+
+<!-- <script src="../js/hm/chart/hm.l4SessBpsChart.js"></script>
+<script src="../js/hm/chart/hm.l4SessConnChart.js"></script>
+<script src="../js/hm/chart/hm.l4SessCpsChart.js"></script>
+<script src="../js/hm/chart/hm.l4SessBpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.l4SessConnChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.l4SessCpsChartLeftType.js"></script>
+
+
+<script type="text/javascript" src="../lib/swiper/swiper-bundle.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../lib/swiper/swiper-bundle.css"> -->
+
+
+
+<script type="text/javascript" src="../lib/swiper10.3.1/swiper-bundle.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../lib/swiper10.3.1/swiper-bundle.min.css">
+
+
+<!-- <link rel="shortcut icon" href="../img/ico/favicon.ico"> -->
+
+
+<link type="text/css" rel="stylesheet" href="../css/style.css" />
+<script src="../js/pub-ui.js"></script>
+<script src="../js/pub-jqx-temp.js"></script>
+<script src="../js/pub-chart-temp.js"></script>
+</head>
+<body style="min-width: var(--min-width);">
+  <div class="n-intro-wrap">
+    <main class="n-intro-content">
+      <h1 class="n-title-intro">학교 유무선 통합 로그인 센터</h1>
+          <p class="n-txt-welcome">
+        통합 로그인 센터에 오신 것을 환영합니다.
+        <br>원하는 서비스에 해당하는 로그인 버튼을 클릭해주세요.
+      </p>
+      <ul class="n-intro-menu">
+        <li>
+          <a href="javascript:void(0);" class="n-link">
+            <span class="n-go">바로가기</span>
+            <i class="n-ico-login-floatform"></i>
+            <b>학교 유무선 통합 플랫폼 로그인</b>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0);" class="n-link">
+            <span class="n-go">바로가기</span>
+            <i class="n-ico-login-system"></i>
+            <b>이용자관리 시스템 로그인</b>
+          </a>
+        </li>
+      </ul>
+    </main>
+    <footer class="n-login-footer">
+      <div class="n-info"><em>개인정보처리방침</em> 개인정보보호책임자: 정운영 팀장</div>
+      <address>
+        <span class="n-addr">경기도 금천구 한내로 56 1층</span>
+        <span class="n-copyright">Copyright(C) 2020 시도교육청협의회 All Rights Reserved</span>
+      </address>
+    </footer>
+  </div>
+</body>
+</html> 

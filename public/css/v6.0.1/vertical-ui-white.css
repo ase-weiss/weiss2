@@ -1,0 +1,686 @@
+@charset "UTF-8";
+/**=======================
+
+	Vertical UI white CSS
+
+	1. 작성자: pub1
+	2. 생성일자: 2023.08.28
+	3. 수정일자: 2023.10.06
+
+======================== */
+
+/* main */
+.mainWrap{ top: 0px;}
+
+/* gnb*/
+.gnb{
+	position: relative;
+	/*height:55px;*/
+	width: 100%;
+	background: #0b1025;
+}
+
+/*  logo Light animation */
+.backGradi{
+	background: linear-gradient(132deg, #0b1025, #0b1025, rgba(255,255,255,0.4), #0b1025, #0b1025);
+	background-size: 400% 400%;
+	animation: BackgroundGradient 10s ease infinite;
+}
+
+@keyframes BackgroundGradient {
+	0% {background-position: 0% 0%;}
+	50% {background-position: 0% 10%;}
+	100% {background-position: 100% 100%;}
+}
+
+
+/** ===========
+
+5.9v  jQuery Mega Menu (메뉴) Start
+
+===================*/
+
+
+ul.mega-menu li a {
+	float: left;
+	display: block;
+	color: #fff;
+	padding: 29px 25px 3px 25px;
+	/*text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);*/
+	text-decoration: none;
+}
+
+ul.mega-menu li a.dc-mega {
+	position: relative;
+	min-width: 100px;
+	padding: 0;
+	height: 55px;
+	text-align: center;
+	line-height: 79px;
+	opacity: 0.7;
+}
+
+ul.mega-menu li a span[class*='dc-mega-icon-']{
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: 40%;
+	width: 23px;
+	height: 23px;}
+ul.mega-menu li a .dc-mega-icon {
+	background: url('../../lib/megamenu/skins/images/icon4.png') no-repeat 0 0;
+}
+
+/*!* 네트워크관리 *!*/
+/*ul.mega-menu li a .dc-mega-icon-nms {*/
+/*background: url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 513px -8px;*/
+/*}*/
+/*!* 트래픽관리 *!*/
+/*ul.mega-menu li a .dc-mega-icon-tms {*/
+/*background: url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 476px -8px;*/
+/*}*/
+/*!* 서버관리 *!*/
+/*ul.mega-menu li a .dc-mega-icon-sms {*/
+/*background: url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 438px -8px;*/
+/*}*/
+/*!* 시설관리 *!*/
+/*ul.mega-menu li a .dc-mega-icon-fms {*/
+/*background: url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 403px -8px;*/
+/*}*/
+/*!* 보고서 *!*/
+/*ul.mega-menu li a .dc-mega-icon-rpt {*/
+/*background: url('../../lib/megamenu/skins/images/ui-icons-v5-12.png') 465px -8px;*/
+/*}*/
+/*!* 환경설정 *!*/
+/*ul.mega-menu li a .dc-mega-icon-env {*/
+/*background: url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 295px -8px;*/
+/*}*/
+
+/*!* 종합현황 *!*/
+/*ul.mega-menu li a .dc-mega-icon-alarm {*/
+/*background: url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 548px -8px;*/
+/*}*/
+/*!* 자산관리 *!*/
+/*ul.mega-menu li a .dc-mega-icon-asset {*/
+/*background: url('../../lib/megamenu/skins/images/ui-icons-v5-12.png') 538px -8px;*/
+/*}*/
+/*!* 선번장 *!*/
+/*ul.mega-menu li a .dc-mega-icon-lms {*/
+/*background: url('../../lib/megamenu/skins/images/ui-icons-v5-12.png') 502px -8px;*/
+/*}*/
+/*!* 콜센터 *!*/
+/*ul.mega-menu li a .dc-mega-icon-ipt {*/
+/*background: url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 331px -8px;*/
+/*}*/
+/*!* 무선관리 *!*/
+/*ul.mega-menu li a .dc-mega-icon-ap {*/
+/*background: url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 365px -8px;*/
+/*}*/
+
+ul.mega-menu li.mega-hover a,  ul.mega-menu li a:hover
+{
+	color: #ffffff;
+	text-shadow: none;
+	background: #545454;
+	opacity: 1;
+}
+
+/**
+	level-1 메뉴 선택스타일
+	by jjung
+ */
+ul.mega-menu li.mega-selected a
+{
+	/*background-position: 100% -40px;*/
+	color: #ffffff;
+	text-shadow: none;
+	background: #1d2c66;
+	opacity: 1;
+}
+
+
+ul.mega-menu li.mega-hover a [class^="dc-mega-icon"] {
+	/*background-position: 0 100%;*/
+	opacity: 1;
+}
+
+ul.mega-menu li .sub-container {
+	position: absolute;
+	background-color: #1d2c66;
+	margin-left: -3px;
+}
+
+ul.mega-menu li .sub {
+	padding: 5px 0px 15px 0px;
+}
+
+ul.mega-menu li .sub-container.mega .sub {
+	border: 1px solid #1d2c66;
+}
+
+ul.mega-menu li .sub .row {
+	width: 100%;
+	overflow: hidden;
+	clear: both;
+	/*margin: 5px 0px 0px 0px;*/
+}
+
+ul.mega-menu li .sub li {
+	list-style: none;
+	float: none;
+	width: 161px;
+	font-size: 1em;
+	font-weight: normal;
+}
+
+ul.mega-menu li .sub li.mega-hdr {
+	margin: 0px 0px 0px 5px;
+	border-right: 1px solid #55618c;
+	float: left;
+	background: url(../../lib/megamenu/skins/images/submenuBg.png) no-repeat 0
+	0;
+	font-size: 16px;
+}
+
+ul.mega-menu li .sub li.mega-hdr.last {
+	margin-right: 0;
+	border: none;
+}
+
+ul.mega-menu li .sub a {
+	background: none;
+	border: none;
+	text-shadow: none;
+	color: #fff;
+	padding: 7px 10px;
+	display: block;
+	float: none;
+	text-decoration: none;
+	font-size: 0.9em;
+}
+
+ul.mega-menu li .sub li.mega-hdr a.mega-hdr-a {
+	padding: 7px 10px 7px 4px;
+	margin-bottom: 10px;
+	height: 23px!important;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;  /* fff  2023-02-27*/
+	font-size: 14px;
+	text-align: center;
+	cursor: default;
+	background: #2e50cc;/*  gray  2023-02-27 */
+	width: 142px;
+}
+
+ul.mega-menu li .sub li.mega-hdr a.mega-hdr-a:hover {
+	color: #fff;  /*  #fff  2023-02-27 */
+	text-shadow: none;
+}
+
+ul.mega-menu .sub li.mega-hdr li a {
+	padding: 4px 5px 4px 15px;
+	/*background: url(../../lib/megamenu/skins/images/rec01_off.png) no-repeat 5px 14px;*/
+	font-weight: normal;
+	width: 135px;
+	font-size: 13px;
+}
+
+ul.mega-menu .sub li.mega-hdr li a:hover {
+	color: #4981f1;
+	font-weight: bold;
+	/*text-decoration:underline;*/
+	text-decoration:none;
+	/*background:  url(../../lib/megamenu/skins/images/rec01_on.png) no-repeat 5px 14px;*/
+	font-size: 13px !important;
+}
+
+ul.mega-menu .sub ul li {
+	padding-right: 0;
+}
+
+ul.mega-menu li .sub-container.non-mega .sub {
+	padding: 20px 20px 20px 0;
+}
+
+ul.mega-menu li .sub-container.non-mega li {
+	padding: 0;
+	width: 190px;
+	margin: 0;
+}
+
+ul.mega-menu li .sub-container.non-mega li a {
+	padding: 10px 5px 10px 22px;
+	background: url(../../lib/megamenu/skins/images/rec01_off.png) no-repeat 7px 10px;
+}
+
+ul.mega-menu li .sub-container.non-mega li a:hover {
+	color: #3f7ab3;
+	background: #e9f6ff url(../../lib/megamenu/skins/images/rec01_on.png) no-repeat 7px 10px;
+}
+
+/** ===========
+
+5.9v  jQuery Mega Menu (메뉴) End
+
+===================*/
+
+/** layout - nav */
+/*!*#nav .favicon_component {float: right; padding:12px 10px 0px 0px; height: 55px; box-sizing:border-box;}*!*/
+/*#nav .favicon_component div {margin: 0px 4px;cursor: pointer}*/
+/*#nav .favicon_component div[class*='favicon_']{float: left;width: 32px;height: 32px;border-radius: 50%;!*background-color:rgba(255,255,255,0.1)  *!}*/
+/*#nav .favicon_component div[class*='favicon_']:hover,#nav .favicon_component div[class*='favicon_']:active{float: left; width: 32px; height: 32px; border-radius: 50%;}*/
+
+/*#nav .favicon_component .favicon_dash {background:url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 229px -3px;}*/
+/*#nav .favicon_component .favicon_dash:hover, #nav .favicon_component .favicon_dash:active {background: rgba(255,255,255,0) url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 229px -87px;}*/
+
+/*#nav .favicon_component .favicon_mib {  background:url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 156px -3px;}*/
+/*#nav .favicon_component .favicon_mib:hover, #nav .favicon_component .favicon_mib:active {background: rgba(255,255,255,0)  url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 156px -88px;}*/
+
+/*#nav .favicon_component .favicon_topo { background: url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 192px -2px;}*/
+/*#nav .favicon_component .favicon_topo:hover, #nav .favicon_component .favicon_topo:active {background: rgba(255,255,255,0) url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 192px -88px;}*/
+
+/*#nav .favicon_component .favicon_admin {  background: url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 119px -3px;}*/
+/*#nav .favicon_component .favicon_admin:hover, #nav .favicon_component .favicon_admin:active {background: rgba(255,255,255,0)  url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 119px -87px;}*/
+
+/*#nav .favicon_component .favicon_logout {  background:url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 47px -3px;}*/
+/*#nav .favicon_component .favicon_logout:hover, #nav .favicon_component .favicon_logout:active {background: rgba(255,255,255,0)  url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 47px -87px;}*/
+
+/*#nav .favicon_component .favicon_sitemap {  background: url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 264px -3px;}*/
+/*#nav .favicon_component .favicon_sitemap:hover, #nav .favicon_component .favicon_sitemap:active {  background: rgba(255,255,255,0) url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 264px -88px;}*/
+
+/*#nav .favicon_component .favicon_bookmark {  background:url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 83px -3px;}*/
+/*#nav .favicon_component .favicon_bookmark:hover, #nav .favicon_component .favicon_bookmark:active {background: rgba(255,255,255,0) url('../../lib/megamenu/skins/images/ui-icons-v5-9.png') 83px -87px;}*/
+
+
+/*
+ sitemap
+
+*/
+
+#hmSitemap ul.mega-menu li .sub-container{background:#fff}
+#hmSitemap  ul.mega-menu li .sub li.mega-hdr a.mega-hdr-a{background:#f7faff}
+
+#hmSitemap .dc-mega-li>a>span{display:block!important;    color: #2b4988!important;}
+#hmSitemap .level-1:hover a > span:nth-child(2){display:block!important; }
+#hmSitemap ul.mega-menu li a span[class*='dc-mega-icon-']{display:none!important; }
+#hmSitemap .level-1:hover a > span:nth-child(1){width:auto; }
+#hmSitemap .level-2>a {
+
+	word-break: break-all;
+	height: auto!important;}
+
+
+#hmSitemap ul.mega-menu .sub li.mega-hdr li a {
+	background: url(../../lib/megamenu/skins/images/rec01_off.png) no-repeat 5px 14px;
+}
+
+#hmSitemap  ul.mega-menu .sub li.mega-hdr li a:hover {
+	background:  url(../../lib/megamenu/skins/images/rec01_on.png) no-repeat 5px 14px;
+}
+
+
+
+/* vertical */
+
+/* 상단 ui 6.0 */
+#gnb p{margin:0}
+#gnb a{text-decoration:none}
+
+#nav{width:0;height:100%;}
+#section{left:49px; z-index: 0;top: 40px;overflow: inherit;border-left:0}
+#mainSplitter{
+	border-left: 0;}
+h4{color:#556390;font-size:20px;padding-left:54px;}
+h4 span{position: absolute;left: 23px;top: 31px;width: 50px;height: 50px;}
+.subTit{position: relative;cursor: pointer;font-size: 14px;border-bottom: 1px solid #d8dce5;color: #485393;font-weight: bold; height: 20px;padding: 15px 20px;}
+.subTit.on{background:#2e50cc}
+.subTit.on>span{font-weight: bold;color: #fff;}
+
+.navList {
+	display: none;
+	overflow: hidden;
+	font-size: 14px;
+	background-color: #d2e0f9;
+	padding: 5px 0;
+}
+
+
+.arrow-wrap {
+	position: absolute;
+	top:50%; right: 10px;
+	transform: translate(0, -50%);
+}
+
+.subTit .arrow-top {
+	display: none;
+}
+.subTit .arrow-bottom {
+	display: block;
+	background:url("../../lib/nav-6.0/navSubTop-white.png") center no-repeat;
+	width:20px;
+	height:20px;
+}
+.subTit.on .arrow-bottom {
+	display: none;
+}
+.subTit.on .arrow-top {
+	display: block;
+	background:url("../../lib/nav-6.0/navSubBottom.png") center no-repeat;
+	width:20px;
+	height:20px;
+}
+
+
+p[class*="icon_"] {
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	background-position: center center;
+}
+/*nav-6-icon-intro*/
+.nav-6-icon-intro {
+
+	background: url("../../lib/nav-6.0/icon-white/icon_intro.png") no-repeat 0 0;
+}
+
+.icon_default {
+
+	background: url("../../lib/nav-6.0/icon-white/icon_default.png") no-repeat 0 0;
+}
+.icon_nms {
+
+	background: url("../../lib/nav-6.0/icon-white/icon_nms.png") no-repeat 0 0;
+}
+
+.icon_tms {
+
+	background: url("../../lib/nav-6.0/icon-white/icon_tms.png") no-repeat 0 0;
+}
+
+.icon_sms {
+
+	background: url("../../lib/nav-6.0/icon-white/icon_sms.png") no-repeat 0 0;
+}
+
+.icon_fms {
+
+	background: url("../../lib/nav-6.0/icon-white/icon_fms.png") no-repeat 0 0;
+}
+
+.icon_rpt {
+
+	background: url('../../lib/nav-6.0/icon-white/icon_rpt.png') no-repeat 0 0;
+}
+
+.icon_env {
+
+	background: url("/lib/nav-6.0/icon-white/icon_env.png") no-repeat 0 0;
+}
+
+.icon_alarm {
+
+	background: url("../../lib/nav-6.0/icon-white/icon_alarm.png") no-repeat 0 0;
+}
+
+.icon_asset {
+
+	background: url("../../lib/nav-6.0/icon-white/icon_asset.png") no-repeat 0 0;
+}
+
+.icon_lms {
+
+	background: url('../../lib/nav-6.0/icon-white/icon_lms.png') no-repeat 0 0;
+}
+
+.icon_ipt {
+
+	background: url("../../lib/nav-6.0/icon-white/icon_ipt.png") no-repeat 0 0;
+}
+.icon_ap {
+
+	background: url("../../lib/nav-6.0/icon-white/icon_ap.png") no-repeat 0 0;
+}
+
+.icon_cubernetis {
+
+	background: url("../../lib/nav-6.0/icon-white/icon_kubernetis.png") no-repeat 0 0;
+}
+
+.icon_errfree {
+
+	background: url("../../lib/nav-6.0/icon-white/icon_errfree.png") no-repeat 0 0;
+}
+
+
+
+/* ----
+
+   대메뉴 a 태그 클래스 leftmenuImg에 hover했을때 아이콘은 사라지고 텍스트가  나오게  PURE CSS - start
+   .leftmenuImg:hover > p:nth-child(1){display:none!important} jquery 대신 이 부분 하면 되지만 .. 주석처리
+
+-----*/
+.leftmenuImg{
+	display:inline-block;
+	position: relative;
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+}
+.leftmenuImg:hover:after,
+.leftmenuImg:hover > .hover_text{
+	display:flex;
+	background:#f1f6fe;
+}
+
+.leftmenuImg:hover > p:nth-child(1){display:none!important}
+.leftmenuImg:after,.hover_text{
+	display:none;
+}
+.leftmenuImg:after{
+	content:'';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 10;
+}
+.leftmenuImg {
+	overflow: hidden;
+}
+
+.hover_text {
+	display: none;
+	position:absolute;
+	color: #485393;
+	z-index: 20;
+	font-weight: 600;
+	font-size: 11px;
+	word-break: break-all;
+	line-height: inherit;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	background:#f1f6fe;
+}
+
+.IconNone{display:none}
+.TxtShow{display:flex;}
+
+/* - 사용자, 북마크, 종료*/
+.favicon_component a:hover > .compo_text{display:flex}
+.compo_text{
+	display:none;
+	color: #fff;
+	z-index: 20;
+	font-weight: 600;
+	font-size: 11px;
+	word-break: break-all;
+	line-height: inherit;
+	width: 50px;
+	height: 34px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+/*.favicon_component a:hover > div:nth-child(1){display:none!important}*/
+/* ----
+
+   대메뉴 a 태그 클래스 leftmenuImg에 hover했을때 아이콘은 사라지고 텍스트가  나오게  PURE CSS - start
+
+-----*/
+
+#leftNav6_0 { position:fixed;  width:50px;height:100%; background:#0b1025;border-right:1px solid #d8dce5; z-index:1;}
+#leftNav6_0 div.left_inner { position:relative;height:100%; background:#fff; }
+#leftNav6_0 h3 {position:relative ;width:50px;height:50px; margin:0;}
+#leftNav6_0 h3 a{position:relative;display:block;width:50px;height:50px; text-align: center;    background-position: center center;cursor:pointer}
+#leftNav6_0 h3 a span{position: absolute;width: 1px;height:1px;left:-999px}
+#leftNav6_0 ul#gnb { background:#fff; }
+#leftNav6_0 ul#gnb > li > a { display:block;    width: 50px;height: 50px;text-decoration:none }
+#leftNav6_0 ul#gnb > li > a:hover,#leftNav6_0 ul#gnb > li > a.large-hover { background:#f1f6fe;}
+#leftNav6_0 ul#gnb > li > a.large-hover { background:#f1f6fe}
+#leftNav6_0 ul#gnb div.sub {display:none; position:absolute;left:50px; top:0; width:250px;height:100%; background:#f1f6fe; z-index:-1;border-left:1px solid #d8dce5 }
+/*#leftNav6_0 ul#gnb div.sub { position:absolute; left:-999px; top:0; width:250px;height:100%; background:#1d2c66; z-index:-1; }*/
+#leftNav6_0 .sub a {display: block;height: 15px;color: #333;background: #d2e0f9; padding: 10px 18px;font-size: 12px; cursor: pointer;}
+#leftNav6_0 .sub a:hover{color:#2e50cc;text-decoration:none;font-weight:bold;}
+
+
+
+
+#leftNav6_0 .favicon_component {position: absolute;right: 0;bottom: 15px; top: auto;height: auto;line-height: 55px;box-sizing: border-box;padding: 0;   width: 50px;text-align: center;}
+
+#leftNav6_0 .favicon_component > a{width:50px;height: 34px;display: block;}
+#leftNav6_0 .favicon_component div[class*='favicon_'] {float: left; width: 50px; height: 32px;border-radius: 50%; margin:0}
+
+#leftNav6_0 .favicon_component div {margin: 0;cursor: pointer}
+#leftNav6_0 .favicon_component div[class*='favicon_']{float: left;width: 50px;height: 34px;border-radius: 50%;/*background-color:rgba(255,255,255,0.1)  */}
+#leftNav6_0 .favicon_component div[class*='favicon_']:hover,#nav .favicon_component div[class*='favicon_']:active{float: left; width: 50px; height: 32px; border-radius: 50%;}
+
+#leftNav6_0 .favicon_component .favicon_admin {background: url('../../lib/nav-6.0/ui-icons-v6-0.png') 130px 197px;}
+#leftNav6_0 .favicon_component .favicon_admin:hover, #leftNav6_0 .favicon_component .favicon_admin:active {background: url('../../lib/nav-6.0/ui-icons-v6-0.png') 130px 35px;
+}
+#leftNav6_0 .favicon_component .favicon_logout {background: url('../../lib/nav-6.0/ui-icons-v6-0.png') 57px 77px;}
+#leftNav6_0 .favicon_component .favicon_logout:hover, #leftNav6_0 .favicon_component .favicon_logout:active {background: url('../../lib/nav-6.0/ui-icons-v6-0.png') 57px 35px;}
+
+#leftNav6_0 .favicon_component .favicon_bookmark {background: url('../../lib/nav-6.0/ui-icons-v6-0.png') 93px 77px;}
+#leftNav6_0 .favicon_component .favicon_bookmark:hover, #leftNav6_0 .favicon_component .favicon_bookmark:active {background: url('../../lib/nav-6.0/ui-icons-v6-0.png') 93px 35px;}
+
+#leftNav6_0 .favicon_component .favicon_sitemap {background: url('../../lib/nav-6.0/ui-icons-v6-1.png') 47px 77px;}
+#leftNav6_0 .favicon_component .favicon_sitemap:hover, #leftNav6_0 .favicon_component .favicon_sitemap:active {background: url('../../lib/nav-6.0/ui-icons-v6-1.png') 47px 35px;}
+
+#leftNav6_0 .favicon_component .favicon_license {background: url('../../lib/nav-6.0/ui-icons-v6-12.png') 47px 77px;}
+#leftNav6_0 .favicon_component .favicon_license:hover, #leftNav6_0 .favicon_component .favicon_license:active {background: url('../../lib/nav-6.0/ui-icons-v6-12.png') 47px 35px;}
+
+
+/* menu left 일때 사이트맵 */
+#hmSitemap .leftmenuImg{display:none!important;}
+/*#hmSitemap .level-1 {*/
+/*width: auto;*/
+/*height: auto;*/
+/*padding: 10px 0 10px 10px;*/
+/*margin: 0;*/
+/*}*/
+#hmSitemap  h4 {
+	font-size: 20px;
+	text-align: center;
+	color:#3a3e56;
+	padding-left:0;
+	margin: 10px 0 10px 0;
+}
+
+#hmSitemap  .sub{    border-right: 1px solid #e1e1e1;}
+#hmSitemap  .sub> div{   margin-right:10px;}
+#hmSitemap .subTit{
+	position: relative;
+	cursor: pointer;
+	font-size: 14px;
+	border-bottom: none;
+	font-weight: bold;
+	height: auto;
+	color: #fff!important;
+	padding: 5px 15px 5px 15px;
+	background: #3a3e56;
+	margin: 0;
+	text-align: center;
+}
+#hmSitemap .subTit.on>span {
+	color: #303030;}
+#hmSitemap .leftmenuImg{
+	display: block;
+	position: relative;
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+
+}
+
+#hmSitemap .navList {
+	display: none;
+	/*overflow: auto;*/
+	font-size:12px;
+	background-color: #fff;
+	padding: 4px 5px 4px 15px;
+	border-bottom: 1px dashed #c2c2c2;
+	padding-bottom: 18px;
+	margin-bottom: 10px;
+}
+#hmSitemap .level-1{float:left;}
+#hmSitemap .level-1 {
+	width: 160px;
+	height: 44px;
+	padding: 0 0 0 10px;
+	margin: 0;
+}
+#hmSitemap  .arrow-wrap{display:none!important}
+
+#hmSitemap .level-3 ,#hmSitemap a, #hmSitemap a:link, #hmSitemap a:visited, #hmSitemap a:hover{
+	padding: 4px 5px 4px 15px;
+	background: url("../../lib/megamenu/skins/images/rec01_off.png") no-repeat 5px 14px;
+	font-weight: normal;
+	width: 135px;
+	font-size: 13px;
+}
+#hmSitemap .level-3:hover{
+	background: url("../../lib/megamenu/skins/images/rec01_on.png") no-repeat 5px 14px;
+	font-size: 13px !important;
+	font-weight:bold;
+}
+
+#hmSitemap span[class*="icon_"]{display:none!important}
+
+
+/* 토폴로지 */
+.titleLeftArea{padding-left:46px;}
+
+/* 사이트맵 스크롤 */
+.sitemapScroll{width: 100%;height: max-content;overflow: auto;min-height: 94.7%;}
+#hmSitemap #gnb{
+	margin: 0 auto;
+	position: relative;
+	display: inline-block;
+	text-align: left;
+}
+#hmSitemap #gnb li {
+	display:inline-block;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+
+/* 세로 중앙정렬 */
+.verticalMiddle{
+	display: table;
+	table-layout:fixed;
+	height: 75%;
+}
+
+.verticalMiddle ul{
+	display: table-cell;
+	vertical-align:middle;
+}
+
+/*메뉴명 추가*/
+.menuTxt {display: inline-block;margin: 0;color: #485393;font-weight: bold;width: 50px;text-align: center;height: 20px;margin-top: -5px;position: absolute;}

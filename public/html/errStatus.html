@@ -1,0 +1,472 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+
+<!-- v5.0.1 css-->
+<link rel="stylesheet" type="text/css" href="../css/v5.0.1/jqx.hamon.css">
+
+<!-- <link rel="stylesheet" type="text/css" href="../css/v5.0.1/jqx.ui-hamon-gray.css"> -->
+<link rel="stylesheet" type="text/css" href="../css/v5.0.1/netis.css">
+
+<link rel="stylesheet" type="text/css" href="../css/v5.0.1/button.css">
+
+
+<link rel="stylesheet" type="text/css" href="../css/v5.0.1/popup.css">
+<link rel="stylesheet" type="text/css" href="../css/v5.0.1/ani.css">
+
+<!-- v6.0.1 css-->
+<link rel="stylesheet" type="text/css" href="../css/v6.0.1/jqx.hamon.v2.css">
+<link rel="stylesheet" type="text/css" href="../css/v6.0.1/button_v62.css">
+
+<!-- js library -->
+<script src="../lib/jquery/jquery-3.6.4.min.js"></script>
+
+<script src="../lib/jquery/jquery-migrate-3.1.0.min.js"></script>
+<script src="../lib/jquery/jquery-dateFormat.js"></script>
+<script src="../lib/jquery/jquery.form.js"></script>
+
+<!-- lodash -->
+<!-- <script src="../lib/lodash/lodash_4.17.21.js"></script> -->
+
+<!-- jqwidgets -->
+<script src="../lib/jqwidgets/jqx-all.js"></script>
+<script src="../lib/jqwidgets/localization.js"></script>
+<script src="../lib/jqwidgets/globalization/globalize.js"></script>
+<script src="../lib/jqwidgets/globalization/globalize.culture.ko-KR.js"></script>
+
+<!-- highchart -->
+
+<!-- <script src="../webjars/highstock/8.0.4/code/highstock.js"></script> -->
+ <!-- 기존 -->
+<!-- <script src="../webjars/highcharts/8.0.4/highcharts-more.js"></script>
+<script src="../webjars/highcharts/8.0.4/modules/heatmap.js"></script> -->
+<!-- cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.0.4/highcharts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.0.4/modules/heatmap.min.js"></script>
+
+<!-- <script src="../webjars/highcharts/8.0.4/modules/networkgraph.js"></script>
+<script src="../webjars/highcharts/8.0.4/modules/networkgraph.src.js"></script>
+
+<script src="../webjars/highstock/8.0.4/code/modules/data.js"></script>
+<script src="../webjars/highstock/8.0.4/code/modules/exporting.js"></script>
+<script src="../webjars/highstock/8.0.4/code/modules/export-data.js"></script>
+<script src="../webjars/highstock/8.0.4/code/modules/no-data-to-display.js"></script>
+
+<script src="../webjars/highcharts/8.0.4/modules/solid-gauge.js"></script>
+<script src="../webjars/highcharts/8.0.4/highcharts-3d.js"></script>
+<script src="../webjars/highcharts/8.0.4/modules/exporting.js"></script>
+
+<script src="../js/hm/highchartscustomEvents.js"></script> -->
+<!-- <script src="../webjars/highcharts/8.0.4/modules/solid-gauge.js"></script> -->
+
+<script src="../lib/megamenu/jquery.hoverIntent.minified.js"></script>
+<script src="../lib/megamenu/jquery.dcmegamenu.1.3.4.min.js"></script>
+
+<!-- <script src="../js/main/code/comCode.js"></script> -->
+<!-- svg to canvas library -->
+<!-- <script src="../lib/rgbcolor.js"></script>
+<script src="../lib/StackBlur.js"></script>
+<script src="../lib/canvg.js"></script> -->
+
+<!-- elastic search 2023.03.21 사용하지 않음으로 주석 처리 -->
+
+
+<!-- hamon -->
+<script src="../js/hm/master.js"></script>
+<script src="../js/hm/hm.prototype.js"></script>
+<script src="../js/hm/hm.resource.js"></script>
+<script src="../js/hm/hm.util.js"></script>
+
+<script src="../js/hm/hm.jqx.grid.v5.0.1.js"></script>
+<script src="../js/hm/hm.jqx.window.js"></script>
+<script src="../js/hm/hm.jqx.tree.js"></script>
+
+<script src="../js/hm/hm.jqx.treegrid.v5.0.1.js"></script>
+<script src="../js/hm/hm.jqx.date.js"></script>
+<script src="../js/hm/hm.jqx.dropdownbtn.js"></script>
+<script src="../js/hm/hm.jqx.dropdownlist.js"></script>
+<script src="../js/hm/hm.jqx.splitter.js"></script>
+<script src="../js/hm/hm.jqx.chart.js"></script>
+<script src="../js/hm/hm.highchart.v2.js"></script>
+<script src="../js/hm/hm.es.js"></script>
+<!-- <script src="../js/hm/chart/hm.aloneUpsVolChart.js"></script>
+<script src="../js/hm/chart/hm.aloneUpsVolChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.aloneUpsTempChart.js"></script>
+<script src="../js/hm/chart/hm.aloneUpsTempChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.perfData.js"></script> -->
+
+<!-- <script src="../js/hm/chart/hm.devCmpChart.js"></script>
+<script src="../js/hm/chart/hm.svrCmpChart.js"></script>
+<script src="../js/hm/chart/hm.devCpuChart.js"></script>
+<script src="../js/hm/chart/hm.devCpsChart.js"></script>
+<script src="../js/hm/chart/hm.devMemoryChart.js"></script>
+<script src="../js/hm/chart/hm.devResptimeChart.js"></script>
+<script src="../js/hm/chart/hm.devThresholdChart.js"></script>
+<script src="../js/hm/chart/hm.svrThresholdChart.js"></script>
+<script src="../js/hm/chart/hm.devSessChart.js"></script>
+<script src="../js/hm/chart/hm.devTempChart.js"></script>
+<script src="../js/hm/chart/hm.ifBpsChart.js"></script>
+<script src="../js/hm/chart/hm.l4IfBpsChart.js"></script>
+
+<script src="../js/hm/chart/hm.devCpuChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.devMemoryChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.devTempChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.devResptimeChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.devSessChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.devCpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifBpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifPpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifBpsPerChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifCrcChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifErrorChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifCollisionChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifNonUnicastChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifDiscardChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifMulticastChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifBroadcastChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifDropChartLeftType.js"></script>
+
+<script src="../js/hm/chart/hm.ifBpsPerChart.js"></script>
+<script src="../js/hm/chart/hm.ifPpsChart.js"></script>
+<script src="../js/hm/chart/hm.ifCrcChart.js"></script>
+<script src="../js/hm/chart/hm.ifErrorChart.js"></script>
+<script src="../js/hm/chart/hm.ifCollisionChart.js"></script>
+<script src="../js/hm/chart/hm.ifNonUnicastChart.js"></script>
+<script src="../js/hm/chart/hm.ifDiscardChart.js"></script>
+<script src="../js/hm/chart/hm.ifMulticastChart.js"></script>
+<script src="../js/hm/chart/hm.ifBroadcastChart.js"></script>
+<script src="../js/hm/chart/hm.ifDropChart.js"></script>
+<script src="../js/hm/chart/hm.ifThresholdChart.js"></script>
+<script src="../js/hm/chart/hm.mainIfBpsChart.js"></script>
+
+<script src="../js/hm/chart/hm.svrCpuChart.js"></script>
+<script src="../js/hm/chart/hm.svrCpuChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrMemoryChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfMemChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfMemChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfMemChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrPerfFsChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfFsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrPerfDiskChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfDiskChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrPerfNetworkChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfNetworkChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrFileSystemChart.js"></script>
+<script src="../js/hm/chart/hm.svrNetworkChart.js"></script>
+<script src="../js/hm/chart/hm.svrDiskChart.js"></script>
+
+<script src="../js/hm/chart/hm.vsvrCpuChart.js"></script>
+<script src="../js/hm/chart/hm.vsvrCpuChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.vsvrMemoryChart.js"></script>
+<script src="../js/hm/chart/hm.vsvrMemoryChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.vsvrBpsChart.js"></script>
+<script src="../js/hm/chart/hm.vsvrBpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.vsvrPpsChart.js"></script>
+<script src="../js/hm/chart/hm.vsvrPpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.vsvrNetworkChart.js"></script>
+
+<script src="../js/hm/chart/hm.vmPpsChart.js"></script>
+<script src="../js/hm/chart/hm.vmPpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.vmBpsChart.js"></script>
+<script src="../js/hm/chart/hm.vmBpsChartLeftType.js"></script>
+
+<script src="../js/hm/chart/hm.apByteChart.js"></script>
+<script src="../js/hm/chart/hm.apClientByteChart.js"></script>
+<script src="../js/hm/chart/hm.apClientByteChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.apClientSignalChart.js"></script>
+<script src="../js/hm/chart/hm.apClientSignalChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrWasChart.js"></script>
+<script src="../js/hm/chart/hm.svrDbmsChart.js"></script>
+<script src="../js/hm/chart/hm.customChart.js"></script>
+<script src="../js/hm/chart/hm.predictChart.js"></script>
+<script src="../js/hm/chart/hm.fmsChart.js"></script>
+
+<script src="../js/hm/chart/hm.l4ConnChart.js"></script>
+<script src="../js/hm/chart/hm.l4CpsChart.js"></script>
+
+
+<script src="../js/hm/chart/hm.donutChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcBarChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcNetworkChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcPieChart.js"></script>
+
+
+<script src="../js/hm/chart/sms/hm.abnlDtcAnalysisChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcSpiderwebChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcAffectLineChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcFeatureLineChart.js"></script>
+
+<script src="../js/hm/chart/hm.solidGaugeChart.js"></script>
+<script src="../js/hm/chart/hm.solidGaugeHarfChart.js"></script>
+<script src="../js/hm/chart/hm.ifPerfTopNChart.js"></script>
+
+<script src="../js/hm/hm.jqx.dataadapter.v2.js"></script>
+<script src="../js/hm/hm.jqx.grid.v2.js"></script>
+<script src="../js/hm/hm.boxcondition.js"></script>
+<script src="../lib/jquery.i18n.properties.min.js"></script>
+
+<link rel="stylesheet" href="../lib/colorpicker/spectrum.css">
+<script src="../lib/colorpicker/spectrum.js"></script>
+<script src="../lib/colorpicker/jquery.spectrum-ko.js"></script> -->
+
+<link rel="stylesheet" href="../lib/colorpicker/spectrum.css">
+<script src="../lib/colorpicker/spectrum.js"></script>
+<script src="../lib/colorpicker/jquery.spectrum-ko.js"></script>
+<!-- <script src="../lib/d3/d3.v4.min.js"></script> -->
+
+
+<!-- <link rel="stylesheet" type="text/css" href="../lib/vis-timeline/vis-timeline-graph2d.min.css"> -->
+
+
+<!-- <script src="../js/hm/chart/hm.l4SessBpsChart.js"></script>
+<script src="../js/hm/chart/hm.l4SessConnChart.js"></script>
+<script src="../js/hm/chart/hm.l4SessCpsChart.js"></script>
+<script src="../js/hm/chart/hm.l4SessBpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.l4SessConnChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.l4SessCpsChartLeftType.js"></script>
+
+
+<script type="text/javascript" src="../lib/swiper/swiper-bundle.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../lib/swiper/swiper-bundle.css"> -->
+
+
+<script type="text/javascript" src="../lib/swiper10.3.1/swiper-bundle.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../lib/swiper10.3.1/swiper-bundle.min.css">
+
+
+<!-- <link rel="shortcut icon" href="../img/ico/favicon.ico"> -->
+
+
+<link type="text/css" rel="stylesheet" href="../css/style.css" />
+<script src="../js/pub-ui.js"></script>
+<script src="../js/pub-jqx-temp.js"></script>
+<script src="../js/pub-chart-temp.js"></script>
+</head>
+<body style="min-width: var(--min-width);">
+  <div class="n-wrap">
+     <script> $(document).ready(function() { $.get('header.html', function(data) { $('.n-wrap').prepend(data);gnbMenu();}); }); </script>
+
+      <main class="n-container">
+        <span id="content" tabindex="-1" class="n-skip-anchor">본문시작</span>
+        <div class="n-tree-area">
+            <div class="n-menu-group">
+                <div class="n-row">
+                    <div class="n-input-search">
+                        <label for="treeSearch" class="n-hidden">명칭검색</label>
+                        <input type="text" placeholder="명칭검색">
+                        <button class="n-btn-search"><span class="n-hidden">검색</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="n-tree">
+                <div id="jqxTreeList" class="n-jqx-tree-list"></div>
+            </div>
+        </div>
+        <div class="n-contents">
+            <nav class="n-breadcrumb" aria-label="경로 탐색">
+                <ol>
+                    <li><a href="../">홈</a></li>
+                    <li><a href="#">1뎁스</a></li>
+                    <li><a href="#">2뎁스</a></li>
+                    <li aria-current="page">current</li>
+                </ol>
+            </nav>
+            <section class="n-content" aria-labelledby="content">
+                <header>
+                    <div class="n-title-wrap">
+                        <h2 class="n-title-page">이벤트현황</h2>
+                    </div>
+                </header>
+
+                <div class="n-error-status-box">
+                    <div class="n-status-box n-total">
+                        <div class="n-label">전체</div>
+                        <div class="n-value">242</div>
+                    </div>
+                    <div class="n-status-list" id="errStatusSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="n-status-box">
+                                    <div class="n-label">텍스트</div>
+                                    <div class="n-value" style="color:#EB003B">장애</div>
+                                    <div class="n-icon" style="background-color:#EB003B"><i class="n-ico-err-obstacle"></i></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="n-status-box">
+                                    <div class="n-label">텍스트</div>
+                                    <div class="n-value" style="color:#FF6A00">경보</div>
+                                    <div class="n-icon" style="background-color:#FF6A00"><i class="n-ico-err-siren"></i></div>
+                                </div>
+                            </div>
+                                                   <div class="swiper-slide">
+                                <div class="n-status-box">
+                                    <div class="n-label">텍스트</div>
+                                    <div class="n-value" style="color:#FF9A00">알람</div>
+                                    <div class="n-icon" style="background-color:#FF9A00"><i class="n-ico-err-alarm"></i></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="n-status-box">
+                                    <div class="n-label">텍스트</div>
+                                    <div class="n-value" style="color:#FFB724">주의</div>
+                                    <div class="n-icon" style="background-color:#FFB724"><i class="n-ico-err-caution"></i></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="n-status-box">
+                                    <div class="n-label">텍스트</div>
+                                    <div class="n-value" style="color:#00A284">정보</div>
+                                    <div class="n-icon" style="background-color:#00A284"><i class="n-ico-err-info"></i></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="n-status-box">
+                                    <div class="n-label">텍스트</div>
+                                    <div class="n-value" style="color:#246BEB">정상</div>
+                                    <div class="n-icon" style="background-color:#246BEB"><i class="n-ico-err-normal"></i></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="n-status-box">
+                                    <div class="n-label">텍스트</div>
+                                    <div class="n-value" style="color:#003675">조치중</div>
+                                    <div class="n-icon" style="background-color:#003675"><i class="n-ico-err-fixing"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // n-error-status-box -->
+                 
+                <div class="n-search-area" aria-label="검색 영역"> <!-- form 태그필요시 div 를 form태그로 변경-->
+                    <div class="n-search-wrap">
+                         <div class="n-row">
+                            <label for="filter-option" class="n-label">검색어</label>
+                            <select id="filter-option" name="filter">
+                                <option value="ip">IP</option>
+                            </select>
+                            <div class="n-inp-search">
+                                <label for="search-query" class="n-hidden">검색어 입력</label>
+                                <input type="text" id="search-query" name="query" placeholder="검색어를 입력하세요.">
+                            </div>
+                            <div class="n-search-menu">
+                                <button type="submit" class="n-btn">검색</button>
+                                <button type="reset" class="n-btn">초기화</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="n-data-header">
+                    <div class="n-left">
+                        <fieldset class="n-btn-check n-sm">
+                            <legend class="n-hidden">시간 선택</legend>
+                            <div class="n-checks">
+                                <input id="sRef_0" type="radio" name="sRef" value="5">
+                                <label for="sRef_0"><span>5S</span></label>
+                            </div>
+                            <div class="n-checks">
+                                <input id="sRef_1" type="radio" name="sRef" value="10">
+                                <label for="sRef_1"><span>10S</span></label>
+                            </div>
+                            <div class="n-checks">
+                                <input id="sRef_2" type="radio" name="sRef" value="30" checked>
+                                <label for="sRef_2"><span>30S</span></label>
+                            </div>
+                            <div class="n-checks n-stop">
+                                <input id="sRef_3" type="radio" name="sRef" value="0">
+                                <label for="sRef_3"><span>정지</span></label>
+                            </div>
+                        </fieldset>
+                        <div class="n-search-gage">
+                            <div class="n-gage-bar"><span class="n-gage" style="width:42%;"></span></div>
+                            <div class="n-gage-txt">42%</div>
+                        </div>
+                    </div>
+                    
+                    <div class="n-right">
+                        <button type="button" class="n-btn-menu n-st-gray-line">순위</button>
+                        <button type="button" class="n-btn-menu n-st-gray-line">Config전체해제</button>
+                        <button type="button" class="n-btn-menu n-st-gray-line">Syslog전체해제</button>
+                        <button type="button" class="n-btn-menu n-st-gray-line">이벤트설정</button>
+                        <button type="button" class="n-btn-menu n-st-gray-line">
+                            <i class="n-ico n-ico-excel"></i>
+                            <span>엑셀 다운로드</span>
+                            <i class="n-ico n-ico-down"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="n-grid-data auto">
+                    <div class="n-grid" id="grid"></div>
+                </div>                
+                
+            </section>
+        </div>
+       </main>
+    </div>
+
+
+
+    <!-- 트리 -->
+    <script>
+        tempJqxTree("#jqxTreeList", {
+            dataFields: [
+                { name: 'grpNo', type: 'string' },
+                { name: 'grpParent', type: 'number' },
+                { name: 'strGrpParent', type: 'string' },
+                { name: 'grpName', type: 'string' },
+                { name: 'devKind1', type: 'string' },
+                { name: 'devKind2', type: 'string' },
+                { name: 'devIp', type: 'string' },
+                { name: 'grpCode', type: 'string' },
+                { name: 'sortIdx', type: 'number'},
+                { name: 'grpRef', type: 'number'}
+            ], 
+            url:'treedata.json',
+            temp:true,
+        })
+    </script>
+        
+
+  
+    <!-- 그리드 -->
+    <script>
+        const localData = [ { "Field1": "", "Field2": "2025-05-19 13:07:33", "Field3": "Window", "Field4": "서버", "Field5": "성능 마스터", "Field6": "29호", "Field7": "진행중", "Field8": "-", "Field9": "-", "Field10": "-" } ];
+
+        tempJqxGrid("#grid", {
+        columns: [
+            { text: '장애등급', datafield: 'Field1', cellsalign: 'center', width: 80, cellsrenderer: function (row, datafield, value) {
+                        return '<div class="n-grid-item-wrap"><span class="n-tag" style="background-color: #EFF5FF;color:#1D56BC">정상</span></div>';
+                    }},
+            { text: '발생일시', datafield: 'Field2', cellsalign: 'left', width: 160 },
+            { text: '그룹', datafield: 'Field3', cellsalign: 'left', width: 120 },
+            { text: '장애종류', datafield: 'Field4', cellsalign: 'left', width: 100 },
+            { text: '장애대상', datafield: 'Field5', cellsalign: 'left', minwidth: 200 },
+            { text: '성능수집단비', datafield: 'Field6', cellsalign: 'left', width: 180 },
+            { text: '사업소수', datafield: 'Field7', cellsalign: 'left', width: 120 },
+            { text: '제조사', datafield: 'Field8', cellsalign: 'left', width: 120 },
+            { text: '모델', datafield: 'Field9', cellsalign: 'left', width: 120 },
+            { text: '장애이력번호', datafield: 'Field10', cellsalign: 'left', width: 120 }
+        ]
+        }, localData);
+    </script>
+
+
+
+
+    <!-- 이벤트 현황 -->
+    <script>
+        var errSwiper = new Swiper("#errStatusSwiper", {
+            lazy: true,
+            spaceBetween: 16,
+            slidesPerView: 5
+        });
+    </script>
+
+</body>
+</html>

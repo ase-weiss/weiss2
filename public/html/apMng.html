@@ -1,0 +1,478 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+
+<!-- v5.0.1 css-->
+<link rel="stylesheet" type="text/css" href="../css/v5.0.1/jqx.hamon.css">
+
+<!-- <link rel="stylesheet" type="text/css" href="../css/v5.0.1/jqx.ui-hamon-gray.css"> -->
+<link rel="stylesheet" type="text/css" href="../css/v5.0.1/netis.css">
+
+<link rel="stylesheet" type="text/css" href="../css/v5.0.1/button.css">
+
+
+<link rel="stylesheet" type="text/css" href="../css/v5.0.1/popup.css">
+<link rel="stylesheet" type="text/css" href="../css/v5.0.1/ani.css">
+
+<!-- v6.0.1 css-->
+<link rel="stylesheet" type="text/css" href="../css/v6.0.1/jqx.hamon.v2.css">
+<link rel="stylesheet" type="text/css" href="../css/v6.0.1/button_v62.css">
+
+<!-- js library -->
+<script src="../lib/jquery/jquery-3.6.4.min.js"></script>
+
+<script src="../lib/jquery/jquery-migrate-3.1.0.min.js"></script>
+<script src="../lib/jquery/jquery-dateFormat.js"></script>
+<script src="../lib/jquery/jquery.form.js"></script>
+
+<!-- lodash -->
+<!-- <script src="../lib/lodash/lodash_4.17.21.js"></script> -->
+
+<!-- jqwidgets -->
+<script src="../lib/jqwidgets/jqx-all.js"></script>
+<script src="../lib/jqwidgets/localization.js"></script>
+<script src="../lib/jqwidgets/globalization/globalize.js"></script>
+<script src="../lib/jqwidgets/globalization/globalize.culture.ko-KR.js"></script>
+
+<!-- highchart -->
+
+<!-- <script src="../webjars/highstock/8.0.4/code/highstock.js"></script> -->
+ <!-- 기존 -->
+<!-- <script src="../webjars/highcharts/8.0.4/highcharts-more.js"></script>
+<script src="../webjars/highcharts/8.0.4/modules/heatmap.js"></script> -->
+<!-- cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.0.4/highcharts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.0.4/modules/heatmap.min.js"></script>
+
+<!-- <script src="../webjars/highcharts/8.0.4/modules/networkgraph.js"></script>
+<script src="../webjars/highcharts/8.0.4/modules/networkgraph.src.js"></script>
+
+<script src="../webjars/highstock/8.0.4/code/modules/data.js"></script>
+<script src="../webjars/highstock/8.0.4/code/modules/exporting.js"></script>
+<script src="../webjars/highstock/8.0.4/code/modules/export-data.js"></script>
+<script src="../webjars/highstock/8.0.4/code/modules/no-data-to-display.js"></script>
+
+<script src="../webjars/highcharts/8.0.4/modules/solid-gauge.js"></script>
+<script src="../webjars/highcharts/8.0.4/highcharts-3d.js"></script>
+<script src="../webjars/highcharts/8.0.4/modules/exporting.js"></script>
+
+<script src="../js/hm/highchartscustomEvents.js"></script> -->
+<!-- <script src="../webjars/highcharts/8.0.4/modules/solid-gauge.js"></script> -->
+
+<script src="../lib/megamenu/jquery.hoverIntent.minified.js"></script>
+<script src="../lib/megamenu/jquery.dcmegamenu.1.3.4.min.js"></script>
+
+<!-- <script src="../js/main/code/comCode.js"></script> -->
+<!-- svg to canvas library -->
+<!-- <script src="../lib/rgbcolor.js"></script>
+<script src="../lib/StackBlur.js"></script>
+<script src="../lib/canvg.js"></script> -->
+
+<!-- elastic search 2023.03.21 사용하지 않음으로 주석 처리 -->
+
+
+<!-- hamon -->
+<script src="../js/hm/master.js"></script>
+<script src="../js/hm/hm.prototype.js"></script>
+<script src="../js/hm/hm.resource.js"></script>
+<script src="../js/hm/hm.util.js"></script>
+
+<script src="../js/hm/hm.jqx.grid.v5.0.1.js"></script>
+<script src="../js/hm/hm.jqx.window.js"></script>
+<script src="../js/hm/hm.jqx.tree.js"></script>
+
+<script src="../js/hm/hm.jqx.treegrid.v5.0.1.js"></script>
+<script src="../js/hm/hm.jqx.date.js"></script>
+<script src="../js/hm/hm.jqx.dropdownbtn.js"></script>
+<script src="../js/hm/hm.jqx.dropdownlist.js"></script>
+<script src="../js/hm/hm.jqx.splitter.js"></script>
+<script src="../js/hm/hm.jqx.chart.js"></script>
+<script src="../js/hm/hm.highchart.v2.js"></script>
+<script src="../js/hm/hm.es.js"></script>
+<!-- <script src="../js/hm/chart/hm.aloneUpsVolChart.js"></script>
+<script src="../js/hm/chart/hm.aloneUpsVolChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.aloneUpsTempChart.js"></script>
+<script src="../js/hm/chart/hm.aloneUpsTempChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.perfData.js"></script> -->
+
+<!-- <script src="../js/hm/chart/hm.devCmpChart.js"></script>
+<script src="../js/hm/chart/hm.svrCmpChart.js"></script>
+<script src="../js/hm/chart/hm.devCpuChart.js"></script>
+<script src="../js/hm/chart/hm.devCpsChart.js"></script>
+<script src="../js/hm/chart/hm.devMemoryChart.js"></script>
+<script src="../js/hm/chart/hm.devResptimeChart.js"></script>
+<script src="../js/hm/chart/hm.devThresholdChart.js"></script>
+<script src="../js/hm/chart/hm.svrThresholdChart.js"></script>
+<script src="../js/hm/chart/hm.devSessChart.js"></script>
+<script src="../js/hm/chart/hm.devTempChart.js"></script>
+<script src="../js/hm/chart/hm.ifBpsChart.js"></script>
+<script src="../js/hm/chart/hm.l4IfBpsChart.js"></script>
+
+<script src="../js/hm/chart/hm.devCpuChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.devMemoryChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.devTempChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.devResptimeChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.devSessChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.devCpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifBpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifPpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifBpsPerChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifCrcChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifErrorChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifCollisionChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifNonUnicastChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifDiscardChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifMulticastChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifBroadcastChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.ifDropChartLeftType.js"></script>
+
+<script src="../js/hm/chart/hm.ifBpsPerChart.js"></script>
+<script src="../js/hm/chart/hm.ifPpsChart.js"></script>
+<script src="../js/hm/chart/hm.ifCrcChart.js"></script>
+<script src="../js/hm/chart/hm.ifErrorChart.js"></script>
+<script src="../js/hm/chart/hm.ifCollisionChart.js"></script>
+<script src="../js/hm/chart/hm.ifNonUnicastChart.js"></script>
+<script src="../js/hm/chart/hm.ifDiscardChart.js"></script>
+<script src="../js/hm/chart/hm.ifMulticastChart.js"></script>
+<script src="../js/hm/chart/hm.ifBroadcastChart.js"></script>
+<script src="../js/hm/chart/hm.ifDropChart.js"></script>
+<script src="../js/hm/chart/hm.ifThresholdChart.js"></script>
+<script src="../js/hm/chart/hm.mainIfBpsChart.js"></script>
+
+<script src="../js/hm/chart/hm.svrCpuChart.js"></script>
+<script src="../js/hm/chart/hm.svrCpuChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrMemoryChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfMemChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfMemChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfMemChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrPerfFsChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfFsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrPerfDiskChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfDiskChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrPerfNetworkChart.js"></script>
+<script src="../js/hm/chart/hm.svrPerfNetworkChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrFileSystemChart.js"></script>
+<script src="../js/hm/chart/hm.svrNetworkChart.js"></script>
+<script src="../js/hm/chart/hm.svrDiskChart.js"></script>
+
+<script src="../js/hm/chart/hm.vsvrCpuChart.js"></script>
+<script src="../js/hm/chart/hm.vsvrCpuChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.vsvrMemoryChart.js"></script>
+<script src="../js/hm/chart/hm.vsvrMemoryChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.vsvrBpsChart.js"></script>
+<script src="../js/hm/chart/hm.vsvrBpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.vsvrPpsChart.js"></script>
+<script src="../js/hm/chart/hm.vsvrPpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.vsvrNetworkChart.js"></script>
+
+<script src="../js/hm/chart/hm.vmPpsChart.js"></script>
+<script src="../js/hm/chart/hm.vmPpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.vmBpsChart.js"></script>
+<script src="../js/hm/chart/hm.vmBpsChartLeftType.js"></script>
+
+<script src="../js/hm/chart/hm.apByteChart.js"></script>
+<script src="../js/hm/chart/hm.apClientByteChart.js"></script>
+<script src="../js/hm/chart/hm.apClientByteChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.apClientSignalChart.js"></script>
+<script src="../js/hm/chart/hm.apClientSignalChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.svrWasChart.js"></script>
+<script src="../js/hm/chart/hm.svrDbmsChart.js"></script>
+<script src="../js/hm/chart/hm.customChart.js"></script>
+<script src="../js/hm/chart/hm.predictChart.js"></script>
+<script src="../js/hm/chart/hm.fmsChart.js"></script>
+
+<script src="../js/hm/chart/hm.l4ConnChart.js"></script>
+<script src="../js/hm/chart/hm.l4CpsChart.js"></script>
+
+
+<script src="../js/hm/chart/hm.donutChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcBarChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcNetworkChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcPieChart.js"></script>
+
+
+<script src="../js/hm/chart/sms/hm.abnlDtcAnalysisChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcSpiderwebChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcAffectLineChart.js"></script>
+<script src="../js/hm/chart/hm.abnlDtcFeatureLineChart.js"></script>
+
+<script src="../js/hm/chart/hm.solidGaugeChart.js"></script>
+<script src="../js/hm/chart/hm.solidGaugeHarfChart.js"></script>
+<script src="../js/hm/chart/hm.ifPerfTopNChart.js"></script>
+
+<script src="../js/hm/hm.jqx.dataadapter.v2.js"></script>
+<script src="../js/hm/hm.jqx.grid.v2.js"></script>
+<script src="../js/hm/hm.boxcondition.js"></script>
+<script src="../lib/jquery.i18n.properties.min.js"></script>
+
+<link rel="stylesheet" href="../lib/colorpicker/spectrum.css">
+<script src="../lib/colorpicker/spectrum.js"></script>
+<script src="../lib/colorpicker/jquery.spectrum-ko.js"></script> -->
+
+<link rel="stylesheet" href="../lib/colorpicker/spectrum.css">
+<script src="../lib/colorpicker/spectrum.js"></script>
+<script src="../lib/colorpicker/jquery.spectrum-ko.js"></script>
+<!-- <script src="../lib/d3/d3.v4.min.js"></script> -->
+
+
+<!-- <link rel="stylesheet" type="text/css" href="../lib/vis-timeline/vis-timeline-graph2d.min.css"> -->
+
+
+<!-- <script src="../js/hm/chart/hm.l4SessBpsChart.js"></script>
+<script src="../js/hm/chart/hm.l4SessConnChart.js"></script>
+<script src="../js/hm/chart/hm.l4SessCpsChart.js"></script>
+<script src="../js/hm/chart/hm.l4SessBpsChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.l4SessConnChartLeftType.js"></script>
+<script src="../js/hm/chart/hm.l4SessCpsChartLeftType.js"></script>
+
+
+<script type="text/javascript" src="../lib/swiper/swiper-bundle.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../lib/swiper/swiper-bundle.css"> -->
+
+
+
+<script type="text/javascript" src="../lib/swiper10.3.1/swiper-bundle.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../lib/swiper10.3.1/swiper-bundle.min.css">
+
+
+<!-- <link rel="shortcut icon" href="../img/ico/favicon.ico"> -->
+
+
+<link type="text/css" rel="stylesheet" href="../css/style.css" />
+<script src="../js/pub-ui.js"></script>
+<script src="../js/pub-jqx-temp.js"></script>
+<script src="../js/pub-chart-temp.js"></script>
+</head>
+<body style="min-width: var(--min-width);">
+  <div class="n-wrap">
+     <script> $(document).ready(function() { $.get('header.html', function(data) { $('.n-wrap').prepend(data);gnbMenu();}); }); </script>
+
+
+      <main class="n-container">
+        <span id="content" tabindex="-1" class="n-skip-anchor">본문시작</span>
+        <div class="n-tree-area">
+            <div class="n-menu-group">
+                <div class="n-row">
+                    <div class="n-input-search">
+                        <label for="treeSearch" class="n-hidden">명칭검색</label>
+                        <input type="text" placeholder="명칭검색">
+                        <button class="n-btn-search"><span class="n-hidden">검색</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="n-tree">
+                <div id="jqxTreeList" class="n-jqx-tree-list"></div>
+            </div>
+        </div>
+        <div class="n-contents">
+            <nav class="n-breadcrumb" aria-label="경로 탐색">
+                <ol>
+                    <li><a href="../">홈</a></li>
+                    <li><a href="#">1뎁스</a></li>
+                    <li><a href="#">2뎁스</a></li>
+                    <li aria-current="page">current</li>
+                </ol>
+            </nav>
+            <section class="n-content" aria-labelledby="content">
+                <header>
+                    <div class="n-title-wrap">
+                        <h2 class="n-title-page">AP관리</h2>
+                        <i class="n-ico n-ico-info" id="tooltip-ap"></i>
+                    </div>
+                </header>
+                <div class="n-search-area" aria-label="검색 영역"> <!-- form 태그필요시 div 를 form태그로 변경-->
+                    <div class="n-search-wrap">
+                        <div class="n-row">
+                            <label for="filter-option" class="n-label">항목</label>
+                            <select id="filter-option" name="filter">
+                                <option value="ip">IP</option>
+                            </select>
+                            <div class="n-inp-search">
+                                <label for="search-query" class="n-hidden">검색어 입력</label>
+                                <input type="text" id="search-query" name="query" placeholder="검색어를 입력하세요.">
+                            </div>
+                            <button type="submit" class="n-btn">검색</button>
+                            <button type="reset" class="n-btn">초기화</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="n-data-header">
+                    <div class="n-left">
+                        <span class="n-title-data"><strong>전체 AP수</strong> <em class="n-num">222,459</em></span>                        
+                    </div>
+                    
+                    <div class="n-right">
+                        <button type="button" class="n-btn-menu n-st-gray-line">선택 삭제</button>
+                        <button type="button" class="n-btn-menu n-st-gray-line">실시간 AP조회</button>
+                        <button type="button" class="n-btn-menu n-st-gray-line">AP재시작</button>
+                        <button type="button" class="n-btn-menu n-st-gray-line">AP학교이동</button>
+                        <button type="button" class="n-btn-menu n-st-gray-line">제어이력</button>
+                        <button type="button" class="n-btn-menu n-st-gray-line">
+                            <i class="n-ico n-ico-excel"></i>
+                            <span>엑셀 다운로드</span>
+                            <i class="n-ico n-ico-down"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="n-grid-data auto">
+                    <div class="n-grid" id="apControllerGrid"></div>
+                </div>
+            </section>
+        </div>
+       </main>
+    </div> 
+
+
+
+
+
+
+<script>
+//툴팁
+let tooltipHtml = `<strong class="n-tooltip-tit">타이틀</strong><ul class="n-tooltip-dot-list">
+                            <li>실시간 AP조회 및 AP재시작은 학교단위에서 실행 <br>가능합니다.</li>
+                            <li>실시간 상태체크는 제어 이력데이터에서 제외됩니다.</li>
+                        </ul>`
+jqxTooltip('#tooltip-ap', tooltipHtml, 'right');
+
+</script>
+
+
+
+<!-- 트리 -->
+<script>
+      tempJqxTree("#jqxTreeList", {
+        dataFields: [
+            { name: 'grpNo', type: 'string' },
+            { name: 'grpParent', type: 'number' },
+            { name: 'strGrpParent', type: 'string' },
+            { name: 'grpName', type: 'string' },
+            { name: 'devKind1', type: 'string' },
+            { name: 'devKind2', type: 'string' },
+            { name: 'devIp', type: 'string' },
+            { name: 'grpCode', type: 'string' },
+            { name: 'sortIdx', type: 'number'},
+            { name: 'grpRef', type: 'number'}
+        ], 
+        url:'treedata.json',
+        temp:true,
+    })
+    </script>
+
+    <!-- 그리드 -->
+    <script>
+
+    const localData = [ {"VENDOR_NAME": "다보링크","AP_INST_LOC": "1-1","STATUS_CHK_DATETIME": "2025-06-03 22:20:00","PROFILE_NO": 0,"INFORM_DATETIME": "2025-06-03 21:58:57","AP_SERIAL": "DVW604ID20CBA06203","AP_VENDOR": "DAVO","TOTAL_BYTES_AVG": 16243857.00,"MNG_NO": 307307,"IP_ADDR": "10.27.20.111","ORDER_DEGREE_CODE": "NEWDEAL","AP_STATUS": "수집","AP_VER": "8.00.82","URL": "http://40.27.20.111","SCH_NM": "가고파초등학교","DIS_INSTALLED_DATE": "2021-08","GW_TYPE": "X51","MAC_ADDR": "6029D53124C0","TX_BYTES_AVG": 404097.00,"AP_MODEL": "DVW604","PORT": -1,"AP_NET_COMP": null,"NEIS_CODE": null,"fwUpdateDt": "2025-01-30 14:25:33","GRP_NO": 10377,"EDU_OFFICE_NAME": "경상남도교육청 〉 창원교육지원청","LIFETIME": 7,"IP_ADDR_NO": 1.69546863E8,"AP_UPTIME": "77","ORDER_DEGREE": "학교 무선환경 구축","AP_NM": "cwm.Ga_Go_Pa.E_111","ACS_IP": "192.168.0.44","CONN_CNT": 0,"INSTALLED_DATE": "2021-08-01","trApplyYn": "ON","RX_BYTES_AVG": 15839760.00}
+    , {
+    "VENDOR_NAME": "다보링크","AP_INST_LOC": "1-2","STATUS_CHK_DATETIME": "2025-06-03 22:20:00","PROFILE_NO": 0,"INFORM_DATETIME": "2025-06-03 21:51:06","AP_SERIAL": "DVW604ID20CBA06204","AP_VENDOR": "DAVO","TOTAL_BYTES_AVG": 16243430.00,"MNG_NO": 266615,"IP_ADDR": "10.27.20.112","ORDER_DEGREE_CODE": "NEWDEAL","AP_STATUS": "수집","AP_VER": "8.00.82","URL": "http://40.27.20.112","SCH_NM": "가고파초등학교","DIS_INSTALLED_DATE": "2021-08","GW_TYPE": "X51","MAC_ADDR": "6029D53124D0","TX_BYTES_AVG": 403108.00,"AP_MODEL": "DVW604","PORT": -1,"AP_NET_COMP": null,"NEIS_CODE": null,"fwUpdateDt": "2025-01-30 14:25:29","GRP_NO": 10377,"EDU_OFFICE_NAME": "경상남도교육청 〉 창원교육지원청","LIFETIME": 7,"IP_ADDR_NO": 1.69546864E8,"AP_UPTIME": "49","ORDER_DEGREE": "학교 무선환경 구축","AP_NM": "다보","ACS_IP": "192.168.0.42","CONN_CNT": 0,"INSTALLED_DATE": "2021-08-01","trApplyYn": "ON","RX_BYTES_AVG": 15840322.00}
+    , {
+    "VENDOR_NAME": "다보링크","AP_INST_LOC": "2-9","STATUS_CHK_DATETIME": "2025-06-03 22:20:00","PROFILE_NO": 0,"INFORM_DATETIME": "2025-06-03 22:09:07","AP_SERIAL": "DVW604ID20CBA06205","AP_VENDOR": "DAVO","TOTAL_BYTES_AVG": 16271242.00,"MNG_NO": 266616,"IP_ADDR": "10.27.20.113","ORDER_DEGREE_CODE": "NEWDEAL","AP_STATUS": "수집","AP_VER": "8.00.82","URL": "http://40.27.20.113","SCH_NM": "가고파초등학교","DIS_INSTALLED_DATE": "2021-08","GW_TYPE": "X51","MAC_ADDR": "6029D53124E0","TX_BYTES_AVG": 408649.00,"AP_MODEL": "DVW604","PORT": -1,"AP_NET_COMP": null,"NEIS_CODE": null,"fwUpdateDt": "2025-01-30 14:29:17","GRP_NO": 10377,"EDU_OFFICE_NAME": "경상남도교육청 〉 창원교육지원청","LIFETIME": 7,"IP_ADDR_NO": 1.69546865E8,"AP_UPTIME": "49","ORDER_DEGREE": "학교 무선환경 구축","AP_NM": "다보","ACS_IP": "192.168.0.41","CONN_CNT": 0,"INSTALLED_DATE": "2021-08-01","trApplyYn": "ON","RX_BYTES_AVG": 15862593.00}
+    , {
+    "VENDOR_NAME": "다보링크","AP_INST_LOC": "2-8","STATUS_CHK_DATETIME": "2025-06-03 22:20:00","PROFILE_NO": 0,"INFORM_DATETIME": "2025-06-03 21:21:04","AP_SERIAL": "DVW604ID20CBA06206","AP_VENDOR": "DAVO","TOTAL_BYTES_AVG": 16372648.00,"MNG_NO": 266617,"IP_ADDR": "10.27.20.114","ORDER_DEGREE_CODE": "NEWDEAL","AP_STATUS": "미수집","AP_VER": "8.00.82","URL": "http://40.27.20.114","SCH_NM": "가고파초등학교","DIS_INSTALLED_DATE": "2021-08","GW_TYPE": "X51","MAC_ADDR": "6029D53124F0","TX_BYTES_AVG": 404367.00,"AP_MODEL": "DVW604","PORT": -1,"AP_NET_COMP": null,"NEIS_CODE": null,"fwUpdateDt": "2025-01-30 16:29:47","GRP_NO": 10377,"EDU_OFFICE_NAME": "경상남도교육청 〉 창원교육지원청","LIFETIME": 7,"IP_ADDR_NO": 1.69546866E8,"AP_UPTIME": "48","ORDER_DEGREE": "학교 무선환경 구축","AP_NM": "다보","ACS_IP": "192.168.0.44","CONN_CNT": 0,"INSTALLED_DATE": "2021-08-01","trApplyYn": "ON","RX_BYTES_AVG": 15968281.00}
+    , {
+    "VENDOR_NAME": "다보링크","AP_INST_LOC": "2-7","STATUS_CHK_DATETIME": "2025-06-03 22:20:00","PROFILE_NO": 0,"INFORM_DATETIME": "2025-06-03 22:12:01","AP_SERIAL": "DVW604ID20CBA06207","AP_VENDOR": "DAVO","TOTAL_BYTES_AVG": 16247627.00,"MNG_NO": 266618,"IP_ADDR": "10.27.20.115","ORDER_DEGREE_CODE": "NEWDEAL","AP_STATUS": "수집","AP_VER": "8.00.82","URL": "http://40.27.20.115","SCH_NM": "가고파초등학교","DIS_INSTALLED_DATE": "2021-08","GW_TYPE": "X51","MAC_ADDR": "6029D5312500","TX_BYTES_AVG": 403576.00,"AP_MODEL": "DVW604","PORT": -1,"AP_NET_COMP": null,"NEIS_CODE": null,"fwUpdateDt": "2025-01-30 14:29:16","GRP_NO": 10377,"EDU_OFFICE_NAME": "경상남도교육청 〉 창원교육지원청","LIFETIME": 7,"IP_ADDR_NO": 1.69546867E8,"AP_UPTIME": "48","ORDER_DEGREE": "학교 무선환경 구축","AP_NM": "다보","ACS_IP": "192.168.0.43","CONN_CNT": 0,"INSTALLED_DATE": "2021-08-01","trApplyYn": "ON","RX_BYTES_AVG": 15844051.00}
+    , {
+    "VENDOR_NAME": "다보링크","AP_INST_LOC": "1-6반","STATUS_CHK_DATETIME": "2025-06-03 22:20:00","PROFILE_NO": 0,"INFORM_DATETIME": "2025-06-03 21:27:27","AP_SERIAL": "DVW604ID20CBA06208","AP_VENDOR": "DAVO","TOTAL_BYTES_AVG": 16246244.00,"MNG_NO": 284091,"IP_ADDR": "10.27.20.116","ORDER_DEGREE_CODE": "NEWDEAL","AP_STATUS": "미수집","AP_VER": "8.00.82","URL": "http://40.27.20.116","SCH_NM": "가고파초등학교","DIS_INSTALLED_DATE": "2021-08","GW_TYPE": "X51","MAC_ADDR": "6029D5312510","TX_BYTES_AVG": 402670.00,"AP_MODEL": "DVW604","PORT": -1,"AP_NET_COMP": null,"NEIS_CODE": null,"fwUpdateDt": "2025-01-30 15:29:57","GRP_NO": 10377,"EDU_OFFICE_NAME": "경상남도교육청 〉 창원교육지원청","LIFETIME": 7,"IP_ADDR_NO": 1.69546868E8,"AP_UPTIME": "50","ORDER_DEGREE": "학교 무선환경 구축","AP_NM": "cwm.Ga_Go_Pa.E_116","ACS_IP": "192.168.0.42","CONN_CNT": 0,"INSTALLED_DATE": "2021-08-01","trApplyYn": "ON","RX_BYTES_AVG": 15843574.00},
+     {"VENDOR_NAME": "다보링크","AP_INST_LOC": "2-1반","STATUS_CHK_DATETIME": "2025-06-03 22:20:00","PROFILE_NO": 0,"INFORM_DATETIME": "2025-06-03 22:01:37","AP_SERIAL": "DVW604ID20CBA06209","AP_VENDOR": "DAVO","TOTAL_BYTES_AVG": 16268014.00,"MNG_NO": 284092,"IP_ADDR": "10.27.20.117","ORDER_DEGREE_CODE": "NEWDEAL","AP_STATUS": "수집","AP_VER": "8.00.82","URL": "http://40.27.20.117","SCH_NM": "가고파초등학교","DIS_INSTALLED_DATE": "2021-08","GW_TYPE": "X51","MAC_ADDR": "6029D5312520","TX_BYTES_AVG": 405225.00,"AP_MODEL": "DVW604","PORT": -1,"AP_NET_COMP": null,"NEIS_CODE": null,"fwUpdateDt": "2025-01-30 14:28:52","GRP_NO": 10377,"EDU_OFFICE_NAME": "경상남도교육청 〉 창원교육지원청","LIFETIME": 7,"IP_ADDR_NO": 1.69546869E8,"AP_UPTIME": "48","ORDER_DEGREE": "학교 무선환경 구축","AP_NM": "cwm.Ga_Go_Pa.E_117","ACS_IP": "192.168.0.41","CONN_CNT": 0,"INSTALLED_DATE": "2021-08-01","trApplyYn": "ON","RX_BYTES_AVG": 15862789.00}, 
+     {"VENDOR_NAME": "다보링크","AP_INST_LOC": "2-1반","STATUS_CHK_DATETIME": "2025-06-03 22:20:00","PROFILE_NO": 0,"INFORM_DATETIME": "2025-06-03 22:01:37","AP_SERIAL": "DVW604ID20CBA06209","AP_VENDOR": "DAVO","TOTAL_BYTES_AVG": 16268014.00,"MNG_NO": 284092,"IP_ADDR": "10.27.20.117","ORDER_DEGREE_CODE": "NEWDEAL","AP_STATUS": "수집","AP_VER": "8.00.82","URL": "http://40.27.20.117","SCH_NM": "가고파초등학교","DIS_INSTALLED_DATE": "2021-08","GW_TYPE": "X51","MAC_ADDR": "6029D5312520","TX_BYTES_AVG": 405225.00,"AP_MODEL": "DVW604","PORT": -1,"AP_NET_COMP": null,"NEIS_CODE": null,"fwUpdateDt": "2025-01-30 14:28:52","GRP_NO": 10377,"EDU_OFFICE_NAME": "경상남도교육청 〉 창원교육지원청","LIFETIME": 7,"IP_ADDR_NO": 1.69546869E8,"AP_UPTIME": "48","ORDER_DEGREE": "학교 무선환경 구축","AP_NM": "cwm.Ga_Go_Pa.E_117","ACS_IP": "192.168.0.41","CONN_CNT": 0,"INSTALLED_DATE": "2021-08-01","trApplyYn": "ON","RX_BYTES_AVG": 15862789.00}, 
+     {"VENDOR_NAME": "다보링크","AP_INST_LOC": "2-1반","STATUS_CHK_DATETIME": "2025-06-03 22:20:00","PROFILE_NO": 0,"INFORM_DATETIME": "2025-06-03 22:01:37","AP_SERIAL": "DVW604ID20CBA06209","AP_VENDOR": "DAVO","TOTAL_BYTES_AVG": 16268014.00,"MNG_NO": 284092,"IP_ADDR": "10.27.20.117","ORDER_DEGREE_CODE": "NEWDEAL","AP_STATUS": "수집","AP_VER": "8.00.82","URL": "http://40.27.20.117","SCH_NM": "가고파초등학교","DIS_INSTALLED_DATE": "2021-08","GW_TYPE": "X51","MAC_ADDR": "6029D5312520","TX_BYTES_AVG": 405225.00,"AP_MODEL": "DVW604","PORT": -1,"AP_NET_COMP": null,"NEIS_CODE": null,"fwUpdateDt": "2025-01-30 14:28:52","GRP_NO": 10377,"EDU_OFFICE_NAME": "경상남도교육청 〉 창원교육지원청","LIFETIME": 7,"IP_ADDR_NO": 1.69546869E8,"AP_UPTIME": "48","ORDER_DEGREE": "학교 무선환경 구축","AP_NM": "cwm.Ga_Go_Pa.E_117","ACS_IP": "192.168.0.41","CONN_CNT": 0,"INSTALLED_DATE": "2021-08-01","trApplyYn": "ON","RX_BYTES_AVG": 15862789.00}, 
+     {"VENDOR_NAME": "다보링크","AP_INST_LOC": "2-1반","STATUS_CHK_DATETIME": "2025-06-03 22:20:00","PROFILE_NO": 0,"INFORM_DATETIME": "2025-06-03 22:01:37","AP_SERIAL": "DVW604ID20CBA06209","AP_VENDOR": "DAVO","TOTAL_BYTES_AVG": 16268014.00,"MNG_NO": 284092,"IP_ADDR": "10.27.20.117","ORDER_DEGREE_CODE": "NEWDEAL","AP_STATUS": "수집","AP_VER": "8.00.82","URL": "http://40.27.20.117","SCH_NM": "가고파초등학교","DIS_INSTALLED_DATE": "2021-08","GW_TYPE": "X51","MAC_ADDR": "6029D5312520","TX_BYTES_AVG": 405225.00,"AP_MODEL": "DVW604","PORT": -1,"AP_NET_COMP": null,"NEIS_CODE": null,"fwUpdateDt": "2025-01-30 14:28:52","GRP_NO": 10377,"EDU_OFFICE_NAME": "경상남도교육청 〉 창원교육지원청","LIFETIME": 7,"IP_ADDR_NO": 1.69546869E8,"AP_UPTIME": "48","ORDER_DEGREE": "학교 무선환경 구축","AP_NM": "cwm.Ga_Go_Pa.E_117","ACS_IP": "192.168.0.41","CONN_CNT": 0,"INSTALLED_DATE": "2021-08-01","trApplyYn": "ON","RX_BYTES_AVG": 15862789.00}, 
+    {"VENDOR_NAME": "다보링크","AP_INST_LOC": "2-2","STATUS_CHK_DATETIME": "2025-06-03 22:20:00","PROFILE_NO": 0,"INFORM_DATETIME": "2025-06-03 21:50:23","AP_SERIAL": "DVW604ID20CBA06210","AP_VENDOR": "DAVO","TOTAL_BYTES_AVG": 16246174.00,"MNG_NO": 271689,"IP_ADDR": "10.27.20.118","ORDER_DEGREE_CODE": "NEWDEAL","AP_STATUS": "수집","AP_VER": "8.00.82","URL": "http://40.27.20.118","SCH_NM": "가고파초등학교","DIS_INSTALLED_DATE": "2021-08","GW_TYPE": "X51","MAC_ADDR": "6029D5312530","TX_BYTES_AVG": 404066.00,"AP_MODEL": "DVW604","PORT": -1,"AP_NET_COMP": null,"NEIS_CODE": null,"fwUpdateDt": "2025-01-30 12:12:10","GRP_NO": 10377,"EDU_OFFICE_NAME": "경상남도교육청 〉 창원교육지원청","LIFETIME": 7,"IP_ADDR_NO": 1.6954687E8,"AP_UPTIME": "48","ORDER_DEGREE": "학교 무선환경 구축","AP_NM": "다보","ACS_IP": "192.168.0.44","CONN_CNT": 0,"INSTALLED_DATE": "2021-08-01","trApplyYn": "ON","RX_BYTES_AVG": 15842108.00}
+    ];
+
+    tempJqxGrid("#apControllerGrid", {
+        columns: [
+ 
+                {text: 'ap번호', datafield: 'MNG_NO', hidden: true, editable: false},
+                // { text: 'ap번호', datafield: 'MNG_NO'},
+                {text: '그룹명', datafield: 'EDU_OFFICE_NAME', cellsalign: 'center', minwidth: '220', pinned: true, editable: false},
+                {text: '학교명', datafield: 'SCH_NM', cellsalign: 'center', width: '150', pinned: true, editable: false},
+                {text: '사업차수', datafield: 'ORDER_DEGREE', cellsalign: 'center', width: '150', editable: false, filtertype:'checkedlist'},
+                {text: 'AP명', datafield: 'AP_NM', cellsalign: 'center', width: '200', editable: false, cellsrenderer: HmGrid.apNameNiaRenderer},
+                {text: 'IP', datafield: 'IP_ADDR', cellsalign: 'center', width: '100', editable: false},
+                {text: 'MAC', datafield: 'MAC_ADDR', cellsalign: 'center', width: '120', editable: false, cellsrenderer: HmGrid.macAddressRenderer},
+                {text: '제조사', datafield: 'VENDOR_NAME', cellsalign: 'center', width: '100', editable: false, filtertype:'checkedlist'},
+                {text: '모델', datafield: 'AP_MODEL', cellsalign: 'center', width: '120', editable: false},
+                {text: '설치위치', datafield: 'AP_INST_LOC', cellsalign: 'center', width: '150', editable: false},
+                {
+                    // 퍼블변경
+                    text: 'AP상태 <img class="img-help-info" src="../img/help7.png">',
+                    datafield: 'AP_STATUS_REAL', width: '100', editable: false, filtertype:'checkedlist',
+                    rendered: function (element) {
+                        HmUtil.showTooltip($(element), '실시간 AP조회를 통한 현재 AP 장비의 <br>ON/OFF 상태 값 입니다.');
+                    },
+                    cellsrenderer: HmGrid.apStatusRealNiaRenderer
+                },
+                {
+                    // 퍼블변경
+                    text: '접속단말수',
+                    datafield: 'CONN_CNT_REAL', width: '100', editable: false,
+                    cellsrenderer: function (row, datafield, value) {
+                        return '<div style="margin: 5px;" class="jqx-center-align" id="CONN_CNT_">-</div>';
+                    },
+                    rendered: function (element) {
+                        HmUtil.showTooltip($(element), '실시간 AP조회를 통한 현재 AP 장비에 <br>연결된 단말 수 입니다.');
+                    },
+                },
+                {text: '펌웨어버전', datafield: 'AP_VER', cellsalign: 'center', width: '120', editable: false},
+                {
+                    text: '성능수집상태', datafield: 'AP_STATUS', cellsalign: 'center', editable: false, width: '100', filtertype:'checkedlist',
+                    createfilterwidget: function (column, columnElement, widget) {
+                        widget.jqxDropDownList({
+                            renderer: function (index, label, value) {
+                                if(value === '수집') return '수집';
+                                else if(value === '미수집') return '미수집';
+                                else return label;
+                            }
+                        });
+                    },
+                    // 퍼블변경
+                    cellsrenderer: function (row, datafield, value) {
+                        var status = '';
+                        if (value == '미수집') {
+                            // status = 'waitingAccount';
+                            status = '<div class="n-grid-item-wrap"><span class="n-tag" style="background-color: #FDF2F3;color:#D50136">미수집</span></div>'
+                        } else {
+                            // status = 'isRecvY';
+                            status = '<div class="n-grid-item-wrap"><span class="n-tag" style="background-color: #E3F3E6;color:#006E18">수집</span></div>'
+                        }
+                        var cell = status;
+                        // var cell = '<div style="margin: 5px;" class="jqx-center-align userConfCell userConf ' + status + '" id="AP_STATUS_">'+value+'</div>';
+                        return cell;
+                    }
+                },
+                {text: '성능수집일시', datafield: 'INFORM_DATETIME', cellsalign: 'center', width: '150', editable: false},
+                {text: '펌웨어업데이트일시', datafield: 'fwUpdateDt', cellsalign: 'center', width: '150', editable: false},
+                {
+                    text: 'AP재시작', datafield: 'AP_RESTART', cellsalign: 'center', editable: false, width: '100', filtertype:'checkedlist',
+                    cellsrenderer: function (row, datafield, value) {
+                        var status = '';
+                        if (value == '성공') {
+                            status = 'successNIA';
+                        } else if (value == '실패') {
+                            status = 'waitingAccount';
+                        } else {
+                            status = '';
+                            value = '-';
+                        }
+                        var cell = '<div style="margin: 5px;" class="jqx-center-align userConfCell userConf ' + status + '" id="AP_RESTART_">'+value+'</div>';
+                        return cell;
+                    }
+                },
+                {text: '도입년/월', datafield: 'DIS_INSTALLED_DATE', cellsalign: 'center', width: '100', editable: false},
+                {text: '도입년/월', datafield: 'INSTALLED_DATE', hidden: true},
+                {text: '내구연한', datafield: 'LIFETIME', cellsalign: 'center', width: '100', editable: false},
+                {text: '사업자', datafield: 'AP_NET_COMP', cellsalign: 'center', width: '50', editable: false}
+            ],  
+            selectionmode: 'checkbox',
+    }, localData)
+
+    </script>
+
+
+
+</body>
+</html>
